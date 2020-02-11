@@ -141,7 +141,7 @@
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(40px) /*element itself video animated button2 9min30s*/
+        transform: translateY(40px) 
     }
 
     100% {
