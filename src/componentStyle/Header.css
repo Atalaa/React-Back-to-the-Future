@@ -1,4 +1,4 @@
-.header{
+.header {
     height: 95vh; /* 95% of the viewport height*/
     background-image: linear-gradient(
         to right bottom, 
@@ -11,12 +11,77 @@
     position: relative;
 }
 
-.logo-box{
+.logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 30px;
+    left: 30px;
 }
 
-.logo{
-    height: 35px;
+.logo {
+    height: 40px;
+}
+
+.text-box {
+    position: absolute;
+    top: 30%; /*of the parent*/
+    left: 50%; 
+    transform: translate(-50%, -50%); /*element itself*/
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    backface-visibility: hidden;
+}
+
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+
+    animation: moveInLeft 1s ease-out;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 17px;
+
+    animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px) /*element itself*/
+    }
+
+    80% {
+        transform: translateX(10px) /*element itself*/
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0) /*element itself*/
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px) /*element itself*/
+    }
+
+    80% {
+        transform: translateX(-10px) /*element itself*/
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0) /*element itself*/
+    }
 }
