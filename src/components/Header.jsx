@@ -16,7 +16,12 @@ function Header(){
                     <span className="heading-primary-sub">to the</span>
                     <span className="heading-primary-main">Future</span>
                 </h1>
+                <a href="#" className="btn btn-white btn-animated">
+                    A worldwide cultural phenomenon
+                </a>
             </div>
+
+            
             
         </header>
     )
