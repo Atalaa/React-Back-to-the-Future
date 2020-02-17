@@ -1,0 +1,25 @@
+$color-grey: #777;
+
+
+*, // real element get behavior css
+*::after, // after element too
+*::before {
+    margin:0;
+    padding:0;
+    box-sizing: inherit; /*Technique: box-sizing itself is not inherited, set it up to inherit will automatically inherit whatever we put as value, for example border-box */
+}
+
+html {
+    font-size: 62.5% ; /* Technique: we use % of the font size given by the browser.
+    We want 10px as default instead of 16px (browser), so we divide 10 by 16 */ 
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+

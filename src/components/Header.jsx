@@ -1,5 +1,5 @@
 import React from 'react';
-import '../componentStyle/Header.css';
+import '../sass/Header.scss';
 import logo from '../img/bttfLogo.png';
 
 

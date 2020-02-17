@@ -1,9 +1,17 @@
+@import './App.scss';
+
+$color-primary: #6bd4facc;
+$color-secondary: #287fb8cc;
+$color-white: #fff;
+
+
 .header {
     height: 95vh; /* 95% of the viewport height*/
     background-image: linear-gradient(
         to right bottom, 
-        hsla(196, 93%, 70%, 0.8), 
-        hsla(204, 64%, 44%, 0.801)), 
+        rgba($color-primary, 0.8), 
+        rgba($color-secondary, 0.8)
+        ), 
         url("../img/desert.jpg");
     background-size: cover;
     background-position: top;
@@ -13,12 +21,12 @@
 
 .logo-box {
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 3rem;
+    left: 3rem;
 }
 
 .logo {
-    height: 40px;
+    height: 3.5rem;
 }
 
 .text-box {
@@ -30,27 +38,27 @@
 }
 
 .heading-primary {
-    color: #fff;
+    color: $color-white;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 140px;
+    margin-bottom: 14rem;
 }
 
 
 .heading-primary-main {
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
 
     animation: moveInLeft 1s ease-out;
 }
 
 .heading-primary-sub {
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 400;
-    letter-spacing: 17px;
+    letter-spacing: 1.75rem;
 
     animation: moveInRight 1s ease-out;
 }
@@ -59,11 +67,11 @@
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px) /*element itself*/
+        transform: translateX(-10rem) /*element itself*/
     }
 
     80% {
-        transform: translateX(10px) /*element itself*/
+        transform: translateX(1rem) /*element itself*/
     }
 
     100% {
@@ -75,11 +83,23 @@
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(100px) /*element itself*/
+        transform: translateX(10rem) /*element itself*/
     }
 
     80% {
-        transform: translateX(-10px) /*element itself*/
+        transform: translateX(-1rem) /*element itself*/
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0) /*element itself*/
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(4rem) 
     }
 
     100% {
@@ -93,26 +113,27 @@
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     display: inline-block; /*to have its own space*/
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all .2s; /*in initial state we declare transition*/
     position: relative; /*reference for .btn::after */
+    font-size: 1.6rem;
 }
 
 .btn:hover {
     transform: translateY(-3px); /*how transition should look like*/
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 }
 
 .btn:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
 
 .btn-white {
-    background-color: #fff;
-    color: #777;
+    background-color: $color-white;
+    color: $color-grey;
 }
 
 /* pseudo elements */
@@ -121,7 +142,7 @@
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top: 0;
     left: 0; 
@@ -130,7 +151,7 @@
 }
 
 .btn-white::after {
-    background-color: #fff;
+    background-color: $color-white;
 }
 
 .btn:hover::after {
@@ -138,17 +159,7 @@
     opacity: 0; /*invisible - trick for fades out smth*/
 } 
 
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(40px) 
-    }
 
-    100% {
-        opacity: 1;
-        transform: translate(0) /*element itself*/
-    }
-}
 
 .btn-animated {
     animation: moveInBottom .5s ease-out .75s;
