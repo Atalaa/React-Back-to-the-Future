@@ -1,10 +1,15 @@
 import React from 'react';
-import '../sass/App.scss';
 import Header from './Header';
+import Main from './Main';
+import '../sass/App.scss';
+
 
 function App(){
-    return(
-        <Header />
+    return (
+        <div>
+            <Header />
+            <Main />
+        </div>
     )
 }
 

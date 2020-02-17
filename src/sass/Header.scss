@@ -1,14 +1,7 @@
-@import './App.scss';
-
-$color-primary: #6bd4facc;
-$color-secondary: #287fb8cc;
-$color-white: #fff;
-$color-black: #000;
-
-
+@import './colors.scss';
 
 .header {
-    height: 95vh; /* 95% of the viewport height*/
+    height: 95vh; /* 95% of the height of viewport */
     background-image: linear-gradient(
         to right bottom, 
         rgba($color-primary, 0.8), 
@@ -125,7 +118,7 @@ $color-black: #000;
         border-radius: 10rem;
         transition: all .2s; /*in initial state we declare transition*/
         position: relative; /*reference for .btn::after */
-        font-size: 1.6rem;
+        font-size: $default-font-size;
     }
 
     &:hover {
@@ -144,8 +137,9 @@ $color-black: #000;
     }
 
     &--white {
+        letter-spacing: 3px;
         background-color: $color-white;
-        color: $color-grey;
+        color: $color-grey-dark;
 
         &::after {
             background-color: $color-white;

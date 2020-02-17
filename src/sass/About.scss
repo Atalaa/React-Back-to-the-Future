@@ -1,0 +1,110 @@
+@import './colors.scss';
+
+.utility-center-text {text-align: center;}
+.utility-margin-bottom-small {margin-bottom: 1.5rem;}
+.utility-margin-bottom-medium {margin-bottom: 4rem;}
+.utility-margin-bottom-big {margin-bottom: 8rem;}
+
+
+.section-about {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh; /*95vh - 75vh of header*/
+}
+
+.heading-secondary {
+    // backface-visibility: hidden;
+    font-size: 3rem;
+    text-transform: uppercase;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary, $color-secondary);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 3px;
+    transition: all .2s;
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 20px rgba($color-black, .2);
+    }
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 80vh auto; //height 80vh
+    column-gap: 2.5rem;
+    grid-template-columns: 40% 35%;
+    justify-content: center;
+}
+
+.item--2{
+    width: 50rem;
+}
+
+.composition {
+    position: relative;
+
+    &__photo {
+        width: 55%;
+        position: absolute;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+
+        &--p1 {
+            left:20%;
+            top: 10rem;
+        }
+        &--p2 {
+            right:0;
+            top: 2rem;
+        }
+        &--p3 {
+            left:0;
+            top: -2rem;
+        }
+    }
+}
+
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    text-align: justify;
+  text-justify: inter-word;
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-secondary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-secondary;
+        padding: 3px;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-secondary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0); //initial position
+    }
+}
+
+

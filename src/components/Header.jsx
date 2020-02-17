@@ -20,9 +20,6 @@ function Header(){
                     A cultural phenomenon
                 </a>
             </div>
-
-            
-            
         </header>
     )
 }
