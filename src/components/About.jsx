@@ -25,7 +25,7 @@ function About() {
                     <h3 className="heading-tertiary utility-margin-bottom-small">Synopsis</h3>
 
                     <p className="paragraph">
-                    When teenager Marty McFly (Michael J. Fox) is blasted to 1955 in the DeLorean time machine created by the eccentric Doc Brown (Christopher Lloyd), he finds himself mixed up in a time-altering chain reaction that could vaporize his future — and leave him trapped in the past. Powered by innovative special effects, unforgettable songs and non-stop action, Back to the Future is an unrivaled adventure that stands the test of time!
+                    When teenager Marty McFly (Michael J. Fox) is blasted to 1955 in the DeLorean time machine created by the eccentric Doc Brown (Christopher Lloyd), he finds himself mixed up in a time-altering chain reaction that could vaporize his future — and leave him trapped in the past. 
                     </p>
 
                     <a href="#" className="btn-text">Learn more &rarr;</a>
