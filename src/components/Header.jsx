@@ -1,4 +1,5 @@
 import React from 'react';
+import Typed from 'react-typed';
 import '../sass/Header.scss';
 import logo from '../img/bttfLogo.png';
 
@@ -16,8 +17,18 @@ function Header(){
                     <span className="heading-primary--sub">to the</span>
                     <span className="heading-primary--main">Future</span>
                 </h1>
-                <a href="https://www.backtothefuture.com/" target="_blank" className="btn btn--white btn--animated">
-                    A cultural phenomenon
+                <a href="https://www.backtothefuture.com/" target="_blank" className="btn btn--white btn--animated btn--typed">
+
+                    <Typed
+                        strings={["A classic masterpiece", "Revisit the Past!", "A cultural phenomenon", "You’re gonna love it!"]}
+                        typeSpeed={50}
+                        backSpeed={20}
+                        backDelay={800}
+                        startDelay={1000}
+                        loop
+                        smartBackspace
+                    />
+
                 </a>
             </div>
         </header>

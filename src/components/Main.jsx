@@ -1,10 +1,15 @@
 import React from 'react';
 import About from './About';
+import Facts from './Facts';
 
 
 function Main() {
     return(
-        <About />
+        <div>
+            <About />
+            <Facts />
+        </div>
+        
     )
 }
 
