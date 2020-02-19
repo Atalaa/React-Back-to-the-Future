@@ -3,6 +3,7 @@ import '../sass/About.scss';
 import marty from '../img/mjfox.jpg';
 import doc from '../img/clloyd.jpg';
 import biff from '../img/twilson.jpg';
+import lea from '../img/ltom.jpg';
 
 
 function About() {
@@ -37,6 +38,7 @@ function About() {
                         <img src={biff} alt="actor3" className="composition__photo composition__photo--p3"/>
                         <img src={doc} alt="actor2" className="composition__photo composition__photo--p2"/>
                         <img src={marty} alt="actor1" className="composition__photo composition__photo--p1"/>
+                        <img src={lea} alt="actor4" className="composition__photo composition__photo--p0"/>
                         
                     </div>
                 </div>

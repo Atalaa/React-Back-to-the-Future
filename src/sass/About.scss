@@ -92,7 +92,7 @@
 
 
         &--p1 {
-            left:20%;
+            left:10%;
             top: 10rem;
         }
         &--p2 {
@@ -102,6 +102,10 @@
         &--p3 {
             left:0;
             top: -2rem;
+        }
+        &--p0 {
+            right:2rem;
+            top:    18rem;
         }
 
         &:hover {
