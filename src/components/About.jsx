@@ -48,10 +48,8 @@ function About() {
                     <a href="https://www.backtothefuture.com/cast/lea-thompson" target="_blank">
                         <img src={lea} alt="actor4" className="composition__photo composition__photo--p0"/>
                     </a>
-                        
                     </div>
                 </div>
-                
             </div>
         </section>      
     )

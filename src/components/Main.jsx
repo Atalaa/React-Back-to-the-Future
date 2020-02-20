@@ -1,13 +1,13 @@
 import React from 'react';
 import About from './About';
-import Facts from './Facts';
+import Music from './Music';
 
 
 function Main() {
     return(
         <div>
             <About />
-            <Facts />
+            <Music />
         </div>
         
     )

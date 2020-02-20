@@ -1,0 +1,52 @@
+@import './colors.scss';
+
+
+.section-music {
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-primary, 0.8), 
+        rgba($color-secondary, 0.8)), 
+    url("../img/delorean.jpg");
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin-top: -35rem;
+
+}
+
+.container2 {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 80vh auto; //height 80vh
+    column-gap: 8rem;
+    grid-template-columns: 20% 20% 20% ;
+    justify-content: center;
+    transform: skewY(7deg);
+}
+
+.music-box {
+    background-color: rgba($color-white, .8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    transition: all .3s;
+
+    &__img {
+        border-radius: 50%;
+        border: 7px solid $color-primary-outline;
+        width: 13rem;
+        height: 13rem;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03) ;
+        backface-visibility: hidden;
+
+    }
+
+
+}
