@@ -6,13 +6,19 @@
     background-image: linear-gradient(
         to right bottom, 
         rgba($color-primary, 0.8), 
-        rgba($color-secondary, 0.8)), 
+        rgba($color-secondary, 0.8)),
     url("../img/delorean.jpg");
     background-size: cover;
     transform: skewY(-7deg);
     margin-top: -35rem;
-
 }
+
+// .section-music::after{
+//     z-index: -1;
+//     background-image: url("../img/delorean.jpg");
+//     transform: skewY(7deg);
+
+// }
 
 .container2 {
     display: grid;
@@ -45,8 +51,5 @@
     &:hover {
         transform: translateY(-1.5rem) scale(1.03) ;
         backface-visibility: hidden;
-
     }
-
-
 }

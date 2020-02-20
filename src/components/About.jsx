@@ -1,4 +1,6 @@
 import React from 'react';
+import Actor from './Actor';
+
 import '../sass/About.scss';
 import marty from '../img/mjfox.jpg';
 import doc from '../img/clloyd.jpg';
@@ -36,18 +38,19 @@ function About() {
                 <div className="item item--2">
                     <div className="composition">
 
-                    <a href="https://www.backtothefuture.com/cast/thomas-wilson" target="_blank">
-                        <img src={biff} alt="actor3" className="composition__photo composition__photo--p3"/>
-                    </a>
-                    <a href="https://www.backtothefuture.com/cast/christopher-lloyd" target="_blank">
-                        <img src={doc} alt="actor2" className="composition__photo composition__photo--p2"/>
-                    </a>
-                    <a href="https://www.backtothefuture.com/cast/michael-j-fox" target="_blank">
-                        <img src={marty} alt="actor1" className="composition__photo composition__photo--p1"/>
-                    </a>
-                    <a href="https://www.backtothefuture.com/cast/lea-thompson" target="_blank">
-                        <img src={lea} alt="actor4" className="composition__photo composition__photo--p0"/>
-                    </a>
+                        <Actor actorImg={biff} link="https://www.backtothefuture.com/cast/thomas-wilson" 
+                            className="composition__photo composition__photo--p3" />
+
+                        <Actor actorImg={doc} link="https://www.backtothefuture.com/cast/christopher-lloyd"
+                            className="composition__photo composition__photo--p2" />
+
+                        <Actor actorImg={marty} link="https://www.backtothefuture.com/cast/michael-j-fox"
+                            className="composition__photo composition__photo--p1" />
+
+
+                        <Actor actorImg={lea} link="https://www.backtothefuture.com/cast/lea-thompson"
+                            className="composition__photo composition__photo--p0" />
+
                     </div>
                 </div>
             </div>
