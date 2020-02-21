@@ -1,11 +1,14 @@
 import React from 'react';
 import Actor from './Actor';
-
+import json_about_actors from '../json/json_about_actors';
 import '../sass/About.scss';
-import marty from '../img/mjfox.jpg';
-import doc from '../img/clloyd.jpg';
-import biff from '../img/twilson.jpg';
-import lea from '../img/ltom.jpg';
+
+
+function createActor(item){
+    return(
+        <Actor key={item.id} actorImg={item.image} linkInfo={item.link} myClass={item.class}/>
+    )
+}
 
 
 function About() {
@@ -31,26 +34,13 @@ function About() {
                     When teenager Marty McFly (Michael J. Fox) is blasted to 1955 in the DeLorean time machine created by the eccentric Doc Brown (Christopher Lloyd), he finds himself mixed up in a time-altering chain reaction that could vaporize his future — and leave him trapped in the past. 
                     </p>
 
-                    <a href="https://www.backtothefuture.com/cast" target="_blank" className="btn-text">Learn more &rarr;</a>
+                    <a href="https://www.backtothefuture.com/cast"  rel="noreferrer noopener" target="_blank" className="btn-text">Learn more &rarr;</a>
 
                 </div>
 
                 <div className="item item--2">
                     <div className="composition">
-
-                        <Actor actorImg={biff} link="https://www.backtothefuture.com/cast/thomas-wilson" 
-                            className="composition__photo composition__photo--p3" />
-
-                        <Actor actorImg={doc} link="https://www.backtothefuture.com/cast/christopher-lloyd"
-                            className="composition__photo composition__photo--p2" />
-
-                        <Actor actorImg={marty} link="https://www.backtothefuture.com/cast/michael-j-fox"
-                            className="composition__photo composition__photo--p1" />
-
-
-                        <Actor actorImg={lea} link="https://www.backtothefuture.com/cast/lea-thompson"
-                            className="composition__photo composition__photo--p0" />
-
+                        {json_about_actors.map(createActor)}
                     </div>
                 </div>
             </div>

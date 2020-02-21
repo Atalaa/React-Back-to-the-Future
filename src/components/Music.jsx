@@ -1,19 +1,21 @@
 import React from 'react';
 import Singer from './Singer';
-
+import json_music_singers from '../json/json_music_singers';
 import '../sass/Music.scss';
-import huey from '../img/hlewis.jpg';
-import chuck from '../img/cberry.jpg';
-import starlighters from '../img/starlighters.jpg';
 
+
+
+function createSinger(item){
+    return(
+        <Singer key={item.id} singerImg={item.image} song={item.mp3}/>
+    )
+}
 
 function Music() {
     return(
         <section className="section-music">
             <div className="container2">
-                <Singer singerImg={huey} />
-                <Singer singerImg={chuck} />
-                <Singer singerImg={starlighters} />
+                {json_music_singers.map(createSinger)}
             </div>
         </section>
     )
