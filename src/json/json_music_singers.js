@@ -13,4 +13,4 @@ const json_music_singers = [
     {id: 3, image: starlighters, mp3: soundStarlighters} 
 ];
 
-export default json_music_singers;
+export default json_music_singers; 
