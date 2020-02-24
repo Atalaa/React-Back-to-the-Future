@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Back-to-the-Future/static/css/main.6d1acde3.chunk.css",
-    "main.js": "/Back-to-the-Future/static/js/main.e3098650.chunk.js",
-    "main.js.map": "/Back-to-the-Future/static/js/main.e3098650.chunk.js.map",
+    "main.css": "/Back-to-the-Future/static/css/main.ce9a6050.chunk.css",
+    "main.js": "/Back-to-the-Future/static/js/main.9ef170d3.chunk.js",
+    "main.js.map": "/Back-to-the-Future/static/js/main.9ef170d3.chunk.js.map",
     "runtime-main.js": "/Back-to-the-Future/static/js/runtime-main.13387317.js",
     "runtime-main.js.map": "/Back-to-the-Future/static/js/runtime-main.13387317.js.map",
     "static/css/2.ab55b510.chunk.css": "/Back-to-the-Future/static/css/2.ab55b510.chunk.css",
     "static/js/2.438a72a2.chunk.js": "/Back-to-the-Future/static/js/2.438a72a2.chunk.js",
     "static/js/2.438a72a2.chunk.js.map": "/Back-to-the-Future/static/js/2.438a72a2.chunk.js.map",
     "index.html": "/Back-to-the-Future/index.html",
-    "precache-manifest.168baf272ecbd44244b4b245e8fb5ff0.js": "/Back-to-the-Future/precache-manifest.168baf272ecbd44244b4b245e8fb5ff0.js",
+    "precache-manifest.4628b7c3cde058be74e93f15167dd7cc.js": "/Back-to-the-Future/precache-manifest.4628b7c3cde058be74e93f15167dd7cc.js",
     "service-worker.js": "/Back-to-the-Future/service-worker.js",
     "static/css/2.ab55b510.chunk.css.map": "/Back-to-the-Future/static/css/2.ab55b510.chunk.css.map",
-    "static/css/main.6d1acde3.chunk.css.map": "/Back-to-the-Future/static/css/main.6d1acde3.chunk.css.map",
+    "static/css/main.ce9a6050.chunk.css.map": "/Back-to-the-Future/static/css/main.ce9a6050.chunk.css.map",
     "static/js/2.438a72a2.chunk.js.LICENSE.txt": "/Back-to-the-Future/static/js/2.438a72a2.chunk.js.LICENSE.txt",
     "static/media/angel.mp3": "/Back-to-the-Future/static/media/angel.8b918c9b.mp3",
     "static/media/back_in_time.mp3": "/Back-to-the-Future/static/media/back_in_time.35cb67dd.mp3",
@@ -22,6 +22,7 @@
     "static/media/clloyd.jpg": "/Back-to-the-Future/static/media/clloyd.b741a1ba.jpg",
     "static/media/Music.scss": "/Back-to-the-Future/static/media/delorean.01d0237d.jpg",
     "static/media/Header.scss": "/Back-to-the-Future/static/media/desert.0730d498.jpg",
+    "static/media/Card.scss": "/Back-to-the-Future/static/media/future1.f4877ce8.jpg",
     "static/media/hlewis.jpg": "/Back-to-the-Future/static/media/hlewis.247aec93.jpg",
     "static/media/ltom.jpg": "/Back-to-the-Future/static/media/ltom.64e5c8a4.jpg",
     "static/media/mjfox.jpg": "/Back-to-the-Future/static/media/mjfox.21b05b9a.jpg",
@@ -32,7 +33,7 @@
     "static/js/runtime-main.13387317.js",
     "static/css/2.ab55b510.chunk.css",
     "static/js/2.438a72a2.chunk.js",
-    "static/css/main.6d1acde3.chunk.css",
-    "static/js/main.e3098650.chunk.js"
+    "static/css/main.ce9a6050.chunk.css",
+    "static/js/main.9ef170d3.chunk.js"
   ]
 }
