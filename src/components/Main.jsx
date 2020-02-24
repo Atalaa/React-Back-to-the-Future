@@ -1,6 +1,8 @@
 import React from 'react';
 import About from './About';
 import Music from './Music';
+import Trailer from './Trailer';
+
 
 
 function Main() {
@@ -8,6 +10,7 @@ function Main() {
         <div>
             <About />
             <Music />
+            <Trailer />
         </div>
         
     )

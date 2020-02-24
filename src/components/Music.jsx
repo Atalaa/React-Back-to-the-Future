@@ -17,6 +17,7 @@ function Music() {
             <div className="container2">
                 {json_music_singers.map(createSinger)}
             </div>
+                
         </section>
     )
 }

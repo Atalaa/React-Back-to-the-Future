@@ -1,0 +1,17 @@
+@import './colors.scss';
+
+
+.section-trailer{
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 50rem 0;
+    margin-top: -10rem;
+}
+
+.container3 {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 80vh auto; //height 80vh
+    column-gap: 5rem;
+    grid-template-columns: 20% 20% 20% ;
+    justify-content: center;
+}
