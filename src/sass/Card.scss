@@ -1,14 +1,16 @@
 @import './colors.scss';
 
 .card{
+
+    //FUNCTIONALITY
     perspective: 150rem; //perspective always on the parent
     -moz-perspective: 150rem;
     position: relative;
-    height: 50rem; //perspective back with this setting
+    height: 45rem; //perspective back with this setting
 
 
     &__side{ //child element get the perspective view
-        height: 50rem;
+        height: 45rem;
         transition: all .8s ease;
         position: absolute;
         top:0;
@@ -16,6 +18,7 @@
         width: 100%;
         backface-visibility: hidden;
         border-radius: 3px;
+        overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front{
@@ -35,7 +38,31 @@
     &:hover &__side--front{
         transform: rotateY(-180deg);   
     }
+
     &:hover &__side--back{
         transform: rotateY(0);   
+    }
+
+
+    //FRONT SIDE STYLING
+    &__picture{
+        background-size: cover;
+
+        &--1{
+            background-image: linear-gradient(to right bottom, $color-card1-light, $color-card1-dark),
+                url(../img/future1.jpg);
+            background-position: center top;
+            background-size: 150%;
+            height: 20rem;
+            background-blend-mode: screen;
+        }
+
+        &--2{
+            // background-image: url(../img/future1.jpg);
+        }
+
+        &--3{
+            // background-image: url(../img/future1.jpg);
+        }
     }
 }
