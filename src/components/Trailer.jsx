@@ -14,8 +14,8 @@ function Trailer(){
             </div>
             <div className="container3">
                 <Card />
-                <div>ca va</div>
-                <div>yeahh oui</div>
+                <div>Card 2</div>
+                <div>Card 3</div>
             </div>
         </div>
     )
