@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Back-to-the-Future/static/css/main.720cb52b.chunk.css",
-    "main.js": "/Back-to-the-Future/static/js/main.d5761128.chunk.js",
-    "main.js.map": "/Back-to-the-Future/static/js/main.d5761128.chunk.js.map",
+    "main.css": "/Back-to-the-Future/static/css/main.f0e570a6.chunk.css",
+    "main.js": "/Back-to-the-Future/static/js/main.71e26876.chunk.js",
+    "main.js.map": "/Back-to-the-Future/static/js/main.71e26876.chunk.js.map",
     "runtime-main.js": "/Back-to-the-Future/static/js/runtime-main.13387317.js",
     "runtime-main.js.map": "/Back-to-the-Future/static/js/runtime-main.13387317.js.map",
     "static/css/2.ab55b510.chunk.css": "/Back-to-the-Future/static/css/2.ab55b510.chunk.css",
     "static/js/2.1a34265e.chunk.js": "/Back-to-the-Future/static/js/2.1a34265e.chunk.js",
     "static/js/2.1a34265e.chunk.js.map": "/Back-to-the-Future/static/js/2.1a34265e.chunk.js.map",
     "index.html": "/Back-to-the-Future/index.html",
-    "precache-manifest.76568ab4679af7279788366dbcc83d7d.js": "/Back-to-the-Future/precache-manifest.76568ab4679af7279788366dbcc83d7d.js",
+    "precache-manifest.a1345019bf032e446f9bfdfb574c2b7a.js": "/Back-to-the-Future/precache-manifest.a1345019bf032e446f9bfdfb574c2b7a.js",
     "service-worker.js": "/Back-to-the-Future/service-worker.js",
     "static/css/2.ab55b510.chunk.css.map": "/Back-to-the-Future/static/css/2.ab55b510.chunk.css.map",
-    "static/css/main.720cb52b.chunk.css.map": "/Back-to-the-Future/static/css/main.720cb52b.chunk.css.map",
+    "static/css/main.f0e570a6.chunk.css.map": "/Back-to-the-Future/static/css/main.f0e570a6.chunk.css.map",
     "static/js/2.1a34265e.chunk.js.LICENSE.txt": "/Back-to-the-Future/static/js/2.1a34265e.chunk.js.LICENSE.txt",
     "static/media/angel.mp3": "/Back-to-the-Future/static/media/angel.8b918c9b.mp3",
     "static/media/back_in_time.mp3": "/Back-to-the-Future/static/media/back_in_time.35cb67dd.mp3",
@@ -36,7 +36,7 @@
     "static/js/runtime-main.13387317.js",
     "static/css/2.ab55b510.chunk.css",
     "static/js/2.1a34265e.chunk.js",
-    "static/css/main.720cb52b.chunk.css",
-    "static/js/main.d5761128.chunk.js"
+    "static/css/main.f0e570a6.chunk.css",
+    "static/js/main.71e26876.chunk.js"
   ]
 }
