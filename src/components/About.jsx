@@ -1,7 +1,8 @@
 import React from 'react';
 import Actor from './Actor';
-import json_about_actors from '../json/json_about_actors';
 import '../sass/About.scss';
+import json_about_actors from '../json/json_about_actors';
+
 
 
 function createActor(item){

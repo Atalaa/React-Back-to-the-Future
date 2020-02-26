@@ -1,7 +1,20 @@
 import React from 'react';
 import Card from './Card';
-
 import '../sass/Trailer.scss';
+import json_trailer_cards from '../json/json_trailer_cards';
+
+
+
+function createCard(item){
+    return(
+        <Card key={item.id} 
+            myClass1={item.class1} 
+            myClass2={item.class2} 
+            myClass3={item.class3} 
+            srce={item.video_mp4} 
+            type={item.type_mp4}/>
+    )
+}
 
 
 function Trailer(){
@@ -13,9 +26,7 @@ function Trailer(){
                 </h2>
             </div>
             <div className="container3">
-                <Card />
-                <div>Card 2</div>
-                <div>Card 3</div>
+                {json_trailer_cards.map(createCard)}
             </div>
         </div>
     )

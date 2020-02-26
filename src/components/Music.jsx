@@ -1,7 +1,8 @@
 import React from 'react';
 import Singer from './Singer';
-import json_music_singers from '../json/json_music_singers';
 import '../sass/Music.scss';
+import json_music_singers from '../json/json_music_singers';
+
 
 
 

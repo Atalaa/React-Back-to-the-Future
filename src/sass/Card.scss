@@ -30,6 +30,14 @@
             &-1{
                 background-image: linear-gradient(to right bottom, $color-card1-light, $color-card1-dark);
             }
+
+            &-2{
+                background-image: linear-gradient(to right bottom, $color-card2-light, $color-card2-dark);
+            }
+
+            &-3{
+                background-image: linear-gradient(to right bottom, $color-card3-light, $color-card3-dark);
+            }
         }
     }
 
@@ -55,6 +63,16 @@
             background-image: linear-gradient(to right bottom, $color-card1-light, $color-card1-dark),
                 url('../img/future1.jpg');
         }
+
+        &--2{
+            background-image: linear-gradient(to right bottom, $color-card2-light, $color-card2-dark),
+                url('../img/future2.jpg');
+        }
+
+        &--3{
+            background-image: linear-gradient(to right bottom, $color-card3-light, $color-card3-dark),
+                url('../img/future3.jpg');
+        }
     }
 
     &__heading{
@@ -79,25 +97,28 @@
             rgba($color-card1-light, .85), 
             rgba($color-card1-dark, .85));
         }
+
+        &--2{
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-card2-light, .85), 
+            rgba($color-card2-dark, .85));
+        }
+
+        &--3{
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-card3-light, .85), 
+            rgba($color-card3-dark, .85));
+        }
     }
 
     &__details{
         padding: 3rem;
 
-        ul{
-            list-style: none;
-            width: 80%;
-            margin: 0 auto;
-
-            li{
-                text-align: center;
-                font-size: 1.5rem;
-                padding: 1rem;
-                
-                &:not(:last-child){
-                    border-bottom: 1px solid $color-grey-light-2;
-                }
-            }
+        &-desc{
+            // width: 80%;
+            // &:last-child{
+            //     border-bottom: 1px solid $color-grey-light-2;
+            // }
         }
     }
 
