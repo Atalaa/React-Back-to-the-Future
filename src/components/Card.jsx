@@ -12,7 +12,7 @@ function Card(props){
                     &nbsp;
                 </div>
                 <h4 className="card__heading">
-                    <span className={props.myClass2}>Back to the Future</span>
+                    <span className={props.myClass2}>{props.title}</span>
                 </h4>
                 <div className="card__details">
                     <p className="card__details card__details-desc">
