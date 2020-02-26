@@ -12,11 +12,11 @@ function Card(props){
                     &nbsp;
                 </div>
                 <h4 className="card__heading">
-                    <span className={props.myClass2}>{props.title}</span>
+                    <span className={props.myClass2}>{props.myTitle}</span>
                 </h4>
-                <div className="card__details">
-                    <p className="card__details card__details-desc">
-                        favicon
+                <div className={props.myCard}>
+                    <p> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
                     
                 </div>
@@ -27,7 +27,7 @@ function Card(props){
                 <div className='card__player-wrapper'>
 
                 <video className="card__trailerVideo" muted autoPlay loop playsInline>
-                        <source src={props.srce} type={props.type}/>
+                        <source src={props.mySrce} type={props.myType}/>
                         Not supported
                     </video>
                 </div>

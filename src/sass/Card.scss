@@ -112,14 +112,32 @@
     }
 
     &__details{
-        padding: 3rem;
+        margin: 9rem auto 0;
+        padding: 5rem;
+        width: 85%;
+        border-radius: 3px;
+        transform: skewX(-12deg);
 
-        &-desc{
-            // width: 80%;
+        & > * {
+            transform: skewX(12deg);
+        }
+
+        &-1{
+            box-shadow: .1rem .1rem 1rem rgba($color-card1-light, .85);
+
             // &:last-child{
             //     border-bottom: 1px solid $color-grey-light-2;
             // }
         }
+
+        &-2{
+            box-shadow: .1rem .1rem 1rem rgba($color-card2-light, .85);
+        }
+
+        &-3{
+            box-shadow: .1rem .1rem 1rem rgba($color-card3-light, .85);
+        }
+
     }
 
     //BACK SIDE STYLING

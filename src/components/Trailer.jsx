@@ -10,10 +10,11 @@ function createCard(item){
         <Card key={item.id} 
             myClass1={item.class1} 
             myClass2={item.class2} 
-            title={item.title}
+            myTitle={item.title}
+            myCard={item.card}
             myClass3={item.class3} 
-            srce={item.video_mp4} 
-            type={item.type_mp4}/>
+            mySrce={item.video_mp4} 
+            myType={item.type_mp4}/>
     )
 }
 
