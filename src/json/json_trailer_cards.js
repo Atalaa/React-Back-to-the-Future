@@ -5,31 +5,31 @@ import future3mp4 from '../img/future3.mp4';
 
 const json_trailer_cards = [ 
     {id: 1, 
-    class1:"card__picture card__picture--1",
-    class2:"card__heading-span card__heading-span--1",
+    postfix2dash:"--1",
     title:"Back to the Future",
-    card:"card__details card__details-1",
-    class3:"card__side card__side--back card__side--back-1",
+    postfix1dash:"-1",
     video_mp4: future1mp4,
-    type_mp4:"video/mp4"},
+    type_mp4:"video/mp4",
+    quote:"When I began work on the first film, I was pretty much walking into unknown territory.",
+    author:"— Michael J. Fox"},
 
     {id: 2, 
-    class1:"card__picture card__picture--2",
-    class2:"card__heading-span card__heading-span--2",
+    postfix2dash:"--2",
     title:"Back to the Future II",
-    card:"card__details card__details-2",
-    class3:"card__side card__side--back card__side--back-2",
+    postfix1dash:"-2",
     video_mp4: future2mp4,
-    type_mp4:"video/mp4"},
+    type_mp4:"video/mp4",
+    quote:"I always loved inventors who come up with new theories that solve problems like Albert Einstein.",
+    author:"— Christopher Lloyd"},
 
     {id: 3,     
-    class1:"card__picture card__picture--3",
-    class2:"card__heading-span card__heading-span--3",
+    postfix2dash:"--3",
     title:"Back to the Future III",
-    card:"card__details card__details-3",
-    class3:"card__side card__side--back card__side--back-3",
+    postfix1dash:"-3",
     video_mp4: future3mp4,
-    type_mp4:"video/mp4"}
+    type_mp4:"video/mp4",
+    quote:"Cowboys have always been my heroes, it's always been a dream of mine to appear in a western.",
+    author:"— Thomas F. Wilson"}
 ];
 
 export default json_trailer_cards; 

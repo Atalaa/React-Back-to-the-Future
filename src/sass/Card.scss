@@ -57,7 +57,7 @@
         height: 22rem;
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        // clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &--1{
             background-image: linear-gradient(to right bottom, $color-card1-light, $color-card1-dark),
@@ -112,8 +112,9 @@
     }
 
     &__details{
-        margin: 9rem auto 0;
-        padding: 5rem;
+        font-size: 1.3rem;
+        margin: 7.5rem auto 0;
+        padding: 3.5rem;
         width: 85%;
         border-radius: 3px;
         transform: skewX(-12deg);
@@ -124,10 +125,6 @@
 
         &-1{
             box-shadow: .1rem .1rem 1rem rgba($color-card1-light, .85);
-
-            // &:last-child{
-            //     border-bottom: 1px solid $color-grey-light-2;
-            // }
         }
 
         &-2{
@@ -137,9 +134,12 @@
         &-3{
             box-shadow: .1rem .1rem 1rem rgba($color-card3-light, .85);
         }
-
     }
 
+    &__quotes{
+        text-align: right;
+    }
+    
     //BACK SIDE STYLING
     &__player-wrapper{
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0 85%);
