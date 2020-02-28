@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "704c2cca4168266e4305cf93410b2fc2",
+    "revision": "b0388eb1d466318a10aa9d8d7416be8f",
     "url": "/Back-to-the-Future/index.html"
   },
   {
-    "revision": "86b7c0047751a2b5ed01",
+    "revision": "4975640b8c299628938c",
     "url": "/Back-to-the-Future/static/css/2.ab55b510.chunk.css"
   },
   {
-    "revision": "22d0482165dd3f1894b8",
-    "url": "/Back-to-the-Future/static/css/main.0ef7cc6d.chunk.css"
+    "revision": "8ab4a25890f6a4e5a6b0",
+    "url": "/Back-to-the-Future/static/css/main.156f53a8.chunk.css"
   },
   {
-    "revision": "86b7c0047751a2b5ed01",
-    "url": "/Back-to-the-Future/static/js/2.1a34265e.chunk.js"
+    "revision": "4975640b8c299628938c",
+    "url": "/Back-to-the-Future/static/js/2.b574d023.chunk.js"
   },
   {
     "revision": "9cd56dec2bfb059c19973edf344033c7",
-    "url": "/Back-to-the-Future/static/js/2.1a34265e.chunk.js.LICENSE.txt"
+    "url": "/Back-to-the-Future/static/js/2.b574d023.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "22d0482165dd3f1894b8",
-    "url": "/Back-to-the-Future/static/js/main.51ba0994.chunk.js"
+    "revision": "8ab4a25890f6a4e5a6b0",
+    "url": "/Back-to-the-Future/static/js/main.8c9b7b59.chunk.js"
   },
   {
     "revision": "df5d928829edf6f3bec9",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b741a1baf762a159aa40dccd4be49146",
     "url": "/Back-to-the-Future/static/media/clloyd.b741a1ba.jpg"
+  },
+  {
+    "revision": "b9cbb8b51239c205db5950df528436a6",
+    "url": "/Back-to-the-Future/static/media/clloyd_card.b9cbb8b5.jpg"
   },
   {
     "revision": "01d0237d606a0560d51e5051597d97c0",
@@ -96,11 +100,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Back-to-the-Future/static/media/mjfox.21b05b9a.jpg"
   },
   {
+    "revision": "766bd27bebaf0901075597666cd89123",
+    "url": "/Back-to-the-Future/static/media/mjfox_card.766bd27b.jpg"
+  },
+  {
     "revision": "500e853f1783fee3ce50345f525800ab",
     "url": "/Back-to-the-Future/static/media/starlighters.500e853f.jpg"
   },
   {
     "revision": "70d5715b9bd9c772dd9cbf680f51d873",
     "url": "/Back-to-the-Future/static/media/twilson.70d5715b.jpg"
+  },
+  {
+    "revision": "ef226c8314f3d1ab6cb237c01e1b7423",
+    "url": "/Back-to-the-Future/static/media/twilson_card.ef226c83.jpg"
   }
 ]);
