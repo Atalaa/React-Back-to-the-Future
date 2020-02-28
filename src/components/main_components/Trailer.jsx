@@ -16,7 +16,8 @@ function createCard(item){
             mySrce={item.video_mp4} 
             myType={item.type_mp4}
             myQuote={item.quote}
-            myAuthor={item.author}      
+            myAuthor={item.author} 
+            myPicCard={item.pic_card}     
         />
     )
 }

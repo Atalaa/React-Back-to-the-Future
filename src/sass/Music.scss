@@ -33,10 +33,10 @@
     transition: all .3s;
 
     &__img {
-        border-radius: 50%;
-        border: 7px solid $color-primary-outline;
         width: 13rem;
         height: 13rem;
+        border-radius: 50%;
+        border: 7px solid $color-primary-outline;
         object-fit: cover;
         margin-bottom: 1rem;
     }

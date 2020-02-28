@@ -16,11 +16,21 @@ function Card(props){
                         {props.myTitle}
                     </span>
                 </h4>
+
                 <div className={`card__details card__details${props.myPostfix1dash}`}>
-                    <div>
-                        {props.myQuote}
-                        <p className="card__quotes">{props.myAuthor}</p>
+                    <div className="card__details-quotes">
+                        {`"${props.myQuote}"`}
                     </div>
+                        
+                    <div className="card__img">
+                        <img src={props.myPicCard} alt="actor" 
+                                className={`card__img-circle card__img-circle${props.myPostfix2dash}`}/>
+                    </div>
+                    
+                    <div className="card__name-author">    
+                        {props.myAuthor}
+                    </div>
+                   
                 </div>
                 
             </div>
@@ -31,7 +41,7 @@ function Card(props){
 
                     <video className="card__trailerVideo" muted autoPlay loop playsInline>
                         <source src={props.mySrce} type={props.myType}/>
-                        Not supported
+                        Media is not supported
                     </video>
 
                 </div>
