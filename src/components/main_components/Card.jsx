@@ -1,4 +1,7 @@
 import React from 'react';
+import InfoMovie from './InfoMovie';
+
+import json_cards_infoMovie from '../../json/json_cards_infoMovie';
 import '../../sass/Card.scss';
 
 
@@ -6,6 +9,7 @@ function Card(props){
     return(
         <div className="card">
 
+            {/* FRONT */}
             <div className="card__side card__side--front">
 
                 <div className={`card__picture card__picture${props.myPostfix2dash}`}>
@@ -35,18 +39,33 @@ function Card(props){
                 
             </div>
             
-
+            {/* BACK */}
             <div className={`card__side card__side--back card__side--back${props.myPostfix1dash}`}>
-                <div className='card__player-wrapper'>
 
-                    <video className="card__trailerVideo" muted autoPlay loop playsInline>
+                <div className='card__wrapper'>
+                    <video className="card__wrapper--video" muted autoPlay loop playsInline>
                         <source src={props.mySrce} type={props.myType}/>
                         Media is not supported
                     </video>
-
                 </div>
+
+                    {json_cards_infoMovie.map(createInfoMovie)}
+
             </div>
         </div>
+    )
+}
+
+function createInfoMovie(item){
+    return(
+        <InfoMovie 
+            key={item.id}
+            myPostfix1dash={item.postfix1dash}
+            myYear={item.year}
+            myFullStar={item.fullStar}
+            myHalfStar={item.halfStar}
+        />
+
     )
 }
 

@@ -50,6 +50,7 @@
         object-fit: cover;
     }
 
+
     //FRONT SIDE STYLING
     &__picture{
         background-size: cover;
@@ -113,7 +114,7 @@
 
     &__details{
         font-size: 1.3rem;
-        margin: 3.5rem auto 0;
+        margin: 4.5rem auto 0;
         padding: 1.5rem;
         width: 85%;
         border-radius: 3px;
@@ -161,21 +162,50 @@
         }
     }
 
-
     &__name-author{
         text-align: right;
     }
     
+
     //BACK SIDE STYLING
-    &__player-wrapper{
+    &__wrapper{
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0 85%);
         clip-path: polygon(0 0, 100% 0, 100% 94%, 0 85%);
-    }
 
-    &__trailerVideo{
-        width: 100%;
+        &--video{
+            width: 100%;
+        }
     }
+    
+    &__synopsis{
+        padding: 0 2.5rem 1rem;
 
+        &--year-1{
+            font-size: 2.5rem;
+            background-image: linear-gradient(to right, $color-year1-light, $color-year1-dark);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        &--star{
+            padding-left: 1rem;
+
+            &-1{
+                width: 1.6rem;
+            }
+        }
+        
+        
+        &--movie1{
+            font-size: 1.5rem;
+            color: #e7e7e7;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    }
+      
+      
 
 
 

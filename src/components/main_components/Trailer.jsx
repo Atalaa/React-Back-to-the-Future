@@ -28,7 +28,7 @@ function Trailer(){
         <div className="section-trailer">
             <div className="utility-center-text utility-margin-bottom-big">
                 <h2 className="heading-secondary">
-                    Trailers
+                    Movie Trailers
                 </h2>
             </div>
             <div className="container3">
