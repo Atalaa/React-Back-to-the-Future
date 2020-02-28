@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b0388eb1d466318a10aa9d8d7416be8f",
+    "revision": "cddfc680d7ca8d0be9b9a05d5a4651b2",
     "url": "/Back-to-the-Future/index.html"
   },
   {
-    "revision": "4975640b8c299628938c",
+    "revision": "a81823913a2ca8b2e796",
     "url": "/Back-to-the-Future/static/css/2.ab55b510.chunk.css"
   },
   {
-    "revision": "8ab4a25890f6a4e5a6b0",
-    "url": "/Back-to-the-Future/static/css/main.156f53a8.chunk.css"
+    "revision": "3547b1473cb900a48114",
+    "url": "/Back-to-the-Future/static/css/main.e91ea571.chunk.css"
   },
   {
-    "revision": "4975640b8c299628938c",
-    "url": "/Back-to-the-Future/static/js/2.b574d023.chunk.js"
+    "revision": "a81823913a2ca8b2e796",
+    "url": "/Back-to-the-Future/static/js/2.dd482420.chunk.js"
   },
   {
     "revision": "9cd56dec2bfb059c19973edf344033c7",
-    "url": "/Back-to-the-Future/static/js/2.b574d023.chunk.js.LICENSE.txt"
+    "url": "/Back-to-the-Future/static/js/2.dd482420.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8ab4a25890f6a4e5a6b0",
-    "url": "/Back-to-the-Future/static/js/main.8c9b7b59.chunk.js"
+    "revision": "3547b1473cb900a48114",
+    "url": "/Back-to-the-Future/static/js/main.2344ad16.chunk.js"
   },
   {
     "revision": "df5d928829edf6f3bec9",
@@ -88,6 +88,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Back-to-the-Future/static/media/future3.e0edf4b1.mp4"
   },
   {
+    "revision": "1045374d5b976d6a5a811d84349108e9",
+    "url": "/Back-to-the-Future/static/media/half-star.1045374d.png"
+  },
+  {
     "revision": "247aec93fcf13be86bc4e7c3c4df7b30",
     "url": "/Back-to-the-Future/static/media/hlewis.247aec93.jpg"
   },
@@ -102,6 +106,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "766bd27bebaf0901075597666cd89123",
     "url": "/Back-to-the-Future/static/media/mjfox_card.766bd27b.jpg"
+  },
+  {
+    "revision": "45dd54703cf1537d439bc358c680762c",
+    "url": "/Back-to-the-Future/static/media/star.45dd5470.png"
   },
   {
     "revision": "500e853f1783fee3ce50345f525800ab",
