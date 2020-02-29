@@ -6,6 +6,7 @@ import json_trailer_cards from '../../json/json_trailer_cards';
 
 
 
+
 function createCard(item){
     return(
         <Card 
@@ -17,7 +18,10 @@ function createCard(item){
             myType={item.type_mp4}
             myQuote={item.quote}
             myAuthor={item.author} 
-            myPicCard={item.pic_card}     
+            myPicCard={item.pic_card}  
+            myYear={item.year}
+            myFullStar={item.fullStar}
+            myHalfStar={item.halfStar}   
         />
     )
 }

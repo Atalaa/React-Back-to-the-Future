@@ -6,6 +6,9 @@ import mjfox_card from '../img/mjfox_card.jpg'
 import clloyd_card from '../img/clloyd_card.jpg'
 import twilson_card from '../img/twilson_card.jpg'
 
+import fullStar from '../img/star.png';
+import halfStar from '../img/half-star.png';
+
 
 const json_trailer_cards = [ 
     {id: 1, 
@@ -16,7 +19,10 @@ const json_trailer_cards = [
     type_mp4:"video/mp4",
     quote:"When I began work on the first film, I was pretty much walking into unknown territory.",
     author:"— Michael J. Fox",
-    pic_card:mjfox_card},
+    pic_card:mjfox_card,
+    year:"1985",
+    fullStar:fullStar,
+    halfStar:halfStar},
 
 
     {id: 2, 
@@ -27,7 +33,10 @@ const json_trailer_cards = [
     type_mp4:"video/mp4",
     quote:"I loved inventors who come up with new theories that solve problems like Albert Einstein.",
     author:"— Christopher Lloyd",
-    pic_card:clloyd_card},
+    pic_card:clloyd_card,
+    year:"1989",
+    fullStar:fullStar,
+    halfStar:halfStar},
 
 
     {id: 3,     
@@ -38,7 +47,10 @@ const json_trailer_cards = [
     type_mp4:"video/mp4",
     quote:"Cowboys have always been my heroes, it's always been a dream of mine to appear in a western.",
     author:"— Thomas F. Wilson",
-    pic_card:twilson_card}
+    pic_card:twilson_card,
+    year:"1990",
+    fullStar:fullStar,
+    halfStar:halfStar}
 ];
 
 export default json_trailer_cards; 

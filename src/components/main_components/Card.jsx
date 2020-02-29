@@ -1,7 +1,4 @@
 import React from 'react';
-import InfoMovie from './InfoMovie';
-
-import json_cards_infoMovie from '../../json/json_cards_infoMovie';
 import '../../sass/Card.scss';
 
 
@@ -38,6 +35,9 @@ function Card(props){
                 </div>
                 
             </div>
+
+
+
             
             {/* BACK */}
             <div className={`card__side card__side--back card__side--back${props.myPostfix1dash}`}>
@@ -49,25 +49,32 @@ function Card(props){
                     </video>
                 </div>
 
-                    {json_cards_infoMovie.map(createInfoMovie)}
+                <div className="card__synopsis">                
+                    <h3 className={`card__synopsis--year${props.myPostfix1dash}`}>
+                        {props.myYear}
+                        <span className="card__synopsis--star">
+
+                            <img className={`card__synopsis--star${props.myPostfix1dash}`} src={props.myFullStar} alt="star"/>
+
+                            <img className={`card__synopsis--star${props.myPostfix1dash}`} src={props.myFullStar} alt="star"/>
+
+                            <img className={`card__synopsis--star${props.myPostfix1dash}`} src={props.myFullStar} alt="star"/>
+
+                            <img className={`card__synopsis--star${props.myPostfix1dash}`} src={props.myFullStar} alt="star"/>
+
+                            <img className={`card__synopsis--star${props.myPostfix1dash}`} src={props.myHalfStar} alt="star"/>
+                        </span>
+                    </h3>
+            
+
+                    <div className="card__synopsis--movie1">
+                        Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the eccentric scientist Doc Brown.
+                    </div>
+                </div>
 
             </div>
         </div>
     )
 }
-
-function createInfoMovie(item){
-    return(
-        <InfoMovie 
-            key={item.id}
-            myPostfix1dash={item.postfix1dash}
-            myYear={item.year}
-            myFullStar={item.fullStar}
-            myHalfStar={item.halfStar}
-        />
-
-    )
-}
-
 
 export default Card;
