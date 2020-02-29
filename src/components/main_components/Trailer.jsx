@@ -20,8 +20,8 @@ function createCard(item){
             myAuthor={item.author} 
             myPicCard={item.pic_card}  
             myYear={item.year}
-            myFullStar={item.fullStar}
-            myHalfStar={item.halfStar}   
+            myStar1={item.imgStar}
+            mySynopsis={item.synopsis}
         />
     )
 }

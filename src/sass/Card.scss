@@ -116,7 +116,10 @@
         font-size: 1.3rem;
         margin: 4.5rem auto 0;
         padding: 1.5rem;
-        width: 85%;
+        width: 80%;
+        max-width: 80%;
+        height: 40%;
+        max-height: 40%;
         border-radius: 3px;
         transform: skewX(-12deg);
 
@@ -181,24 +184,23 @@
         padding: 0 2.5rem 1rem;
 
         &--year{
-
             &-1{
-                font-size: 2.5rem;
+                font-size: 1.9rem;
                 background-image: linear-gradient(to right, $color-year1-light, $color-year1-dark);
                 background-clip: text;
                 -webkit-background-clip: text;
                 color: transparent;
             }
             &-2{
-                font-size: 2.5rem;
-                background-image: linear-gradient(to right, $color-year1-light, $color-year1-dark);
+                font-size: 1.9rem;
+                background-image: linear-gradient(to right, $color-year2-light, $color-year2-dark);
                 background-clip: text;
                 -webkit-background-clip: text;
                 color: transparent;
             }
             &-3{
-                font-size: 2.5rem;
-                background-image: linear-gradient(to right, $color-year1-light, $color-year1-dark);
+                font-size: 1.9rem;
+                background-image: linear-gradient(to right, $color-year3-light, $color-year3-dark);
                 background-clip: text;
                 -webkit-background-clip: text;
                 color: transparent;
@@ -206,21 +208,18 @@
         }
 
         &--star{
-            padding-left: 1rem;
 
             &-1{
-                width: 1.6rem;
+                width: 10rem;
             }
             &-2{
-                width: 1.6rem;
-            }
+                width: 10rem;            }
             &-3{
-                width: 1.6rem;
-            }
+                width: 10rem;            }
         }
         
         
-        &--movie1{
+        &--movie{
             font-size: 1.5rem;
             color: #e7e7e7;
             text-align: justify;

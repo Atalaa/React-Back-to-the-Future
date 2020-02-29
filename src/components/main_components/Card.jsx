@@ -2,6 +2,7 @@ import React from 'react';
 import '../../sass/Card.scss';
 
 
+
 function Card(props){
     return(
         <div className="card">
@@ -51,24 +52,15 @@ function Card(props){
 
                 <div className="card__synopsis">                
                     <h3 className={`card__synopsis--year${props.myPostfix1dash}`}>
-                        {props.myYear}
+                        {props.myYear} <br/>
                         <span className="card__synopsis--star">
-
-                            <img className={`card__synopsis--star${props.myPostfix1dash}`} src={props.myFullStar} alt="star"/>
-
-                            <img className={`card__synopsis--star${props.myPostfix1dash}`} src={props.myFullStar} alt="star"/>
-
-                            <img className={`card__synopsis--star${props.myPostfix1dash}`} src={props.myFullStar} alt="star"/>
-
-                            <img className={`card__synopsis--star${props.myPostfix1dash}`} src={props.myFullStar} alt="star"/>
-
-                            <img className={`card__synopsis--star${props.myPostfix1dash}`} src={props.myHalfStar} alt="star"/>
+                            <img className={`card__synopsis--star${props.myPostfix1dash}`} src={props.myStar1} alt="star"/>
                         </span>
                     </h3>
             
 
-                    <div className="card__synopsis--movie1">
-                        Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the eccentric scientist Doc Brown.
+                    <div className="card__synopsis--movie">
+                        {props.mySynopsis}
                     </div>
                 </div>
 
