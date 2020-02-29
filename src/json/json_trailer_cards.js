@@ -24,7 +24,7 @@ const json_trailer_cards = [
     pic_card:mjfox_card,
     year:"Back to the Future (1985)",
     imgStar:star1,
-    synopsis:"Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the eccentric scientist Doc Brown."},
+    synopsis:"Marty McFly is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the eccentric scientist Doc Brown."},
 
 
 
@@ -54,7 +54,7 @@ const json_trailer_cards = [
     pic_card:twilson_card,
     year:"Back to the Future III (1990)",
     imgStar:star3,
-    synopsis:"Stranded in 1955, Marty McFly learns about the death of Doc Brown in 1885 and must travel back in time to save him. With no fuel readily available for the DeLorean, the two must figure how to escape the Old West before Emmett is murdered."}
+    synopsis:"Stranded in 1955, Marty McFly learns about the death of Doc Brown in 1885 and must travel back in time to save him."}
 ];
 
 export default json_trailer_cards; 

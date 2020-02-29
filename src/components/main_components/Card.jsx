@@ -64,6 +64,24 @@ function Card(props){
                     </div>
                 </div>
 
+                
+                <div class="card__cast">
+                    <h4 >Cast</h4>
+                    <ul>
+                        <li><img src = "https://www.famousbirthdays.com/headshots/robert-downey-jr-2.jpg"/></li>
+                        <li><img src = "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTU1MTM0NzA2NzQ3MTg4NDQw/chris-evans-arrives-at-the-los-angeles-premiere-of-captain-america-the-winter-soldier-held-at-the-el-capitan-theatre-on-march-13-2014-in-hollywood-california-photo-by-michael-tran_filmmagicjpg-square.jpg"/></li>
+                        <li><img src = "https://www.india-forums.com/images/celebrity/l_12804.jpg"/></li>
+                        <li><img src = "https://imageresizer.static9.net.au/LYRtJfSVUFCURsyAlx6qdMXJzwI=/400x0/http%3A%2F%2Fprod.static9.net.au%2F_%2Fmedia%2FNetwork%2FImages%2Favengers300616Scarjo.jpg"/></li>
+                        <li><img src="https://www.famousbirthdays.com/faces/boseman-chadwick-image.jpg"/></li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+
             </div>
         </div>
     )
