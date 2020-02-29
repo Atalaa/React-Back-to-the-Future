@@ -1,31 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d3caca24c155685656db9552bf4ddc50",
+    "revision": "98a4dda35877b4ef87624729113b704f",
     "url": "/Back-to-the-Future/index.html"
   },
   {
-    "revision": "a81823913a2ca8b2e796",
+    "revision": "841cfa9593963c853757",
     "url": "/Back-to-the-Future/static/css/2.ab55b510.chunk.css"
   },
   {
-    "revision": "dbe713dea1416036dee8",
-    "url": "/Back-to-the-Future/static/css/main.d03a65cd.chunk.css"
+    "revision": "ddda1965a53dad6de837",
+    "url": "/Back-to-the-Future/static/css/main.746b4c97.chunk.css"
   },
   {
-    "revision": "a81823913a2ca8b2e796",
-    "url": "/Back-to-the-Future/static/js/2.dd482420.chunk.js"
+    "revision": "841cfa9593963c853757",
+    "url": "/Back-to-the-Future/static/js/2.35d823bd.chunk.js"
   },
   {
     "revision": "9cd56dec2bfb059c19973edf344033c7",
-    "url": "/Back-to-the-Future/static/js/2.dd482420.chunk.js.LICENSE.txt"
+    "url": "/Back-to-the-Future/static/js/2.35d823bd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dbe713dea1416036dee8",
-    "url": "/Back-to-the-Future/static/js/main.e4a5bddf.chunk.js"
+    "revision": "ddda1965a53dad6de837",
+    "url": "/Back-to-the-Future/static/js/main.de7dd7c3.chunk.js"
   },
   {
     "revision": "df5d928829edf6f3bec9",
     "url": "/Back-to-the-Future/static/js/runtime-main.13387317.js"
+  },
+  {
+    "revision": "b3f70f12b7312978335e8ba5b48e6e5c",
+    "url": "/Back-to-the-Future/static/media/3-5star.b3f70f12.png"
+  },
+  {
+    "revision": "69aa27889c187f2f315d9a6de11c9a94",
+    "url": "/Back-to-the-Future/static/media/4-5star.69aa2788.png"
+  },
+  {
+    "revision": "a97c7bbcbe6e22124c410b2ee693cc45",
+    "url": "/Back-to-the-Future/static/media/4star.a97c7bbc.png"
   },
   {
     "revision": "8b918c9b805c66a6867139c6c8b21c41",
@@ -88,10 +100,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Back-to-the-Future/static/media/future3.e0edf4b1.mp4"
   },
   {
-    "revision": "1045374d5b976d6a5a811d84349108e9",
-    "url": "/Back-to-the-Future/static/media/half-star.1045374d.png"
-  },
-  {
     "revision": "247aec93fcf13be86bc4e7c3c4df7b30",
     "url": "/Back-to-the-Future/static/media/hlewis.247aec93.jpg"
   },
@@ -106,10 +114,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "766bd27bebaf0901075597666cd89123",
     "url": "/Back-to-the-Future/static/media/mjfox_card.766bd27b.jpg"
-  },
-  {
-    "revision": "45dd54703cf1537d439bc358c680762c",
-    "url": "/Back-to-the-Future/static/media/star.45dd5470.png"
   },
   {
     "revision": "500e853f1783fee3ce50345f525800ab",
