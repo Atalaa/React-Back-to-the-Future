@@ -1,5 +1,8 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import Card from './Card';
+import 'animate.css/animate.css';
+
 
 import '../../sass/Trailer.scss';
 import json_trailer_cards from '../../json/json_trailer_cards';
@@ -40,9 +43,12 @@ function Trailer(){
                     Movie Trailers
                 </h2>
             </div>
-            <div className="container3">
-                {json_trailer_cards.map(createCard)}
-            </div>
+
+            <ScrollAnimation animateIn='fadeIn' duration={2.5}>
+                <div className="container3">
+                    {json_trailer_cards.map(createCard)}
+                </div>
+            </ScrollAnimation>
         </div>
     )
 }

@@ -292,12 +292,16 @@
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(10rem) 
+        transform: translateY(10rem);
+    }
+
+    80% {
+        opacity: 0.8;
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0) /*element itself*/
+        transform: translateY(0); /*element itself*/
     }
 }
 
