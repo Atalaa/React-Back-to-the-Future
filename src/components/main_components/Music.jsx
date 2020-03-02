@@ -19,7 +19,7 @@ function Music() {
     return(
         <section className="section-music">
             <div className="section-music-backgroundimage"></div>
-                <ScrollAnimation animateIn='fadeIn' duration={2.5}>
+                <ScrollAnimation animateIn='fadeInUp' duration={1.5} animateOnce={true}>
                     <div className="container2">
                         {json_music_singers.map(createSinger)}
                     </div>

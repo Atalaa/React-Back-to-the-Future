@@ -53,10 +53,10 @@
         .card__cast{
             animation: moveInBottom .8s ease-out .2s;
         }
-        .card__synopsis{
-            animation: moveInBottom .8s ease-out .2s;
+        // .card__synopsis{
+        //     animation: moveInBottom .8s ease-out .2s;
 
-        }
+        // }
     }
 
 
@@ -248,12 +248,6 @@
         bottom:4rem;
         left:2.5rem;
         right:2.5rem;
-        // animation: moveInBottom 1.5s ease-out;
-
-
-        // &:hover{
-        // animation: moveInBottom 1.5s ease-out 3;
-        // }
 
         & h4{
             margin: 0;
@@ -304,4 +298,3 @@
         transform: translateY(0); /*element itself*/
     }
 }
-
