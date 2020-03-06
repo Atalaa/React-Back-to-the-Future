@@ -14,7 +14,7 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
 
-    &__logo-box {
+    &__logoBox {
         position: absolute;
         top: 3rem;
         left: 3rem;
@@ -24,7 +24,7 @@
         height: 3.5rem;
     }
 
-    &__text-box {
+    &__textBox {
         position: absolute;
         top: 45%; /*of the parent*/
         left: 50%; 
@@ -34,7 +34,7 @@
 }
 
 
-.heading-primary {
+.headingPrimary {
     color: $color-white;
     text-transform: uppercase;
     backface-visibility: hidden;

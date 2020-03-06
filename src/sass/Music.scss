@@ -1,7 +1,7 @@
 @import './colors.scss';
 
 
-.section-music {
+.sectionMusic {
     padding: 20rem 0;
     background-image: linear-gradient(
         to right bottom, 
@@ -23,7 +23,7 @@
     transform: skewY(7deg);
 }
 
-.music-box {
+.musicBox {
     background-color: rgba($color-white, .8);
     font-size: 1.5rem;
     padding: 2.5rem;

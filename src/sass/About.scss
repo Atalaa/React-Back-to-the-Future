@@ -1,18 +1,17 @@
 @import './colors.scss';
-
 .utility-center-text {text-align: center;}
-.utility-margin-bottom-small {margin-bottom: 1.5rem;}
-.utility-margin-bottom-medium {margin-bottom: 4rem;}
 .utility-margin-bottom-big {margin-bottom: 8rem;}
+.utility-margin-bottom-medium {margin-bottom: 4rem;}
+.utility-margin-bottom-small {margin-bottom: 1.5rem;}
 
 
-.section-about {
+.sectionAbout{
     background-color: $color-grey-light-1;
     padding: 25rem 0;
     margin-top: -20vh; /*95vh - 75vh of header*/
 }
 
-.heading-secondary {
+.headingSecondary {
     font-size: 3rem;
     text-transform: uppercase;
     display: inline-block;
@@ -37,7 +36,7 @@
     justify-content: center;
 }
 
-.heading-tertiary {
+.headingTertiary {
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;

@@ -1,7 +1,7 @@
-import marty from '../img/mjfox.jpg';
-import doc from '../img/clloyd.jpg';
-import biff from '../img/twilson.jpg';
 import lea from '../img/ltom.jpg';
+import doc from '../img/clloyd.jpg';
+import marty from '../img/mjfox.jpg';
+import biff from '../img/twilson.jpg';
 
 
 const json_about_actors = [ 

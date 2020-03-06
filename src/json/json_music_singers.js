@@ -1,9 +1,8 @@
 import huey from '../img/hlewis.jpg';
 import chuck from '../img/cberry.jpg';
-import starlighters from '../img/starlighters.jpg';
-
-import soundHuey from '../sounds/back_in_time.mp3';
 import soundChuck from '../sounds/cberry.mp3';
+import soundHuey from '../sounds/back_in_time.mp3';
+import starlighters from '../img/starlighters.jpg';
 import soundStarlighters from '../sounds/angel.mp3';
 
 

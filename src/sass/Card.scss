@@ -53,10 +53,6 @@
         .card__cast{
             animation: moveInBottom .8s ease-out .2s;
         }
-        // .card__synopsis{
-        //     animation: moveInBottom .8s ease-out .2s;
-
-        // }
     }
 
 
@@ -97,7 +93,7 @@
         width: 75%;
     }
 
-    &__heading-span{
+    &__headingSpan{
         padding: 1rem 1.5rem;
         box-decoration-break: clone;
         -webkit-box-decoration-break: clone; //make two different entities
@@ -147,16 +143,16 @@
         &-3{
             box-shadow: .1rem .1rem 0 rgba($color-card3-light, .85);
         }
-
-        &-quotes{
-            font-size: $default-font-size;
-        }
+    }
+    
+    &__quotes{
+        font-size: $default-font-size;
     }
 
     &__img{
         text-align: right;
         
-        &-circle{
+        &Circle{
             width: 6rem;
             height: 6rem;
             border-radius: 50%;
@@ -174,7 +170,7 @@
         }
     }
 
-    &__name-author{
+    &__nameAuthor{
         text-align: right;
     }
     
@@ -183,10 +179,10 @@
     &__wrapper{
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0 85%);
         clip-path: polygon(0 0, 100% 0, 100% 94%, 0 85%);
+    }
 
-        &--video{
-            width: 100%;
-        }
+    &__video{
+        width: 100%;
     }
     
     &__synopsis{
@@ -194,53 +190,51 @@
         top:20rem; 
         left:2.5rem;
         right:2.5rem;
-        // padding: 0 2.5rem 1rem;
+    }
 
-        &--year{
-            &-1{
-                font-size: 1.9rem;
-                background-image: linear-gradient(to right, $color-year1-light, $color-year1-dark);
-                background-clip: text;
-                -webkit-background-clip: text;
-                color: transparent;
-            }
-            &-2{
-                font-size: 1.9rem;
-                background-image: linear-gradient(to right, $color-year2-light, $color-year2-dark);
-                background-clip: text;
-                -webkit-background-clip: text;
-                color: transparent;
-            }
-            &-3{
-                font-size: 1.9rem;
-                background-image: linear-gradient(to right, $color-year3-light, $color-year3-dark);
-                background-clip: text;
-                -webkit-background-clip: text;
-                color: transparent;
-            }
+    &__year{
+        &-1{
+            font-size: 1.9rem;
+            background-image: linear-gradient(to right, $color-year1-light, $color-year1-dark);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        &-2{
+            font-size: 1.9rem;
+            background-image: linear-gradient(to right, $color-year2-light, $color-year2-dark);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        &-3{
+            font-size: 1.9rem;
+            background-image: linear-gradient(to right, $color-year3-light, $color-year3-dark);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    }
+
+    &__star{
+
+        &-1{
+            width: 10rem;
+        }
+        &-2{
+            width: 10rem;            
         }
 
-        &--star{
-
-            &-1{
-                width: 10rem;
-            }
-            &-2{
-                width: 10rem;            
-            }
-
-            &-3{
-                width: 10rem;            
-            }
+        &-3{
+            width: 10rem;            
         }
-        
-        
-        &--movie{
-            font-size: 1.5rem;
-            color: #e7e7e7;
-            text-align: justify;
-            text-justify: inter-word;
-        }
+    }
+
+    &__movie{
+        font-size: 1.5rem;
+        color: #e7e7e7;
+        text-align: justify;
+        text-justify: inter-word;
     }
 
     &__cast{

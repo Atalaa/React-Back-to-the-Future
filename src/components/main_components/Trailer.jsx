@@ -1,22 +1,18 @@
 import React from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
 import Card from './Card';
 import 'animate.css/animate.css';
-
-
 import '../../sass/Trailer.scss';
+import ScrollAnimation from 'react-animate-on-scroll';
 import json_trailer_cards from '../../json/json_trailer_cards';
-
-
 
 
 function createCard(item){
     return(
         <Card 
             key={item.id} 
-            myPostfix2dash={item.postfix2dash} 
+            myDashes={item.dashes} 
             myTitle={item.title}
-            myPostfix1dash={item.postfix1dash}
+            myDash={item.dash}
             mySrce={item.video_mp4} 
             myType={item.type_mp4}
             myQuote={item.quote}
@@ -37,9 +33,9 @@ function createCard(item){
 
 function Trailer(){
     return(
-        <div className="section-trailer">
+        <div className="sectionTrailer">
             <div className="utility-center-text utility-margin-bottom-big">
-                <h2 className="heading-secondary">
+                <h2 className="headingSecondary">
                     Movie Trailers
                 </h2>
             </div>

@@ -8,56 +8,54 @@ function Card(props){
 
             {/* FRONT */}
             <div className="card__side card__side--front">
-                <div className={`card__picture card__picture${props.myPostfix2dash}`}>
+                <div className={`card__picture card__picture${props.myDashes}`}>
                     &nbsp;
                 </div>
 
 
                 <h4 className="card__heading">
-                    <span className={`card__heading-span card__heading-span${props.myPostfix2dash}`}>
+                    <span className={`card__headingSpan card__headingSpan${props.myDashes}`}>
                         {props.myTitle}
                     </span>
                 </h4>
 
 
-                <div className={`card__details card__details${props.myPostfix1dash}`}>
-                    <div className="card__details-quotes">
+                <div className={`card__details card__details${props.myDash}`}>
+                    <div className="card__quotes">
                         {`"${props.myQuote}"`}
                     </div>
                         
                     <div className="card__img">
                         <img src={props.myPicCard} alt="actor" 
-                        className={`card__img-circle card__img-circle${props.myPostfix2dash}`}/>
+                        className={`card__imgCircle card__imgCircle${props.myDashes}`}/>
                     </div>
                     
-                    <div className="card__name-author">    
+                    <div className="card__nameAuthor">    
                         {props.myAuthor}
                     </div>  
                 </div>
             </div>
 
-
-
             
-            {/* BACK */}
-            <div className={`card__side card__side--back card__side--back${props.myPostfix1dash}`}>
+            {/* BACK  we have 3 backside cards --back1,2,3*/}
+            <div className={`card__side card__side--back card__side--back${props.myDash}`}>
 
                 <div className='card__wrapper'>
-                    <video className="card__wrapper--video" muted autoPlay loop playsInline>
+                    <video className="card__video" muted autoPlay loop playsInline>
                         <source src={props.mySrce} type={props.myType}/>
                         Media is not supported
                     </video>
                 </div>
 
                 <div className="card__synopsis">                
-                    <h3 className={`card__synopsis--year${props.myPostfix1dash}`}>
+                    <h3 className={`card__year${props.myDash}`}>
                         {props.myYear} <br/>
-                        <span className="card__synopsis--star">
-                            <img className={`card__synopsis--star${props.myPostfix1dash}`} src={props.myStar1} alt="star"/>
+                        <span className="card__star">
+                            <img className={`card__star${props.myDash}`} src={props.myStar1} alt="star"/>
                         </span>
                     </h3>
 
-                    <div className="card__synopsis--movie">
+                    <div className="card__movie">
                         {props.mySynopsis}
                     </div>
                         
