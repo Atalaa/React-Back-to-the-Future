@@ -2,6 +2,7 @@ import React from 'react';
 import '../../sass/Card.scss';
 
 
+
 function Card(props){
     return(
         <div className="card">
@@ -44,8 +45,10 @@ function Card(props){
                     <video className="card__video" muted autoPlay loop playsInline>
                         <source src={props.mySrce} type={props.myType}/>
                         Media is not supported
+
                     </video>
                 </div>
+
 
                 <div className="card__synopsis">                
                     <h3 className={`card__year${props.myDash}`}>

@@ -15,3 +15,52 @@
     grid-template-columns: 26% 26% 26% ;
     justify-content: center;
 }
+
+.trailers{
+    &__btn{
+        // font-weight: 300;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 100px;
+        background-image: linear-gradient(to right, $color-primary, $color-secondary);
+        color: $color-white;
+        position: relative;
+        overflow: hidden; /*because element is outside of the button = it's an overflow element*/
+        cursor: pointer;
+
+        & > * { /*select all child elements*/
+            display: inline-block; /*like that we can use padding in there*/
+            width: 100%;
+            height: 100%;
+            padding: 2rem 7rem;
+            transition: all .3s;
+        }
+
+        &--invisible{
+            position: absolute; /*to put it outside of the button*/
+            top:-100%;
+            left:0;
+            &-anchor{
+                text-decoration: none;
+                color: $color-white;
+            }
+        }
+
+        &:hover{
+            background-image: linear-gradient(to right, $color-secondary, $color-primary);
+        }
+
+        &:hover &--visible{
+            transform: translateY(100%);
+        }
+
+        &:hover &--invisible{
+            top:0;
+        }
+
+        &:focus{
+            outline: none;
+        }
+    }
+}
