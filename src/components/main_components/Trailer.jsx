@@ -19,9 +19,8 @@ function createCard(item){
             myAuthor={item.author} 
             myPicCard={item.pic_card}  
             myYear={item.year}
-            myStar1={item.imgStar}
+            myStar={item.imgStar}
             mySynopsis={item.synopsis}
-            myCastImages={item.cast_images}
             myCastImage1={item.cast_image1}
             myCastImage2={item.cast_image2}
             myCastImage3={item.cast_image3}

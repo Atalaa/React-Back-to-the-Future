@@ -51,7 +51,7 @@ function Card(props){
                     <h3 className={`card__year${props.myDash}`}>
                         {props.myYear} <br/>
                         <span className="card__star">
-                            <img className={`card__star${props.myDash}`} src={props.myStar1} alt="star"/>
+                            <img className={`card__star${props.myDash}`} src={props.myStar} alt="star"/>
                         </span>
                     </h3>
 
@@ -63,14 +63,15 @@ function Card(props){
 
                 <div className="card__cast">
                     <h4 >Cast</h4>
-                    <ul>
+                    
+                    <ul>                    
                         <li><img src={props.myCastImage1} alt="actor"/></li>
                         <li><img src={props.myCastImage2} alt="actor"/></li>
                         <li><img src={props.myCastImage3} alt="actor"/></li>
                         <li><img src={props.myCastImage4} alt="actor"/></li>
                     </ul>
+
                 </div>
-        
             </div>
         </div>
     )

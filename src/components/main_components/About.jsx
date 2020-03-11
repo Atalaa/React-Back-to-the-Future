@@ -8,7 +8,7 @@ import json_about_actors from '../../json/json_about_actors';
 
 function createActor(item){
     return(
-        <Actor key={item.id} actorImg={item.image} linkInfo={item.link} myClass={item.class}/>
+        <Actor key={item.id} actorImg={item.image} linkInfo={item.link} myClass={item.classes}/>
     )
 }
 
