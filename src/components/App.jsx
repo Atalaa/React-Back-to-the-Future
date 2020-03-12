@@ -1,7 +1,8 @@
 import React from 'react';
 import Main from './Main';
-import '../sass/App.scss';
 import Header from './Header';
+import '../sass/App.scss';
+
 
 
 
