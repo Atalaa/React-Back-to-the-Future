@@ -18,11 +18,11 @@
 
 .trailers{
     &__btn{
-        // font-weight: 300;
-        font-size: 1.5rem;
+        font-weight: 400;
+        font-size: $default-font-size;
         text-transform: uppercase;
         border: none;
-        border-radius: 100px;
+        border-radius: 10rem;
         background-image: linear-gradient(to right, $color-primary, $color-secondary);
         color: $color-white;
         position: relative;
@@ -37,18 +37,19 @@
             transition: all .3s;
         }
 
+        &:hover{
+            background-image: linear-gradient(to right, $color-secondary, $color-primary);
+        }
+
         &--invisible{
             position: absolute; /*to put it outside of the button*/
             top:-100%;
             left:0;
+
             &-anchor{
                 text-decoration: none;
                 color: $color-white;
             }
-        }
-
-        &:hover{
-            background-image: linear-gradient(to right, $color-secondary, $color-primary);
         }
 
         &:hover &--visible{
@@ -64,3 +65,6 @@
         }
     }
 }
+
+
+

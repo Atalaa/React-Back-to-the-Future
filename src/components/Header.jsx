@@ -17,8 +17,8 @@ function Header(){
                     <span className="headingPrimary--sub">to the</span>
                     <span className="headingPrimary--main">Future</span>
                 </h1>
-                <a href="https://www.backtothefuture.com/"  rel="noreferrer noopener" target="_blank" className="btn btn--white btn--animated btn--typed">
 
+                <a href="https://www.backtothefuture.com/"  rel="noreferrer noopener" target="_blank" className="btn btn--white btn--animated btn--typed">
                     <Typed
                         strings={["A classic masterpiece", "Revisit the Past!", "A cultural phenomenon", "You’re gonna love it!"]}
                         typeSpeed={50}
@@ -28,8 +28,8 @@ function Header(){
                         loop
                         smartBackspace
                     />
-
                 </a>
+                
             </div>
         </header>
     )

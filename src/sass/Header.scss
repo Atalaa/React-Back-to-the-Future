@@ -124,8 +124,8 @@
         transform: translateY(-3px); /*how transition should look like*/
         box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
-        &::after {
-            transform: scaleX(1.4) scaleY(1.6);
+        &::after {//here  
+            transform: scaleX(1.4) scaleY(1.6); //transition in ::after below
             opacity: 0; /*invisible - trick for fades out smth*/
         } 
     }
@@ -141,22 +141,18 @@
         color: $color-grey-dark;
 
         &::after {
-            background-color: $color-white;
+            background-color: $color-white;//here
         }
-    }
-
-    &--typed {
-        width: 85%;
     }
 
     /* pseudo elements */
     &::after {
         content: "";
-        display: inline-block;
-        height: 100%;
+        display: inline-block; //because the real button is inline block
+        height: 100%; //of the real parent button, so same dimension
         width: 100%;
         border-radius: 10rem;
-        position: absolute;
+        position: absolute; //to put it behind real button
         top: 0;
         left: 0; 
         z-index: -1;
@@ -165,7 +161,11 @@
 
     &--animated {
         animation: moveInBottom .5s ease-out .75s;
-        animation-fill-mode: backwards;
+        animation-fill-mode: backwards; //apply styles of 0% keyframes before animation starts
+    }
+
+    &--typed {
+        width: 85%;
     }
 }
 

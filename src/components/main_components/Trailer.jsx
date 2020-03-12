@@ -46,19 +46,16 @@ function Trailer(){
 
                 <div className="trailers utility-center-text utility-margin-bottom-big">
                     <button className="trailers__btn">
-                    
-                        <span className="trailers__btn--visible">Bluray Collection Trailer</span>
-                        
+                        <span className="trailers__btn--visible">Blu-ray Collection Trailer</span>
                         <span className="trailers__btn--invisible">
                             <a className="trailers__btn--invisible-anchor" href="https://www.youtube.com/watch?v=yUcVeQ9jZDw" target="_blank" rel="noreferrer noopener">Enjoy!</a>
                         </span>
-                        
                     </button>
                 </div>
+                
             </ScrollAnimation>
         </div>
     )
 }
 
 export default Trailer;
-// 
