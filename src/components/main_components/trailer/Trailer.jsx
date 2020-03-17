@@ -54,6 +54,8 @@ function Trailer(){
                 </div>
                 
             </ScrollAnimation>
+
+            <h1>Game Memory coming soon</h1>
         </section>
     )
 }
