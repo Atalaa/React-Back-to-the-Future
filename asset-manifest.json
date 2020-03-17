@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Back-to-the-Future/static/css/main.d97b7783.chunk.css",
-    "main.js": "/Back-to-the-Future/static/js/main.b3934773.chunk.js",
-    "main.js.map": "/Back-to-the-Future/static/js/main.b3934773.chunk.js.map",
+    "main.css": "/Back-to-the-Future/static/css/main.e4b94e96.chunk.css",
+    "main.js": "/Back-to-the-Future/static/js/main.c10d98c5.chunk.js",
+    "main.js.map": "/Back-to-the-Future/static/js/main.c10d98c5.chunk.js.map",
     "runtime-main.js": "/Back-to-the-Future/static/js/runtime-main.13387317.js",
     "runtime-main.js.map": "/Back-to-the-Future/static/js/runtime-main.13387317.js.map",
     "static/css/2.4698c812.chunk.css": "/Back-to-the-Future/static/css/2.4698c812.chunk.css",
-    "static/js/2.337b7d38.chunk.js": "/Back-to-the-Future/static/js/2.337b7d38.chunk.js",
-    "static/js/2.337b7d38.chunk.js.map": "/Back-to-the-Future/static/js/2.337b7d38.chunk.js.map",
+    "static/js/2.a599a825.chunk.js": "/Back-to-the-Future/static/js/2.a599a825.chunk.js",
+    "static/js/2.a599a825.chunk.js.map": "/Back-to-the-Future/static/js/2.a599a825.chunk.js.map",
     "index.html": "/Back-to-the-Future/index.html",
-    "precache-manifest.1fc6a5fde754e5148506f398ba8f7867.js": "/Back-to-the-Future/precache-manifest.1fc6a5fde754e5148506f398ba8f7867.js",
+    "precache-manifest.f34ad9b2d58e6b1cb84f023e843fe975.js": "/Back-to-the-Future/precache-manifest.f34ad9b2d58e6b1cb84f023e843fe975.js",
     "service-worker.js": "/Back-to-the-Future/service-worker.js",
     "static/css/2.4698c812.chunk.css.map": "/Back-to-the-Future/static/css/2.4698c812.chunk.css.map",
-    "static/css/main.d97b7783.chunk.css.map": "/Back-to-the-Future/static/css/main.d97b7783.chunk.css.map",
-    "static/js/2.337b7d38.chunk.js.LICENSE.txt": "/Back-to-the-Future/static/js/2.337b7d38.chunk.js.LICENSE.txt",
+    "static/css/main.e4b94e96.chunk.css.map": "/Back-to-the-Future/static/css/main.e4b94e96.chunk.css.map",
+    "static/js/2.a599a825.chunk.js.LICENSE.txt": "/Back-to-the-Future/static/js/2.a599a825.chunk.js.LICENSE.txt",
     "static/media/3-5star.png": "/Back-to-the-Future/static/media/3-5star.b3f70f12.png",
     "static/media/4-5star.png": "/Back-to-the-Future/static/media/4-5star.69aa2788.png",
     "static/media/4star.png": "/Back-to-the-Future/static/media/4star.a97c7bbc.png",
@@ -50,8 +50,8 @@
   "entrypoints": [
     "static/js/runtime-main.13387317.js",
     "static/css/2.4698c812.chunk.css",
-    "static/js/2.337b7d38.chunk.js",
-    "static/css/main.d97b7783.chunk.css",
-    "static/js/main.b3934773.chunk.js"
+    "static/js/2.a599a825.chunk.js",
+    "static/css/main.e4b94e96.chunk.css",
+    "static/js/main.c10d98c5.chunk.js"
   ]
 }
