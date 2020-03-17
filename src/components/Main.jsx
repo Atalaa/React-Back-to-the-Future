@@ -1,8 +1,8 @@
 import React from 'react';
-import Game from './main_components/Game';
-import About from './main_components/About';
-import Music from './main_components/Music';
-import Trailer from './main_components/Trailer';
+import Game from './main_components/game/Game';
+import About from './main_components/about/About';
+import Music from './main_components/music/Music';
+import Trailer from './main_components/trailer/Trailer';
 
 
 function Main() {

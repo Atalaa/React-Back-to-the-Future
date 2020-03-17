@@ -1,10 +1,18 @@
 import React from 'react';
-import '../../sass/Game.scss';
+import GuessTry from './GuessTry';
+
+
 
 function Game(){
+
+   
     return(
         <section className="sectionGame">
-            Hello World!
+            <GuessTry />
+
+            <div className="memory">                    
+
+            </div>
         </section>
     )
 

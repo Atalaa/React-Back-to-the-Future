@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../sass/Card.scss';
+import '../../../sass/Card.scss';
 
 
 

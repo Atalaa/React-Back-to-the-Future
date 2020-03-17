@@ -1,9 +1,9 @@
 import React from 'react';
 import Card from './Card';
 import 'animate.css/animate.css';
-import '../../sass/Trailer.scss';
+import '../../../sass/Trailer.scss';
 import ScrollAnimation from 'react-animate-on-scroll';
-import json_trailer_cards from '../../json/json_trailer_cards';
+import json_trailer_cards from '../../../json/json_trailer_cards';
 
 
 function createCard(item){
