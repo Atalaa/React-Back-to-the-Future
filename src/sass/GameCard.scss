@@ -1,0 +1,32 @@
+@import './colors.scss';
+
+
+.memory > .game_card {
+    margin: 6px;
+    outline: 4px solid #6bd4facc;
+    text-align: center;
+}
+
+  
+.memory > .game_card.hidden {
+    background-image: linear-gradient(to right bottom, #6bd4facc, #2948ff);
+}
+
+.memory > .game_card.justMatched,
+.memory > .game_card.justMismatched {
+    outline: 4px solid blue;
+}
+.memory > .game_card.justMismatched {
+    outline-color: red;
+}
+
+.memory > .game_card.visible {
+    cursor: not-allowed;
+}
+
+.memory > .game_card > .symbol {
+    font-size: 5.5rem;
+    margin:auto 0;
+}
+
+

@@ -48,14 +48,12 @@ function Trailer(){
                     <button className="trailers__btn">
                         <span className="trailers__btn--visible">Blu-ray Collection Trailer</span>
                         <span className="trailers__btn--invisible">
-                            <a className="trailers__btn--invisible-anchor" href="https://www.youtube.com/watch?v=yUcVeQ9jZDw" target="_blank" rel="noreferrer noopener">Enjoy!</a>
+                            <a className="trailers__btn--invisible-anchor" href="https://www.youtube.com/watch?v=yUcVeQ9jZDw" target="_blank" rel="noreferrer noopener">Watch it !</a>
                         </span>
                     </button>
                 </div>
                 
             </ScrollAnimation>
-
-            <h1>Game Memory coming soon</h1>
         </section>
     )
 }

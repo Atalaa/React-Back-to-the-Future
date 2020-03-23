@@ -107,8 +107,11 @@
 
 
 .btn {
-    /* pseudo classes */
+    /* pseudo classes mandatory in this order*/
+
+    /* unvisited link */
     &:link, 
+    /* visited link */
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
@@ -129,7 +132,8 @@
             opacity: 0; /*invisible - trick for fades out smth*/
         } 
     }
-
+    
+    /* selected link */
     &:active {
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
@@ -145,18 +149,18 @@
         }
     }
 
-    /* pseudo elements */
+    /* pseudo elements, actually same as the real btn but behind it*/
     &::after {
         content: "";
         display: inline-block; //because the real button is inline block
-        height: 100%; //of the real parent button, so same dimension
+        height: 100%; //of the real parent button (btn), so same dimension
         width: 100%;
         border-radius: 10rem;
+        transition: all .4s; /*initial state*/
         position: absolute; //to put it behind real button
         top: 0;
         left: 0; 
         z-index: -1;
-        transition: all .4s; /*initial state*/
     }
 
     &--animated {

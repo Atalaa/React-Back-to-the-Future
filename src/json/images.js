@@ -5,9 +5,9 @@ import clock from '../img_game/clock.png'
 import marty from '../img_game/marty.png'
 import skate from '../img_game/skate.png'
 import radio from '../img_game/radio.png'
+import poster from '../img_game/poster.png'
 import guitare from '../img_game/guitare.png'
 import popcorn from '../img_game/popcorn.png'
-import dashboard from '../img_game/dashboard.png'
 import clocktower from '../img_game/clocktower.png'
 import deloreanback from '../img_game/deloreanback.png'
 import deloreanface from '../img_game/deloreanface.png'
@@ -66,7 +66,7 @@ const imagesJson = [
     },
     {
         id: 13,
-        imge: dashboard
+        imge: poster
     },
     {
         id: 14,

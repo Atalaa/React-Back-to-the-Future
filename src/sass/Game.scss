@@ -1,0 +1,102 @@
+@import './colors.scss';
+
+
+.sectionGame {
+    padding: 8rem 0 15rem;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-primary, 0.8), 
+        rgba($color-secondary, 0.8)), 
+        url(../img/interrogation.jpg);
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin-top: -45rem;
+}
+
+.guesses{
+    transform: skewY(7deg);
+    font-size: 2rem;
+    margin: 0.2em;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, $color-game-button-light, $color-game-button-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-family: Menlo, Monaco, Consolas, Inconsolata, 'Courier New', monospace;
+}
+
+.gameTitle{
+    transform: skewY(7deg);
+    text-transform: uppercase;
+    font-size: 3rem;
+    background-image: linear-gradient(to bottom right, $color-game-button-light, $color-game-button-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.play{
+    padding: 3rem;
+
+    &__btn{
+        font-weight: 400;
+        font-size: $default-font-size;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 10rem;
+        background-image: linear-gradient(to right, $color-game-button-light, $color-game-button-dark);
+        color: $color-grey-dark;
+        position: relative;
+        overflow: hidden; /*because element is outside of the button = it's an overflow element*/
+        cursor: pointer;
+
+        & > * { /*select all child elements*/
+            display: inline-block; /*like that we can use padding in there*/
+            width: 100%;
+            height: 100%;
+            padding: 2rem 7rem;
+            transition: all .3s;
+        }
+
+        &:hover{
+            background-image: linear-gradient(to right, $color-game-button-dark, $color-game-button-light);
+        }
+
+        &--invisible{
+            position: absolute; /*to put it outside of the button*/
+            top:-100%;
+            left:0;
+
+            &-anchor{
+                text-decoration: none;
+                color: $color-grey-dark;
+            }
+        }
+
+        &:hover &--visible{
+            transform: translateY(100%);
+        }
+
+        &:hover &--invisible{
+            top:0;
+        }
+
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+.memory{
+    display: grid;
+    grid-template-columns: 13rem 13rem 13rem 13rem 13rem 13rem;
+    grid-template-rows: 11rem 11rem 11rem 11rem 11rem;
+    justify-content: center;
+    user-select: none;
+    transform: skewY(7deg);
+
+    
+    
+}
