@@ -79,9 +79,9 @@ function Game(){
 
 
     return(
+        //remove this div when finished
+        <div>
         <section className="sectionGame">
-        
-        
             <div className="gameTitle utility-center-text">
                 Test your memory
                 <h6> Found all the pairs</h6>
@@ -103,8 +103,6 @@ function Game(){
             </div>
 
 
-
-
             <ScrollAnimation animateIn='fadeInUp' duration={1.5} animateOnce={true}>
                 <GuessTry guesses={guesses} />
                 <div className="memory">
@@ -119,6 +117,10 @@ function Game(){
                 </div>
             </ScrollAnimation>
         </section>
+        <br /><br /><br /><br /><br />
+        <h1 className="utility-center-text">Still in construction, coming soon...</h1>
+
+        </div>
     )
 
 }
