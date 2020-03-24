@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-
-// import {useState} from 'react'; 
 import '../../../sass/Game.scss';
 import GuessTry from './GuessTry';
 import GameCard from './GameCard';
@@ -80,7 +78,6 @@ function Game(){
 
     return(
         //remove this div when finished
-        <div>
         <section className="sectionGame">
             <div className="gameTitle utility-center-text">
                 Test your memory
@@ -116,11 +113,9 @@ function Game(){
                     ))}
                 </div>
             </ScrollAnimation>
+            <br /><br /><br /><br /><br />
+            {/* <h1 className="utility-center-text">Still in construction, coming soon...</h1> */}
         </section>
-        <br /><br /><br /><br /><br />
-        <h1 className="utility-center-text">Still in construction, coming soon...</h1>
-
-        </div>
     )
 
 }

@@ -9,12 +9,12 @@
         rgba($color-secondary, 0.8)), 
         url(../img/interrogation.jpg);
     background-size: cover;
-    transform: skewY(-7deg);
+    // transform: skewY(-7deg);
     margin-top: -45rem;
 }
 
 .guesses{
-    transform: skewY(7deg);
+    // transform: skewY(7deg);
     font-size: 2rem;
     margin: 0.2em;
     text-align: center;
@@ -26,7 +26,7 @@
 }
 
 .gameTitle{
-    transform: skewY(7deg);
+    // transform: skewY(7deg);
     text-transform: uppercase;
     font-size: 3rem;
     background-image: linear-gradient(to bottom right, $color-game-button-light, $color-game-button-dark);
@@ -95,8 +95,5 @@
     grid-template-rows: 11rem 11rem 11rem 11rem 11rem;
     justify-content: center;
     user-select: none;
-    transform: skewY(7deg);
-
-    
-    
+    // transform: skewY(7deg);    
 }

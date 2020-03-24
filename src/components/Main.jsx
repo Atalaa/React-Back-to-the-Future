@@ -3,6 +3,7 @@ import Game from './main_components/game/Game';
 import About from './main_components/about/About';
 import Music from './main_components/music/Music';
 import Trailer from './main_components/trailer/Trailer';
+import Review from './main_components/review/Review';
 
 
 function Main() {
@@ -12,6 +13,7 @@ function Main() {
             <Music />
             <Trailer />
             <Game />
+            <Review />
         </main>
         
     )

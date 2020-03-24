@@ -1,0 +1,26 @@
+@import './colors.scss';
+
+
+.sectionReview {
+    padding: 15rem 0;
+    background-color: $color-grey-light-1;
+}
+
+.reviews{
+    list-style-type: none;
+    width: 60%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column; //main axis now
+    align-items: center; // version of justify-content for direction:row
+}
+
+.reviews > li {
+    margin: 0.5em;
+    padding: 6rem;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: $color-white;
+    border-radius: 3px;
+
+}
