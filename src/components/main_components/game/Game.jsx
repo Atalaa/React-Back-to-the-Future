@@ -77,7 +77,6 @@ function Game(){
 
 
     return(
-        //remove this div when finished
         <section className="sectionGame">
             <div className="gameTitle utility-center-text">
                 Test your memory
@@ -113,8 +112,6 @@ function Game(){
                     ))}
                 </div>
             </ScrollAnimation>
-            <br /><br /><br /><br /><br />
-            {/* <h1 className="utility-center-text">Still in construction, coming soon...</h1> */}
         </section>
     )
 
