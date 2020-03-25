@@ -81,7 +81,7 @@ function Game(){
         <section className="sectionGame">
             <div className="gameTitle utility-center-text">
                 Test your memory
-                <h6> Found all the pairs</h6>
+                <h3 className="headingTertiary"> Found all the pairs</h3>
               
                 <div className="play">
                     <button className="play__btn" onClick={()=> {

@@ -1,6 +1,21 @@
 import React from 'react';
+import Reviews from './Reviews';
 import '../../../sass/Review.scss';
+import ScrollAnimation from 'react-animate-on-scroll';
+import json_review_reviews from '../../../json/json_review_reviews';
 
+
+
+function createReviews(item){
+    return(
+        <Reviews 
+            key={item.id}
+            myPic={item.pic}
+            myHeader={item.header}
+            myDesc={item.desc}
+        />
+    )
+}
 
 function Review(){
     return(
@@ -10,13 +25,10 @@ function Review(){
                     Critics Consensus
                 </h2>
             </div>
+            <ScrollAnimation animateIn='fadeInUp' duration={1.5} animateOnce={true}>
+                {json_review_reviews.map(createReviews)}
+            </ScrollAnimation>
 
-            <ul className="reviews">
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            </ul>
         </section>
     )
 }

@@ -1,6 +1,7 @@
 @import './colors.scss';
 
 
+//TRAILER
 .sectionTrailer{
     background-color: $color-grey-light-1;
     padding: 25rem 0 50rem 0;
@@ -68,3 +69,296 @@
 
 
 
+//CARD
+.card{
+
+    //FUNCTIONALITY
+    perspective: 150rem; //perspective always on the parent
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 52rem; //for perspective 3d flip back 
+
+    &__side{ //child element get the perspective view
+        height: 52rem; // for both side
+        transition: all .8s ease;
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 4px;
+        overflow: hidden; //because the image of &--1 overflowing the parent/border-radius in the corner
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &--front{
+            background-color: $color-white;
+        }
+
+        &--back{
+            position: relative; //for cast div
+            transform: rotateY(180deg);
+
+            &-1{
+                background-image: linear-gradient(to right bottom, $color-card1-light, $color-card1-dark);
+            }
+
+            &-2{
+                background-image: linear-gradient(to right bottom, $color-card2-light, $color-card2-dark);
+            }
+
+            &-3{
+                background-image: linear-gradient(to right bottom, $color-card3-light, $color-card3-dark);
+            }
+        }
+    }
+
+    &:hover &__side--front{
+        transform: rotateY(-180deg);   
+    }
+
+    &:hover &__side--back{
+        transform: rotateY(0);   
+        object-fit: cover;
+
+        .card__cast{
+            animation: moveInBottom .8s ease-out .2s;
+        }
+    }
+
+
+    //FRONT SIDE STYLING
+    &__picture{
+        background-size: cover;
+        background-position: center;
+        height: 22rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &--1{
+            background-image: linear-gradient(to right bottom, $color-card1-light, $color-card1-dark),
+                url('../img/future1.jpg');
+        }
+
+        &--2{
+            background-image: linear-gradient(to right bottom, $color-card2-light, $color-card2-dark),
+                url('../img/future2.jpg');
+        }
+
+        &--3{
+            background-image: linear-gradient(to right bottom, $color-card3-light, $color-card3-dark),
+                url('../img/future3.jpg');
+        }
+    }
+
+    &__heading{
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+    }
+
+    &__headingSpan{
+        padding: 1rem 1.5rem;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone; //make two different entities
+
+        &--1{
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-card1-light, .85), 
+            rgba($color-card1-dark, .85));
+        }
+
+        &--2{
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-card2-light, .85), 
+            rgba($color-card2-dark, .85));
+        }
+
+        &--3{
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-card3-light, .85), 
+            rgba($color-card3-dark, .85));
+        }
+    }
+
+    &__details{
+        font-size: 1.3rem;
+        margin: 4.5rem auto 0;
+        padding: 1.5rem;
+        width: 80%;
+        max-width: 80%;
+        height: 40%;
+        max-height: 40%;
+        border-radius: 3px;
+        transform: skewX(-12deg);
+
+        & > * {
+            transform: skewX(12deg);
+        }
+
+        &-1{
+            box-shadow: .1rem .1rem 0 rgba($color-card1-light, .85);
+        }
+
+        &-2{
+            box-shadow: .1rem .1rem 0 rgba($color-card2-light, .85);
+        }
+
+        &-3{
+            box-shadow: .1rem .1rem 0 rgba($color-card3-light, .85);
+        }
+    }
+    
+    &__quotes{
+        font-size: $default-font-size;
+    }
+
+    &__img{
+        text-align: right;
+        
+        &Circle{
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            object-fit: cover;
+
+            &--1{
+                border: 3px solid $color-card1-light;
+            }
+            &--2{
+                border: 3px solid $color-card2-light;
+            }
+            &--3{
+                border: 3px solid $color-card3-light;
+            }
+        }
+    }
+
+    &__nameAuthor{
+        text-align: right;
+    }
+    
+
+    //BACK SIDE STYLING
+    &__wrapper{
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0 85%);
+        clip-path: polygon(0 0, 100% 0, 100% 94%, 0 85%);
+    }
+
+    &__video{
+        width: 100%;
+    }
+    
+    &__synopsis{
+        position: absolute;
+        top:20rem; 
+        left:2.5rem;
+        right:2.5rem;
+    }
+
+    &__year{
+        &-1{
+            font-size: 1.9rem;
+            background-image: linear-gradient(to right, $color-year1-light, $color-year1-dark);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        &-2{
+            font-size: 1.9rem;
+            background-image: linear-gradient(to right, $color-year2-light, $color-year2-dark);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        &-3{
+            font-size: 1.9rem;
+            background-image: linear-gradient(to right, $color-year3-light, $color-year3-dark);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    }
+
+    &__star{
+
+        &-1{
+            width: 10rem;
+        }
+        &-2{
+            width: 10rem;            
+        }
+
+        &-3{
+            width: 10rem;            
+        }
+    }
+
+    &__movie{
+        font-size: 1.5rem;
+        color: #e7e7e7;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    &__cast{
+        position: absolute;
+        bottom:4rem;
+        left:2.5rem;
+        right:2.5rem;
+
+        & h4{
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            background-image: linear-gradient(to right bottom, $color-cast-light, $color-cast-dark);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        & ul{
+            margin: 10px 0 0;
+            padding: 0;
+            display: flex;
+
+            & li{
+                list-style: none;
+                width: 50px;
+                height: 50px;
+                background: #fff;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 6px;
+                border: 2px solid #fff;
+
+                & img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+  
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0); /*element itself*/
+    }
+}

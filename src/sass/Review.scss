@@ -8,19 +8,39 @@
 
 .reviews{
     list-style-type: none;
-    width: 60%;
     margin: 0 auto;
-
     display: flex;
     flex-direction: column; //main axis now
     align-items: center; // version of justify-content for direction:row
-}
 
-.reviews > li {
-    margin: 0.5em;
-    padding: 6rem;
-    box-shadow: 0 3rem 6rem rgba($color-black, .1);
-    background-color: $color-white;
-    border-radius: 3px;
+    & > li {
+        width: 65%;
+        margin: 0.5em;
+        padding: 6rem;
+        padding-left: 9rem; // 6rem + (-3rem from translateX)
+        box-shadow: 0 3rem 6rem rgba($color-black, .1);
+        background-color: $color-white;
+        border-radius: 3px;
+        font-size: $default-font-size;
+        transform: skewX(-12deg);
+    }
 
+    &__shape{
+        width: 15rem; //mandatory for shape-outside
+        height: 15rem; //mandatory for shape-outside
+        float: left; //mandatory for shape-outside
+        -webkit-shape-outside: circle(50% at 50% 50%); //for Safari
+        shape-outside: circle(50% at 50% 50%); //only defines where the content floats around the element (circle in this case)
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%); //if we want the element to look that circle
+        transform: translateX(-3rem) skewX(12deg); //best way to move around a float element is to use transform NOT margin
+    }
+
+    &__img{
+        width: 100%;
+    }
+
+    &__text{
+        transform: skewX(12deg);
+    }
 }

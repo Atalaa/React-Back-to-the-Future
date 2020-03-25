@@ -1,6 +1,4 @@
 import React from 'react';
-import '../../../sass/Card.scss';
-
 
 
 function Card(props){
