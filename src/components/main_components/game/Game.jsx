@@ -99,7 +99,7 @@ function Game(){
             </div>
 
 
-            <ScrollAnimation animateIn='fadeInUp' duration={1.5} animateOnce={true}>
+            <ScrollAnimation animateIn='fadeIn' duration={1.5} animateOnce={true}>
                 <GuessTry guesses={guesses} />
                 <div className="memory">
                     {cards.map((game_card, index) => (

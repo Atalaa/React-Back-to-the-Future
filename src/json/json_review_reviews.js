@@ -1,7 +1,6 @@
 import review1 from '../img/review1.png';
 import review2 from '../img/review2.png';
 import review3 from '../img/review3.png';
-import test from '../img/test.jpg';
 
 
 const json_review_reviews = [

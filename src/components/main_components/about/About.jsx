@@ -21,7 +21,7 @@ function About() {
                 </h2>
             </div>
 
-            <ScrollAnimation animateIn='fadeInUp' duration={1.5} animateOnce={true}>
+            <ScrollAnimation animateIn='fadeIn' duration={1.5} animateOnce={true}>
                 <div className="container">
                     <div className="item item--1">
                         <h3 className="headingTertiary utility-margin-bottom-small">You're gonna love "Back to the Future"</h3>

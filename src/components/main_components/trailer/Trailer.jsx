@@ -39,7 +39,7 @@ function Trailer(){
                 </h2>
             </div>
 
-            <ScrollAnimation animateIn='fadeInUp' duration={1.5} animateOnce={true}>
+            <ScrollAnimation animateIn='fadeIn' duration={1.5} animateOnce={true}>
                 <div className="container3">
                     {json_trailer_cards.map(createCard)}
                 </div>

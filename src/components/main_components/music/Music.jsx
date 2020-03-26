@@ -15,7 +15,7 @@ function createSinger(item){
 function Music() {
     return(
         <section className="sectionMusic">
-            <ScrollAnimation animateIn='fadeInUp' duration={1.5} animateOnce={true}>
+            <ScrollAnimation animateIn='fadeIn' duration={1.5} animateOnce={true}>
                 <div className="container2">
                     {json_music_singers.map(createSinger)}
                 </div>
