@@ -1,6 +1,6 @@
 import React from 'react';
-import newYearNyc from '../img/newYearNyc.png';
 import '../sass/Footer.scss';
+import newYearNyc from '../img/newYearNyc.png';
 
 
 function Footer(){

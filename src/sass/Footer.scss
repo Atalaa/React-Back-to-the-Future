@@ -54,7 +54,7 @@
         &:hover,
         /* selected link by clicking */
         &:active {
-            color: yellow;
+            color: #70a1ff;
             box-shadow: 0 1rem 2rem rgba($color-black, .4);
             transform: rotate(5deg) scale(1.5); //130%
         }
