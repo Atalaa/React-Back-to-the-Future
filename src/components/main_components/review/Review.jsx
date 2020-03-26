@@ -11,6 +11,7 @@ function createReviews(item){
         <Reviews 
             key={item.id}
             myPic={item.pic}
+            myPicName={item.picName}
             myHeader={item.header}
             myDesc={item.desc}
         />

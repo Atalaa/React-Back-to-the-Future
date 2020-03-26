@@ -21,8 +21,20 @@
         box-shadow: 0 3rem 6rem rgba($color-black, .1);
         background-color: $color-white;
         border-radius: 3px;
-        font-size: $default-font-size;
+        font-size: 1.7rem;
         transform: skewX(-12deg);
+
+        &:hover {
+            .reviews__caption{
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+
+            img{
+                transform: scale(1);
+                filter: blur(3px) brightness(80%);
+            }
+        }
     }
 
     &__shape{
@@ -37,13 +49,32 @@
         clip-path: circle(50% at 50% 50%); //if we want the element to look that circle, to specify a specific region of an element to display, rather than showing the complete area
 
         transform: translateX(-3rem) skewX(12deg); //best way to move around a float element is to use transform NOT margin
+
+        position: relative;
     }
 
     &__img{
         width: 100%;
+        transform: scale(1.1); //110%, initially to be able to zoom out on hover
+        transition: all .5s; //for transform scale in hover img (here is the parent)
+
+    }
+
+    &__caption{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, 20%);//best way to move around a float element is to use transform NOT margin
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: $default-font-size;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
     }
 
     &__text{
         transform: skewX(12deg);
     }
+
 }

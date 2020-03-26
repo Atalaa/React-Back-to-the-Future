@@ -7,6 +7,7 @@ function Reviews(props){
             <li>
                 <figure className="reviews__shape">
                     <img className="reviews__img" src={props.myPic} alt="logo"/>
+                    <figcaption className="reviews__caption">{props.myPicName}</figcaption>
                 </figure>
                 <div className="reviews__text">
                     <h3 className="headingTertiary utility-margin-bottom-small">{props.myHeader}</h3>
