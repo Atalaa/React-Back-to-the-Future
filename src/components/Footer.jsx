@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../img/footerlogo.jpg';
+import newYearNyc from '../img/newYearNyc.png';
 import '../sass/Footer.scss';
 
 
@@ -7,7 +7,7 @@ function Footer(){
     return(
         <footer className="footer">
             <div className="footer__logoBox utility-margin-bottom-small">
-                <img src={logo} alt="logo" className="footer__logo"/>
+                <img src={newYearNyc} alt="logo" className="footer__logo"/>
             </div>
 
             <div className="footer__navigation">
@@ -17,7 +17,7 @@ function Footer(){
 
                     <li className="footer__items"><a href="https://github.com/Atalaa" rel="noreferrer noopener" target="_blank" className="footer__link">Github</a></li>
 
-                    <li className="footer__items"><a href="mailto:someone@example.com" rel="noreferrer noopener" target="_blank" className="footer__link">Hire me</a></li>
+                    <li className="footer__items"><a href="mailto:atala.rchidi@gmail.com" rel="noreferrer noopener" target="_blank" className="footer__link">Hire me</a></li>
                 </ul>
             </div>
         </footer>
