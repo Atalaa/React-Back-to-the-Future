@@ -8,7 +8,6 @@
 
 .reviews{
     list-style-type: none;
-    // margin: 0 auto;
     display: flex;
     flex-direction: column; //main axis now
     align-items: center; // version of justify-content for direction:row
@@ -48,15 +47,19 @@
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%); //if we want the element to look that circle, to specify a specific region of an element to display, rather than showing the complete area
 
-        transform: translateX(-3rem) skewX(12deg); //best way to move around a float element is to use transform NOT margin
+        transform: translateX(-3rem) skewX(12deg); //best way to move around a float element is to use transformX or Y NOT margin
 
         position: relative;
+        // backface-visibility: hidden;
+
     }
 
     &__img{
         width: 100%;
-        transform: scale(1.1); //110%, initially to be able to zoom out on hover
+        transform: scale(1.1); //110%, initially, to be able to zoom out on hover later
         transition: all .5s; //for transform scale in hover img (here is the parent)
+        backface-visibility: hidden;
+
 
     }
 
@@ -71,6 +74,7 @@
         text-align: center;
         opacity: 0;
         transition: all .5s;
+        backface-visibility: hidden;
     }
 
     &__text{

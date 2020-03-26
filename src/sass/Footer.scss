@@ -1,0 +1,65 @@
+@import './colors.scss';
+
+
+.footer{
+    background-color:$color-background-footer;
+    padding: 11rem 0;
+    font-size: 1.4rem;
+
+    &__logoBox{
+        text-align: center; //because img is an inline element
+    }
+
+    &__logo{
+        width: 20rem;
+        height: auto;
+        border-radius: 3px ;
+    }
+
+    &__navigation{
+        font-size: $default-font-size;
+        padding-top: 2rem;
+
+        & hr{
+            width: 50%;
+            margin: 0 auto 2.5rem;
+        }
+    }
+
+    &__list{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row; //main axis now
+        justify-content: center; // version of justify-content for direction:row
+    }
+
+    &__items{
+        padding: 0 2rem;
+    }
+
+    &__link{
+        transition: all .3s;
+         /* unvisited link */
+        &:link, 
+        /* visited link */
+        &:visited {
+            color: $color-grey-light-1;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block; //rotate(5deg) doesn't work without inline-block
+            background-color:$color-background-footer;
+        }
+
+        &:hover,
+        /* selected link by clicking */
+        &:active {
+            color: yellow;
+            box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            transform: rotate(5deg) scale(1.5); //130%
+        }
+    }
+}
+
+.footer__details{
+    background-color: red;
+}

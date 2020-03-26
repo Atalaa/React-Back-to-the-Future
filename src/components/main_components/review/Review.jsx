@@ -39,8 +39,6 @@ function Review(){
             <ScrollAnimation animateIn='fadeIn' duration={1.5} animateOnce={true}>
                 {json_review_reviews.map(createReviews)}
             </ScrollAnimation>
-            <h1 className="utility-center-text">Still in construction, coming soon...</h1>
-
         </section>
     )
 }
