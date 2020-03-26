@@ -14,7 +14,6 @@ function createCard(item){
             myTitle={item.title}
             myDash={item.dash}
             mySrce={item.video_mp4} 
-            myType={item.type_mp4}
             myQuote={item.quote}
             myAuthor={item.author} 
             myPicCard={item.pic_card}  

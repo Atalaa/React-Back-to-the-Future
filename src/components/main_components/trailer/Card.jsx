@@ -41,9 +41,8 @@ function Card(props){
 
                 <div className='card__wrapper'>
                     <video className="card__video" muted autoPlay loop playsInline>
-                        <source src={props.mySrce} type={props.myType}/>
-                        Media is not supported
-
+                        <source src={props.mySrce} type="video/mp4"/>
+                        Your browser does not support the video tag.
                     </video>
                 </div>
 

@@ -12,7 +12,7 @@ const json_review_reviews = [
     pic: sjon,
     picName:"Scarlett Johansson",
     header:"My All Time Favorite Movie!",
-    desc:"My favorite thing about this movie is the relationship between Doc and Marty. Zemeckis and Gale have given the movie a core of feeling that makes real claims on us."},
+    desc:"My favorite thing about this movie is the relationship between Doc and Marty. Zemeckis and Gale have given the movie a core of feeling that makes real claims on us.",},
 
     {id: 2, 
     pic: wsmith,
