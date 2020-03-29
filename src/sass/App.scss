@@ -50,5 +50,10 @@ body {
     @media only screen and (max-width: 56.25em) { 
         padding: 0;
     }
+
+    // width < 600px - phone
+    @media only screen and (max-width: 37.5em) { //600/16
+        padding: 0;
+    }
 }
 
