@@ -37,7 +37,7 @@
     // width < 900px - tablet portrait
     @media only screen and (max-width: 56.25em) { //900/16
         display: grid;
-        grid-template-columns: repeat(1, 55%);
+        grid-template-columns: repeat(1, 60%);
         row-gap: 10rem;
         justify-content: center;
         transform: skewY(7deg);
@@ -45,7 +45,7 @@
 }
 
 .musicBox {
-    max-height: 200rem;
+    // max-height: 200rem;
     background-color: rgba($color-white, .8);
     font-size: 1.5rem;
     padding: 2.5rem;
@@ -54,6 +54,18 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     transition: all .3s;
 
+    // width < 900px - tablet portrait
+    @media only screen and (max-width: 56.25em) { //900/16
+        padding: 2rem;
+    }
+
+    & p{
+        // width < 900px - tablet portrait
+        @media only screen and (max-width: 56.25em) { //900/16
+            display: none;
+        }
+    }
+
     &__img {
         width: 13rem;
         height: 13rem;
@@ -61,6 +73,15 @@
         border: 7px solid $color-primary-outline;
         object-fit: cover;
         margin-bottom: 1rem;
+
+        // width < 900px - tablet portrait
+        @media only screen and (max-width: 56.25em) { //900/16
+            width: 8rem;
+            height: 8rem;
+            border-radius: 20%;
+            border: 2px solid $color-primary-outline;
+            object-fit: cover;
+        }
     }
 
     &:hover {
