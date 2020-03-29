@@ -15,15 +15,35 @@
 
 .container2 {
     display: grid;
-    width: 100%;
-    grid-template-rows: 55vh auto; //height 80vh
+    grid-template-columns: repeat(3, 25%);
     column-gap: 10rem;
-    grid-template-columns: 20% 20% 20% ;
     justify-content: center;
     transform: skewY(7deg);
+
+    // width < 1200px - tablet landscape
+    @media only screen and (max-width: 75em) { //1200/16
+        display: grid;
+        grid-template-columns: repeat(3, 26%);
+        column-gap: 10rem;
+        justify-content: center;
+        transform: skewY(7deg);
+    }
+
+    // width < 900px - tablet portrait
+    @media only screen and (max-width: 56.25em) { //900/16
+        display: grid;
+        grid-template-columns: repeat(1, 55%);
+        row-gap: 10rem;
+        justify-content: center;
+        transform: skewY(7deg);
+
+
+        
+    }
 }
 
 .musicBox {
+    max-height: 200rem;
     background-color: rgba($color-white, .8);
     font-size: 1.5rem;
     padding: 2.5rem;

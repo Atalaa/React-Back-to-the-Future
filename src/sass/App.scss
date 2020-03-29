@@ -10,7 +10,32 @@
 
 html {
     font-size: 62.5% ; /* Technique: we use % of the font size given by the browser.
-    We want 10px as default instead of 16px (browser), so we divide 10 by 16 */ 
+    We want 1rem=10px as default instead of 1rem=16px (browser), so we divide 10 by 16. 
+    ems and rems in media queries are not affected by root font size setting, means 1em or 1rem equal to the default browser's font-size=16px. em best option for media queries*/ 
+    
+
+    //MEDIA QUERIES
+
+    // width < 1200px - tablet landscape
+    @media only screen and (max-width: 75em) { //1200/16
+        font-size: 56.25%; //1em=9px 9/16=56.25
+    }
+    
+    // width < 900px - tablet portrait
+    @media only screen and (max-width: 56.25em) { //900/16
+        font-size: 50%; //1em=8px so 8/16=50%. I'm going from 62.5% to 50% here
+    }
+
+    // // width < 600px - phone
+    // @media only screen and (max-width: 37.5em) { //600/16
+    //     font-size: 50%; //1em=8px so 8/16=50%. I'm going from 62.5% to 50% here
+    // }
+    
+    // @media only screen and (min-width: 112.5em) { //1200/16
+    //     font-size: 75%; //1em=8px so 8/16=50%. I'm going from 62.5% to 50% here
+    // }
+
+    
 }
 
 body {
@@ -20,5 +45,10 @@ body {
     color: $color-grey-dark;
     padding: 3rem;
     box-sizing: border-box;
+
+    // width < 1200px - tablet landscape
+    @media only screen and (max-width: 56.25em) { 
+        padding: 0;
+    }
 }
 

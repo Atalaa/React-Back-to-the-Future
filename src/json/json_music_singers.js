@@ -8,7 +8,7 @@ import soundStarlighters from '../sounds/angel.mp3';
 
 const json_music_singers = [ 
     {id: 1, image: huey,  mp3: soundHuey, artist:"Huey Lewis and the News",
-    info: "An American pop rock band. Their greatest success was \"The Power of Love\" and \"Back in Time\" as the soundtrack of Back to the Future."}, 
+    info: "Their greatest success was \"The Power of Love\" and \"Back in Time\" as the soundtrack of Back to the Future."}, 
 
     {id: 2, image: chuck, mp3: soundChuck, artist:"Chuck Berry", 
     info: "\"Johnny B. Goode\" was the signature song performed by Marty McFly and the Starlighters during the bal."}, 
