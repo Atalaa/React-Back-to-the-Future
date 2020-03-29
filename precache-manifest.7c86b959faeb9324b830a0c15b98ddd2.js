@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "35fc69890df41fd9ef32f25d58546186",
+    "revision": "5acf87c4cefb961885b7e785e23c912c",
     "url": "/Back-to-the-Future/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Back-to-the-Future/static/css/2.d5660b37.chunk.css"
   },
   {
-    "revision": "38543c15bf16604cd119",
-    "url": "/Back-to-the-Future/static/css/main.1207ef95.chunk.css"
+    "revision": "8f56896d07027c715c6f",
+    "url": "/Back-to-the-Future/static/css/main.c14bd7d2.chunk.css"
   },
   {
     "revision": "abef35497422aa224ff6",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Back-to-the-Future/static/js/2.6a9f2381.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "38543c15bf16604cd119",
+    "revision": "8f56896d07027c715c6f",
     "url": "/Back-to-the-Future/static/js/main.1a5b233a.chunk.js"
   },
   {
