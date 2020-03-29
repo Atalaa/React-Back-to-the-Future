@@ -9,6 +9,11 @@
     background-color: $color-grey-light-1;
     padding: 25rem 0;
     margin-top: -20vh; /*95vh - 75vh of header*/
+
+    // width < 900px - tablet portrait
+    @media only screen and (max-width: 56.25em) { //900/16
+        margin-top: -30vh;
+    }
 }
 
 .headingSecondary {
@@ -39,11 +44,25 @@
 
 .container {
     display: grid;
-    width: 100%;
-    grid-template-rows: 80vh auto; //height 80vh
+    grid-template-columns: repeat(2, 40%);
     column-gap: 4rem;
-    grid-template-columns: 40% 35%;
     justify-content: center;
+
+    // width < 1200px - tablet landscape
+    @media only screen and (max-width: 75em) { //1200/16
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        column-gap: 10rem;
+        justify-content: center;
+    }
+
+    // width < 900px - tablet portrait
+    @media only screen and (max-width: 56.25em) { //900/16
+        display: grid;
+        grid-template-columns: repeat(1, 55%);
+        column-gap: 10rem;
+        justify-content: center;
+    }
 }
 
 .headingTertiary {
@@ -86,6 +105,7 @@
     }
 }
 
+
 .composition {
     position: relative;
 
@@ -98,22 +118,63 @@
         transition: all .2s;
         outline-offset: 1.5rem;
 
+        // width < 900px - tablet portrait
+        @media only screen and (max-width: 56.25em) { //900/16
+            float:left;
+            position: relative;
+            width: calc(100%/4);
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+        }
+
 
         &--p1 {
-            left:0;
-            top: -2rem
+            left: 3rem;
+            top: -2rem;
+
+            // width < 900px - tablet portrait
+            @media only screen and (max-width: 56.25em) { //900/16
+                top: 5rem;
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3);
+            }
         }
+
         &--p2 {
             right:0;
             top: 2rem;
+
+            // width < 900px - tablet portrait
+            @media only screen and (max-width: 56.25em) { //900/16
+                top: 5rem;
+                left: 8rem;
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
         }
+
         &--p3 {
             left:5%;
             top: 10rem;
+
+            // width < 900px - tablet portrait
+            @media only screen and (max-width: 56.25em) { //900/16
+                top: 5rem;
+                left: 11rem;
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
         }
         &--p4 {
-            right:2rem;
-            top:15rem;
+            right: 2rem;
+            top: 15rem;
+
+            // width < 900px - tablet portrait
+            @media only screen and (max-width: 56.25em) { //900/16
+                right: -12rem;
+                top: 5rem;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
         }
 
         &:hover {
