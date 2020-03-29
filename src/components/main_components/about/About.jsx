@@ -15,13 +15,12 @@ function createActor(item){
 function About() {
     return(
         <section className="sectionAbout">
-            <div className="utility-center-text utility-margin-bottom-big">
-                <h2 className="headingSecondary">
-                    The Timeless Classic Original
-                </h2>
-            </div>
-
             <ScrollAnimation animateIn='fadeIn' duration={1.5} animateOnce={true}>
+                <div className="utility-center-text utility-margin-bottom-big">
+                    <h2 className="headingSecondary">
+                        The Timeless Classic Original
+                    </h2>
+                </div>
                 <div className="container">
                     <div className="item item--1">
                         <h3 className="headingTertiary utility-margin-bottom-small">You're gonna love "Back to the Future"</h3>
