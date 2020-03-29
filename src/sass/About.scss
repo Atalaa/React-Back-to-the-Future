@@ -1,7 +1,24 @@
 @import './colors.scss';
 .utility-center-text {text-align: center;}
-.utility-margin-bottom-big {margin-bottom: 8rem;}
-.utility-margin-bottom-medium {margin-bottom: 4rem;}
+
+.utility-margin-bottom-big {
+    margin-bottom: 8rem;
+
+    // width < 900px - tablet portrait
+    @media only screen and (max-width: 56.25em) { //900/16
+        margin-bottom: 5rem;
+    }
+}
+
+.utility-margin-bottom-medium {
+    margin-bottom: 4rem;
+
+    // width < 900px - tablet portrait
+    @media only screen and (max-width: 56.25em) { //900/16
+        margin-bottom: 3rem;
+    }
+}
+
 .utility-margin-bottom-small {margin-bottom: 1.5rem;}
 
 
@@ -10,9 +27,9 @@
     padding: 25rem 0;
     margin-top: -20vh; /*95vh - 75vh of header*/
 
-    // width < 900px - tablet portrait
-    @media only screen and (max-width: 56.25em) { //900/16
-        // margin-top: -30vh;
+     // width < 900px - tablet portrait
+     @media only screen and (max-width: 56.25em) { //900/16
+        padding: 20rem 0;
     }
 }
 
@@ -44,25 +61,19 @@
 
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 40%);
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(1, 100%);
     column-gap: 4rem;
     justify-content: center;
-
-    // width < 1200px - tablet landscape
-    @media only screen and (max-width: 75em) { //1200/16
-        display: grid;
-        grid-template-columns: repeat(2, 40%);
-        column-gap: 10rem;
-        justify-content: center;
-    }
 
     // width < 900px - tablet portrait
     @media only screen and (max-width: 56.25em) { //900/16
         display: grid;
-        grid-template-columns: repeat(1, 55%);
-        column-gap: 10rem;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 10rem;
         justify-content: center;
-    }
+    }    
 }
 
 .headingTertiary {
@@ -109,20 +120,6 @@
 .composition {
     position: relative;
 
-    // width < 900px - tablet portrait
-    @media only screen and (max-width: 56.25em) { //900/16
-        // display: flex;
-        // flex-direction: row; //main axis now
-        // flex-wrap: wrap;
-        // // align-items: center; // version of justify-content for direction:row
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-        column-gap: 1rem;
-        justify-content: space-between;
-        max-width: 50rem;
-
-    }
-
     &__link{
         width: 100%;
     }
@@ -138,9 +135,9 @@
 
         // width < 900px - tablet portrait
         @media only screen and (max-width: 56.25em) { //900/16
-            float:left;
-            position: relative;
-            width: calc(100%/2);
+            float: left;
+            position: relative; //to get rid of absolute above
+            width: 33.333333%;
             box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
         }
 
@@ -151,9 +148,8 @@
 
             // width < 900px - tablet portrait
             @media only screen and (max-width: 56.25em) { //900/16
-                top: 5rem;
-                -webkit-transform: scale(1.3);
-                transform: scale(1.3);
+                left: 0;
+                top: 0;
             }
         }
 
@@ -163,10 +159,8 @@
 
             // width < 900px - tablet portrait
             @media only screen and (max-width: 56.25em) { //900/16
-                top: 5rem;
-                left: 8rem;
-                -webkit-transform: scale(1.2);
-                transform: scale(1.2);
+                right: 0;
+                top: 0;
             }
         }
 
@@ -176,10 +170,8 @@
 
             // width < 900px - tablet portrait
             @media only screen and (max-width: 56.25em) { //900/16
-                top: 5rem;
-                left: 11rem;
-                -webkit-transform: scale(1.1);
-                transform: scale(1.1);
+                left:0;
+                top: 0;
             }
         }
         &--p4 {
@@ -188,10 +180,7 @@
 
             // width < 900px - tablet portrait
             @media only screen and (max-width: 56.25em) { //900/16
-                right: -12rem;
-                top: 5rem;
-                -webkit-transform: scale(1);
-                transform: scale(1);
+                display: none;
             }
         }
 

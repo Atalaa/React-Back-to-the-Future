@@ -14,8 +14,8 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
 
-    // width < 600px - phone
-    @media only screen and (max-width: 37.5em) {//600/16
+    // width < 900px - tablet portrait
+    @media only screen and (max-width: 56.25em) { //900/16
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); 
         clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); 
     }

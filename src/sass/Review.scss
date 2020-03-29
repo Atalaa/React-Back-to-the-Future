@@ -4,6 +4,10 @@
 .sectionReview {
     padding: 15rem 0;
     position: relative; //bg video
+
+    @media only screen and (max-width: 56.25em) { //900/16
+        padding: 10rem 0;
+    }
 }
 
 .reviews{

@@ -10,6 +10,10 @@
         url(../img/interrogation.jpg);
     background-size: cover;
     margin-top: -45rem;
+
+    @media only screen and (max-width: 56.25em) { //900/16
+        padding: 3rem 0;
+    }
 }
 
 .guesses{
