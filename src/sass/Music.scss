@@ -25,20 +25,20 @@
     justify-content: center;
     transform: skewY(7deg);
 
-    // width < 1200px - tablet landscape
-    @media only screen and (max-width: 75em) { //1200/16
-        display: grid;
-        grid-template-columns: repeat(3, 25%);
-        column-gap: 8rem;
-        justify-content: center;
-        transform: skewY(7deg);
-    }
+    // // width < 1200px - tablet landscape
+    // @media only screen and (max-width: 75em) { //1200/16
+    //     display: grid;
+    //     grid-template-columns: repeat(3, 25%);
+    //     column-gap: 8rem;
+    //     justify-content: center;
+    //     transform: skewY(7deg);
+    // }
 
     // width < 900px - tablet portrait
     @media only screen and (max-width: 56.25em) { //900/16
         display: grid;
         grid-template-columns: repeat(1, 85%);
-        row-gap: 3rem;
+        row-gap: 5rem;
         justify-content: center;
         transform: skewY(7deg);
     }
