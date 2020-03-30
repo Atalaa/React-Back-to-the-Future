@@ -93,9 +93,29 @@
 }
 
 .memory{
+    // display: grid;
+    // grid-template-columns: 13rem 13rem 13rem 13rem 13rem 13rem;
+    // grid-template-rows: 11rem 11rem 11rem 11rem 11rem;
+    // justify-content: center;
+    // user-select: none;
+
     display: grid;
-    grid-template-columns: 13rem 13rem 13rem 13rem 13rem 13rem;
-    grid-template-rows: 11rem 11rem 11rem 11rem 11rem;
+    grid-template-columns: repeat(6, 13rem);
+    // grid-template-rows: repeat(5, 11rem);
     justify-content: center;
     user-select: none;
+
+
+
+
+    // width < 900px - tablet portrait
+    @media only screen and (max-width: 56.25em) { //900/16
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+
+        // grid-template-columns: repeat(6, 25%);
+        // column-gap: 10rem;
+        // justify-content: center;    
+    }
+    
 }
