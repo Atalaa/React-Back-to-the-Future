@@ -69,29 +69,29 @@
     padding: 0 8rem;
     display: grid;
     grid-template-columns: repeat(2, 45%);
-    grid-template-rows: repeat(1, 100%);
-    column-gap: 4rem;
+    column-gap: 8rem;
     justify-content: center;
 
     // width < 900px - tablet portrait
     @media only screen and (max-width: 56.25em) { //900/16
         padding: 0 5rem;
         display: grid;
-        grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 12rem;
+        // grid-template-columns: repeat(1, 100%);
+        // grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 85%);
+        row-gap: 10rem;
         justify-content: center;
     }    
 
-    // width < 600px - phone
-    @media only screen and (max-width: 37.5em) { //600/16
-        padding: 0 4rem;
-        display: grid;
-        grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 10rem;
-        justify-content: center;
-    }
+    // // width < 600px - phone
+    // @media only screen and (max-width: 37.5em) { //600/16
+    //     padding: 0 4rem;
+    //     display: grid;
+    //     grid-template-columns: repeat(1, 100%);
+    //     grid-template-rows: repeat(2, 1fr);
+    //     row-gap: 10rem;
+    //     justify-content: center;
+    // }
 }
 
 .headingTertiary {
