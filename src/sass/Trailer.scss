@@ -364,6 +364,48 @@
             }
         }
     }
+
+
+
+
+
+
+
+
+
+//MEDIA QUERY **********************************************************************************************
+    // width < 900px - tablet portrait
+    @media only screen and (max-width: 56.25em) { //900/16
+        height: auto;  
+        border-radius: 4px;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+
+        &__side{ 
+            position: relative; //because we no longer have two sides
+            // border-radius: 4px;
+            box-shadow: none;
+
+
+            &--back{
+                // position: relative; 
+                transform: rotateY(0);
+                -webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+                clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+                margin-top: -3rem;
+            }
+        }
+
+        &__wrapper{
+            -webkit-clip-path: polygon(0 7%, 100% 0, 100% 85%, 0 85%);
+            clip-path: polygon(0 7%, 100% 0, 100% 85%, 0 85%);
+        }
+
+        &:hover &__side--front{
+            transform: rotateY(0);   
+        }
+    }
 }
 
   
