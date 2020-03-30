@@ -5,6 +5,12 @@
     margin: 6px;
     outline: 4px solid #6bd4facc;
     text-align: center;
+
+     // width < 900px - tablet portrait
+     @media only screen and (max-width: 56.25em) { //900/16
+        height: 6rem;
+    }
+
 }
 
   
@@ -27,6 +33,11 @@
 .memory > .game_card > .symbol {
     font-size: 5.5rem;
     margin:auto 0;
+
+    // width < 900px - tablet portrait
+    @media only screen and (max-width: 56.25em) { //900/16
+        font-size: 3.5rem;
+    }
 }
 
 
