@@ -79,8 +79,8 @@ function Game(){
     return(
         <section className="sectionGame">
             <div className="gameTitle utility-center-text">
-                <h2 className="headingSecondary">Test your memory</h2>
-                <h3 className="headingTertiary"> Find all the pairs</h3>
+                <h2>Memory Game</h2>
+                <h3 className="headingTertiary"> Find all pairs</h3>
                 <div className="play">
                     <button className="play__btn" onClick={()=> {
                         setCards(generateCards); 
