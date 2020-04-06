@@ -399,6 +399,56 @@
         &:hover &__side--front{
             transform: rotateY(0);   
         }
+
+        &__synopsis{
+            position: absolute;
+            top: 43rem; 
+        }
+
+        &__year{
+            &-1{
+                display: none;
+            }
+            &-2{
+                display: none;
+            }
+            &-3{
+                display: none;
+            }
+        }
+
+        &__cast{
+            display: none;
+        }
+    }
+
+
+    // width < 600px - phone
+    @media only screen and (max-width: 37.5em) { //600/16
+
+        &__synopsis{
+            margin-top: 3rem;
+            position: absolute;
+            top:20rem; 
+            left:2.5rem;
+            right:2.5rem;
+        }
+
+        &__year{
+            &-1{
+                display: none;
+            }
+            &-2{
+                display: none;
+            }
+            &-3{
+                display: none;
+            }
+        }
+
+        &__cast{
+            display: inline-block;
+        }
     }
 }
 
