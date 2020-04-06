@@ -27,6 +27,18 @@
         font-size: 1.7rem;
         transform: skewX(-12deg);
 
+        // width < 900px - tablet portrait
+        @media only screen and (max-width: 56.25em) { //900/16
+            width: 80%;
+            padding: 3rem;
+            padding-left: 5rem; 
+        }
+        // width < 600px - phone
+        @media only screen and (max-width: 37.5em) {//600/16
+            width: 85%;
+            transform: skewX(0);
+        }
+
         &:hover {
             .reviews__caption{
                 opacity: 1;
@@ -56,6 +68,10 @@
         position: relative;
         // backface-visibility: hidden;
 
+        // width < 600px - phone
+        @media only screen and (max-width: 56.25em) { //600/16
+            transform: translateX(-3rem) skewX(0);
+        }
     }
 
     &__img{
@@ -83,6 +99,11 @@
 
     &__text{
         transform: skewX(12deg);
+
+        // width < 600px - phone
+        @media only screen and (max-width: 56.25em) { //600/16
+            transform: skewX(0);
+        }
     }
 }
 
