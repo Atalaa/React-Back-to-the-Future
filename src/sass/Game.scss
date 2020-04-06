@@ -33,7 +33,7 @@
 .gameTitle{
     // transform: skewY(7deg);
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.5rem;
     background-image: linear-gradient(to bottom right, $color-game-button-light, $color-game-button-dark);
     -webkit-background-clip: text;
     color: transparent;
@@ -42,12 +42,6 @@
     padding: 2rem;
 }
 
-.memTitle{
-    // width < 900px - tablet portrait
-    @media only screen and (max-width: 56.25em) { //900/16
-        font-size: 3rem;
-    }
-}
 
 .play{
     padding: 3rem;

@@ -49,6 +49,22 @@
     letter-spacing: 3px;
     transition: all .2s;
 
+    &__game{
+        background-image: linear-gradient(to right, $color-game-button-light, $color-game-button-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+        
+        // width < 900px - tablet portrait
+        @media only screen and (max-width: 56.25em) {
+            font-size: 3rem;
+        }
+
+        // width < 600px - phone
+        @media only screen and (max-width: 37.5em) {
+            font-size: 2.5rem;
+        }
+    }
+
     // width < 900px - tablet portrait
     @media only screen and (max-width: 56.25em) {
         font-size: 3rem;
