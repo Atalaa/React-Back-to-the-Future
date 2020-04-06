@@ -79,7 +79,7 @@ function Game(){
     return(
         <section className="sectionGame">
             <div className="gameTitle utility-center-text">
-                <h2 className="memTitle">Memory Game</h2>
+                <h2 className="headingSecondary">Memory Game</h2>
                 <h3 className="headingTertiary"> Find all pairs</h3>
                 <div className="play">
                     <button className="play__btn" onClick={()=> {
