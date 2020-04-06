@@ -68,8 +68,9 @@
         position: relative;
         // backface-visibility: hidden;
 
+       
         // width < 600px - phone
-        @media only screen and (max-width: 56.25em) { //600/16
+        @media only screen and (max-width: 37.5em ) { //600/16
             transform: translateX(-3rem) skewX(0);
         }
     }
@@ -101,7 +102,7 @@
         transform: skewX(12deg);
 
         // width < 600px - phone
-        @media only screen and (max-width: 56.25em) { //600/16
+        @media only screen and (max-width: 37.5em) { //600/16
             transform: skewX(0);
         }
     }

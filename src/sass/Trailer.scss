@@ -212,6 +212,10 @@
         border-radius: 3px;
         transform: skewX(-12deg);
 
+        // @media (max-width:900px) and (min-width:600px) {
+        //     display: none;
+        // }
+
         & > * {
             transform: skewX(12deg);
         }
@@ -419,6 +423,27 @@
 
         &__cast{
             display: none;
+        }
+    }
+
+    // 600px < width < 900px
+    @media (max-width:900px) and (min-width:600px) {
+        &__details{
+            display: none;
+        }
+
+        &__picture{
+            height: 45rem;
+        }
+
+        &__side--back{
+            margin-top: -15rem;
+        }
+
+        &__headingSpan{
+            position: absolute;
+            top: 12rem;
+            left: 25rem;           
         }
     }
 
