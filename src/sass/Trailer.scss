@@ -15,8 +15,8 @@
 
 .container3 {
     display: grid;
-    grid-template-columns: repeat(3, 25%);
-    column-gap: 10rem;
+    grid-template-columns: repeat(3, 24%);
+    column-gap: 6rem;
     justify-content: center;
 
     // width < 900px - tablet portrait
@@ -376,7 +376,7 @@
 
 
         &__side{ 
-            position: relative; //because we no longer have two sides
+            position: relative; //relative: elements nicely displayed one below the other
             // border-radius: 4px;
             box-shadow: none;
 
