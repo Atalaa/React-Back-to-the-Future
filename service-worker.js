@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Back-to-the-Future/precache-manifest.30c9006fb8563b93ed74bd51fb58e2b8.js"
+  "/Back-to-the-Future/precache-manifest.449f4adf22ada578d091f1a14ea1102e.js"
 );
 
 self.addEventListener('message', (event) => {
