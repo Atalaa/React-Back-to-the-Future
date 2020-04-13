@@ -3,10 +3,10 @@ import 'react-h5-audio-player/src/styles.scss';
 import AudioPlayer from 'react-h5-audio-player';
 
 
-function Audio(props){
+function Audio({songArtist}){
         return(
             <div>
-                <AudioPlayer src={props.songArtist} />
+                <AudioPlayer src={songArtist} />
             </div>
         )        
 }

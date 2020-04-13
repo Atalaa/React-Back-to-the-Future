@@ -1,24 +1,10 @@
 import React from 'react';
 import Reviews from './Reviews';
-import '../../../sass/components/Review.scss';
 import ScrollAnimation from 'react-animate-on-scroll';
 import json_review_reviews from '../../../json/json_review_reviews';
 import waves from '../../../img/waves.mp4';
 
 
-
-
-function createReviews(item){
-    return(
-        <Reviews 
-            key={item.id}
-            myPic={item.pic}
-            myPicName={item.picName}
-            myHeader={item.header}
-            myDesc={item.desc}
-        />
-    )
-}
 
 function Review(){
     return(
@@ -37,7 +23,17 @@ function Review(){
                 </h2>
             </div>
             <ScrollAnimation animateIn='fadeIn' duration={1.5} animateOnce={true}>
-                {json_review_reviews.map(createReviews)}
+
+                {json_review_reviews.map(item => (
+                    <Reviews 
+                        key={item.id}
+                        myPic={item.pic}
+                        myPicName={item.picName}
+                        myHeader={item.header}
+                        myDesc={item.desc}
+                    />
+                ))}
+
             </ScrollAnimation>
         </section>
     )

@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../../sass/components/Card.scss';
 
 
 function Card(props){
+    console.log(props);
     return(
         <div className="card">
 
@@ -79,6 +79,7 @@ function Card(props){
                 </div>
             </div>
         </div>
+
     )
 }
 

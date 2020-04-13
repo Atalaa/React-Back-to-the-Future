@@ -1,16 +1,9 @@
 import React from 'react';
 import Actor from './Actor';
-import '../../../sass/components/About.scss';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import json_about_actors from '../../../json/json_about_actors';
 
-
-function createActor(item){
-    return(
-        <Actor key={item.id} actorImg={item.image} linkInfo={item.link} myClass={item.classes}/>
-    )
-}
 
 function About() {
     return(
@@ -36,12 +29,17 @@ function About() {
                         </p>
 
                         <a href="https://www.backtothefuture.com/cast"  rel="noreferrer noopener" target="_blank" className="btn-text">Learn more &rarr;</a>
-
                     </div>
 
                     <div className="item item--2">
                         <div className="composition">
-                            {json_about_actors.map(createActor)}
+                            {json_about_actors.map(item => (
+                                <Actor 
+                                    key={item.id} 
+                                    actorImg={item.image} 
+                                    linkInfo={item.link} 
+                                    myClass={item.classes}/>
+                            ))}
                         </div>
                     </div>
                 </div>

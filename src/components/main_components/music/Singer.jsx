@@ -2,18 +2,18 @@ import React from 'react';
 import Audio from './Audio';
 
 
-function Singer(props){
+function Singer({singerImg, song, artist, info}){
     return(
         <div className="item">
             <div className="musicBox">
-                <img src={props.singerImg} alt="singer" className="musicBox__img"/>
+                <img src={singerImg} alt="singer" className="musicBox__img"/>
 
-                <h3 className="headingTertiary utility-margin-bottom-small">{props.artist}</h3>
+                <h3 className="headingTertiary utility-margin-bottom-small">{artist}</h3>
                 
                 <p>
-                 {props.info}
+                 {info}
                 </p>
-                <Audio songArtist={props.song}/>
+                <Audio songArtist={song}/>
             </div>
             
         </div>

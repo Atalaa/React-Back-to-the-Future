@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../../sass/components/GameCard.scss';
 import './Game';
 
 

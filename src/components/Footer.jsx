@@ -1,5 +1,4 @@
 import React from 'react';
-import '../sass/layout/Footer.scss';
 import newYearNyc from '../img/newYearNyc.png';
 
 

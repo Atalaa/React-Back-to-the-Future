@@ -1,5 +1,5 @@
 import React from 'react';
-import '../sass/layout/Header.scss';
+// import '../sass/layout/Header.scss';
 import Typed from 'react-typed';
 import logo from '../img/bttfLogo.png';
 
