@@ -1,6 +1,6 @@
 import React from 'react';
+import '../sass/layout/Header.scss';
 import Typed from 'react-typed';
-import '../sass/Header.scss';
 import logo from '../img/bttfLogo.png';
 
 

@@ -5,6 +5,9 @@ import star3 from '../img/3-5star.png';
 import future1mp4 from '../img/future1.mp4';
 import future2mp4 from '../img/future2.mp4';
 import future3mp4 from '../img/future3.mp4';
+import future1webm from '../img/future1.webm';
+// import future2webm from '../img/future2.webm';
+import future3webm from '../img/future3.webm';
 
 import flea_card from '../img/flea_card.jpg';
 import ltom_card from '../img/ltom_card.jpg';
@@ -27,6 +30,7 @@ const json_trailer_cards = [
     title:"Back to the Future",
     dash:"-1",
     video_mp4:future1mp4,
+    video_webm:future1webm,
     quote:"When I began work on the first film, I was pretty much walking into unknown territory.",
     author:"— Michael J. Fox",
     pic_card:mjfox_card,
@@ -44,6 +48,7 @@ const json_trailer_cards = [
     title:"Back to the Future II",
     dash:"-2",
     video_mp4: future2mp4,
+    // video_webm:future2webm,
     quote:"I loved inventors who come up with new theories that solve problems like Albert Einstein.",
     author:"— Christopher Lloyd",
     pic_card:clloyd_card,
@@ -61,6 +66,7 @@ const json_trailer_cards = [
     title:"Back to the Future III",
     dash:"-3",
     video_mp4: future3mp4,
+    video_webm:future3webm,
     quote:"Cowboys have always been my heroes, it's always been a dream of mine to appear in a western.",
     author:"— Thomas F. Wilson",
     pic_card:twilson_card,

@@ -1,5 +1,8 @@
-@import './colors.scss';
-.utility-center-text {text-align: center;}
+@import '../colors.scss';
+
+.utility-center-text {
+    text-align: center;
+}
 
 .utility-margin-bottom-big {
     margin-bottom: 8rem;

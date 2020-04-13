@@ -1,6 +1,6 @@
 import React from 'react';
 import Reviews from './Reviews';
-import '../../../sass/Review.scss';
+import '../../../sass/components/Review.scss';
 import ScrollAnimation from 'react-animate-on-scroll';
 import json_review_reviews from '../../../json/json_review_reviews';
 import waves from '../../../img/waves.mp4';
@@ -24,7 +24,7 @@ function Review(){
     return(
         <section className="sectionReview">
             <div className="bg-video">
-                <video className="bg-video__content" muted autoPlay loop playsInline>
+                <video className="bg-video__content" autoPlay muted loop playsInline>
                     <source src={waves} type="video/mp4"/>
                     {/* <source src={forestLullabyWebm} type="video/webm"/> */}
                     Your browser does not support the video tag.

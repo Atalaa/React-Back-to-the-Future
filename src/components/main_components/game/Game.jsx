@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../../../sass/Game.scss';
+import '../../../sass/components/Game.scss';
 import GuessTry from './GuessTry';
 import GameCard from './GameCard';
 import imagesJson from '../../../json/images';

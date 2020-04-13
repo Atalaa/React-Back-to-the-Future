@@ -1,4 +1,4 @@
-@import './colors.scss';
+@import '../colors.scss';
 
 *, // real element get behavior css
 *::after, // after element too
@@ -51,4 +51,3 @@ body {
         padding: 0;
     }
 }
-

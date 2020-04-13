@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import 'animate.css/animate.css';
-import '../../../sass/Trailer.scss';
+import '../../../sass/components/Trailer.scss';
 import ScrollAnimation from 'react-animate-on-scroll';
 import json_trailer_cards from '../../../json/json_trailer_cards';
 
@@ -13,7 +13,8 @@ function createCard(item){
             myDashes={item.dashes} 
             myTitle={item.title}
             myDash={item.dash}
-            mySrce={item.video_mp4} 
+            myMp4={item.video_mp4} 
+            myWebm={item.video_webm} 
             myQuote={item.quote}
             myAuthor={item.author} 
             myPicCard={item.pic_card}  

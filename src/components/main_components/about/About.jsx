@@ -1,6 +1,6 @@
 import React from 'react';
 import Actor from './Actor';
-import '../../../sass/About.scss';
+import '../../../sass/components/About.scss';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import json_about_actors from '../../../json/json_about_actors';

@@ -1,4 +1,4 @@
-@import './colors.scss';
+@import '../colors.scss';
 
 .header {
     height: 95vh; /* 95% of the height of viewport */
@@ -7,7 +7,7 @@
         rgba($color-primary, 0.8), 
         rgba($color-secondary, 0.8)
         ), 
-        url("../img/desert.jpg");
+        url("../../img/desert.jpg");
     background-size: cover;
     background-position: top;
     position: relative; 
@@ -187,7 +187,3 @@
         width: 85%;
     }
 }
-
-
-
-

@@ -1,7 +1,7 @@
 import React from 'react';
 import Singer from './Singer';
-import '../../../sass/Music.scss';
 import 'animate.css/animate.css';
+import '../../../sass/components/Music.scss';
 import ScrollAnimation from 'react-animate-on-scroll';
 import json_music_singers from '../../../json/json_music_singers';
 
