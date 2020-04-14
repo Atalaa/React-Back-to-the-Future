@@ -31,7 +31,8 @@ const imagesJson = [
     {
         id: 4,
         imge: clock
-    },
+    }
+    ,
     {
         id: 5,
         imge: marty

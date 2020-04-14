@@ -1,29 +1,30 @@
 import React, { useState } from "react";
 import GuessTry from './GuessTry';
 import GameCard from './GameCard';
-import imagesJson from '../../../json/images';
 import shuffle from 'lodash.shuffle';
+import imagesJson from '../../../json/images';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Swal from 'sweetalert2';
+import win from '../../../img/win.png';
+
 
 
 function Game(){
 
-    const side1 = 6
-    const side2 = 5
+    // const side1 = 6
+    // const side2 = 5
     const milliseconds = 750
-
     const [cards, setCards] = useState(generateCards);
     const [currentPair, setCurrentPair] = useState([]);
     const [guesses, setGuesses] = useState(0);
     const [indexOfCardsSuccessfullyPaired, setindexOfCardsSuccessfullyPaired] = useState([]);  
+    const won = indexOfCardsSuccessfullyPaired.length === cards.length;
 
-
-    // const won = indexOfCardsSuccessfullyPaired.length === cards.length;
 
 
     function generateCards() {
         const result = []
-        const size = side1 * side2
+        const size = 6
         const candidates = shuffle(imagesJson)
 
         while (result.length < size) {
@@ -74,12 +75,26 @@ function Game(){
         setTimeout(() => { setCurrentPair([]) }, milliseconds);// purge pair
     }
 
+    function winner(){
+        setTimeout(() => { 
+            Swal.fire({
+                // title: 'Sweet!',
+                text: `🏆 You won in ${guesses} moves! 🏆`,
+                imageUrl: win,
+                imageWidth: 200,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+            })        
+        }, 1500)
+    }
+    
+
 
     return(
         <section className="sectionGame">
             <div className="gameTitle utility-center-text">
                 <h2 className="headingSecondary__game">Memory Game <br/> Find all pairs</h2>
-                {/* <h3 className="headingTertiary"> Find all pairs</h3> */}
+
                 <div className="play">
                     <button className="play__btn" onClick={()=> {
                         setCards(generateCards); 
@@ -100,14 +115,15 @@ function Game(){
             <ScrollAnimation animateIn='fadeIn' duration={1.5} animateOnce={true}>
                 <GuessTry guesses={guesses} />
                 <div className="memory">
-                    {cards.map((game_card, index) => (
+                    {cards.map((memory__card, index) => (
                         <GameCard 
                             key={index} 
                             index={index} //position of a card
-                            symbolOfCard={game_card.imge} 
+                            symbolOfCard={memory__card.imge} 
                             stateOfCard={getStateOfCard(index)} //stateOfCard = 'hidden' at the beggining
                             onClick={handleCardClick}/>
                     ))}
+                    {won && winner()}     
                 </div>
             </ScrollAnimation>
         </section>
