@@ -4,15 +4,14 @@ import GameCard from './GameCard';
 import shuffle from 'lodash.shuffle';
 import imagesJson from '../../../json/images';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Swal from 'sweetalert2';
-import win from '../../../img/win.png';
+import Winner from './Winner';
 
 
 
 function Game(){
 
-    // const side1 = 6
-    // const side2 = 5
+    const side1 = 6
+    const side2 = 5
     const milliseconds = 750
     const [cards, setCards] = useState(generateCards);
     const [currentPair, setCurrentPair] = useState([]);
@@ -21,10 +20,9 @@ function Game(){
     const won = indexOfCardsSuccessfullyPaired.length === cards.length;
 
 
-
     function generateCards() {
         const result = []
-        const size = 6
+        const size = side1 * side2
         const candidates = shuffle(imagesJson)
 
         while (result.length < size) {
@@ -69,25 +67,14 @@ function Game(){
     
         setCurrentPair(newPair)
     
-        if (matching){               
+        // //if it's really a pair
+        if (matching){             
             setindexOfCardsSuccessfullyPaired([...indexOfCardsSuccessfullyPaired, ...newPair]);
         } 
-        setTimeout(() => { setCurrentPair([]) }, milliseconds);// purge pair
-    }
 
-    function winner(){
-        setTimeout(() => { 
-            Swal.fire({
-                // title: 'Sweet!',
-                text: `🏆 You won in ${guesses} moves! 🏆`,
-                imageUrl: win,
-                imageWidth: 200,
-                imageHeight: 200,
-                imageAlt: 'Custom image',
-            })        
-        }, 1500)
+        //after a while we do again a setCurrentPair
+        setTimeout(() => { setCurrentPair([]) }, milliseconds);// React re-render the component with a new value with setCurrentPaire - purge pair
     }
-    
 
 
     return(
@@ -123,7 +110,7 @@ function Game(){
                             stateOfCard={getStateOfCard(index)} //stateOfCard = 'hidden' at the beggining
                             onClick={handleCardClick}/>
                     ))}
-                    {won && winner()}     
+                    {won && <Winner guess={guesses} />}
                 </div>
             </ScrollAnimation>
         </section>
