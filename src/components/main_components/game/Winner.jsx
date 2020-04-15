@@ -7,7 +7,7 @@ function Winner({guess}){
         <div>
             { setTimeout(() => { 
                 Swal.fire({
-                    // title: 'Sweet!',
+                    title: 'Sweet!',
                     text: `🏆 You won in ${guess} moves! 🏆`,
                     imageUrl: win,
                     imageWidth: 200,

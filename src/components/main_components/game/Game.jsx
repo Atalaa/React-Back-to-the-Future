@@ -19,7 +19,6 @@ function Game(){
     const [indexOfCardsSuccessfullyPaired, setindexOfCardsSuccessfullyPaired] = useState([]);  
     const won = indexOfCardsSuccessfullyPaired.length === cards.length;
 
-
     function generateCards() {
         const result = []
         const size = side1 * side2
@@ -57,10 +56,10 @@ function Game(){
         if (currentPair.length === 2){ //ignore click while a pair is created (success or error)
           return;
         }
-        handleNewPairClosedBy(index);
+        handleNewPairSecondClick(index);
     }
 
-    function handleNewPairClosedBy(index) {//index = position {
+    function handleNewPairSecondClick(index) {//index = position {
         const newPair = [currentPair[0], index]
         setGuesses(guesses + 1)
         const matching = cards[newPair[0]] === cards[newPair[1]]
@@ -73,9 +72,10 @@ function Game(){
         } 
 
         //after a while we do again a setCurrentPair
-        setTimeout(() => { setCurrentPair([]) }, milliseconds);// React re-render the component with a new value with setCurrentPaire - purge pair
+        setTimeout(() => { setCurrentPair([]) }, milliseconds);
+        // React re-render the component with a new value with setCurrentPaire - purge pair
     }
-
+    
 
     return(
         <section className="sectionGame">
@@ -108,14 +108,14 @@ function Game(){
                             index={index} //position of a card
                             symbolOfCard={memory__card.imge} 
                             stateOfCard={getStateOfCard(index)} //stateOfCard = 'hidden' at the beggining
-                            onClick={handleCardClick}/>
+                            onClick={handleCardClick}
+                        />
                     ))}
                     {won && <Winner guess={guesses} />}
                 </div>
             </ScrollAnimation>
         </section>
-    )
-
+    )    
 }
 
 export default Game;
