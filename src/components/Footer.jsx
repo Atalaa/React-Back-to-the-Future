@@ -1,6 +1,6 @@
 import React from 'react';
-import newYearNyc from '../img/newYearNyc.png';
 
+import newYearNyc from '../img/newYearNyc.png';
 
 function Footer(){
     return(

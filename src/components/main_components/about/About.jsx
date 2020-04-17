@@ -1,9 +1,10 @@
 import React from 'react';
-import Actor from './Actor';
-import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
-import json_about_actors from '../../../json/json_about_actors';
 
+import json_about_actors from '../../../json/json_about_actors';
+import Actor from './Actor';
+
+import "animate.css/animate.min.css";
 
 function About() {
     return(

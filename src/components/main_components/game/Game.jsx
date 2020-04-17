@@ -1,17 +1,16 @@
-import React, { useState } from "react";
-import GuessTry from './GuessTry';
-import GameCard from './GameCard';
 import shuffle from 'lodash.shuffle';
-import imagesJson from '../../../json/images';
+import React, { useState } from "react";
 import ScrollAnimation from 'react-animate-on-scroll';
+
+import imagesJson from '../../../json/images';
+import GameCard from './GameCard';
+import GuessTry from './GuessTry';
 import Winner from './Winner';
-
-
 
 function Game(){
 
-    const side1 = 6
-    const side2 = 5
+    // const side1 = 6
+    // const side2 = 5
     const milliseconds = 750
     const [cards, setCards] = useState(generateCards);
     const [currentPair, setCurrentPair] = useState([]);
@@ -21,7 +20,8 @@ function Game(){
 
     function generateCards() {
         const result = []
-        const size = side1 * side2
+        // const size = side1 * side2
+        const size = 6
         const candidates = shuffle(imagesJson)
 
         while (result.length < size) {
@@ -84,11 +84,11 @@ function Game(){
 
                 <div className="play">
                     <button className="play__btn" onClick={()=> {
-                        setCards(generateCards); 
-                        setGuesses(0);
-                        setCurrentPair([]);
-                        setindexOfCardsSuccessfullyPaired([]);
-                    }}>
+                            setCards(generateCards); 
+                            setGuesses(0);
+                            setCurrentPair([]);
+                            setindexOfCardsSuccessfullyPaired([]);
+                        }}>
 
                         <span className="play__btn--visible">Play again ?</span>
                         <span className="play__btn--invisible">
@@ -102,16 +102,19 @@ function Game(){
             <ScrollAnimation animateIn='fadeIn' duration={1.5} animateOnce={true}>
                 <GuessTry guesses={guesses} />
                 <div className="memory">
+
                     {cards.map((memory__card, index) => (
                         <GameCard 
                             key={index} 
                             index={index} //position of a card
-                            symbolOfCard={memory__card.imge} 
+                            imageOfCard={memory__card.imge} 
                             stateOfCard={getStateOfCard(index)} //stateOfCard = 'hidden' at the beggining
                             onClick={handleCardClick}
                         />
                     ))}
+
                     {won && <Winner guess={guesses} />}
+
                 </div>
             </ScrollAnimation>
         </section>

@@ -1,9 +1,10 @@
 import React from 'react';
-import Singer from './Singer';
-import 'animate.css/animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-import json_music_singers from '../../../json/json_music_singers';
 
+import json_music_singers from '../../../json/json_music_singers';
+import Singer from './Singer';
+
+import 'animate.css/animate.css';
 
 function Music() {
     return(
