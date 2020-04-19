@@ -21,7 +21,8 @@ function Game(){
     function generateCards() {
         const result = []
         // const size = side1 * side2
-        const size = 6
+        const size = 4
+        // const size = 6
         const candidates = shuffle(imagesJson)
 
         while (result.length < size) {
@@ -76,6 +77,8 @@ function Game(){
         // React re-render the component with a new value with setCurrentPaire - purge pair
     }
     
+   
+
 
     return(
         <section className="sectionGame">

@@ -1,6 +1,5 @@
 @import '../colors.scss';
 
-
 .memory {
     &__card{
         margin: 6px;
@@ -47,11 +46,11 @@
     &__card > .symbol {
         font-size: 5.5rem;
         margin:auto 0;
-    }
 
-    // width < 900px - tablet portrait
-    @media only screen and (max-width: 56.25em) { //900/16
-        font-size: 2.5rem;
+        // width < 900px - tablet portrait
+        @media only screen and (max-width: 56.25em) { //900/16
+            font-size: 3rem;
+        }
     }
 }
 

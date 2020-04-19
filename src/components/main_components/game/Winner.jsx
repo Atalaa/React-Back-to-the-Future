@@ -1,5 +1,6 @@
 import React from 'react';
 import Swal from 'sweetalert2';
+
 import win from '../../../img/win.png';
 
 function Winner({guess}){
