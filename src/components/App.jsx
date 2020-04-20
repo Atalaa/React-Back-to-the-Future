@@ -15,6 +15,7 @@ import '../sass/layout/App.scss';
 import '../sass/layout/Footer.scss';
 import '../sass/layout/Header.scss';
 
+
 //ROOT COMPONENT
 function App(){
     return (

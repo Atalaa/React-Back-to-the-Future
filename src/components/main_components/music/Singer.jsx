@@ -2,7 +2,7 @@ import React from 'react';
 import Audio from './Audio';
 
 
-function Singer({singerImg, song, artist, info}){
+function Singer({id, singerImg, song, artist, info}){
     return(
         <div className="item">
             <div className="musicBox">
@@ -13,7 +13,7 @@ function Singer({singerImg, song, artist, info}){
                 <p>
                  {info}
                 </p>
-                <Audio songArtist={song}/>
+                <Audio idArtist={id} songArtist={song}/>
             </div>
             
         </div>

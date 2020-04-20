@@ -14,6 +14,7 @@ function Music() {
                     {json_music_singers.map(item => (
                         <Singer 
                             key={item.id} 
+                            id={item.id} 
                             singerImg={item.image} 
                             song={item.mp3} 
                             artist={item.artist} 
