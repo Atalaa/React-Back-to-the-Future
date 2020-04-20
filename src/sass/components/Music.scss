@@ -61,14 +61,12 @@
         border-radius: 50%;
         border: 1px solid $color-primary-outline;
         object-fit: cover;
-        margin-bottom: 1rem;
 
         // width < 900px - tablet portrait
         @media only screen and (max-width: 56.25em) { //900/16
             width: 8rem;
             height: 8rem;
-            border-radius: 20%;
-            border: 2px solid $color-primary-outline;
+            border: 1px solid $color-primary-outline;
             object-fit: cover;
         }
     }
@@ -85,9 +83,10 @@
     }
 }
 
-button.playSong{
+button.playSong, button.stopSong{
     border: none;
     background-color: inherit;
+    color: $color-grey-dark;
 
     &:focus{
         outline: none;
@@ -101,6 +100,21 @@ button.playSong{
 
 .musicBox.playing .musicBox__img{
     animation-play-state: running;
+}
+
+.musicBox.stop .musicBox__img{
+    animation: 0s;
+}
+
+.audio-set{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin: auto;
+}
+
+.audio-playSong, .audio-stopSong{
+    padding-top: 3rem;
 }
 
 @keyframes rotate {
