@@ -20,7 +20,7 @@ function Game(){
 
     function generateCards() {
         const result = []
-        const size = sideÁ1 * side2
+        const size = side1 * side2
         const candidates = shuffle(imagesJson)
 
         while (result.length < size) {
