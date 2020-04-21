@@ -1,48 +1,132 @@
 import React from 'react';
 
-function Audio({ idArtist, songArtist }){
+function Audio(props){
+    
+    const myAudio = document.getElementsByClassName("audio-element");
+    const musicBoxContainer = document.getElementsByClassName("musicBox");
+    const controls = document.getElementsByClassName("playSong");
 
+    console.log(myAudio)
+
+    //PLAY
     function playAudio(){
-        const myAudio = document.getElementsByClassName("audio-element")[0];
-        const musicBoxContainer = document.getElementsByClassName("musicBox")[0];
+        if(props.idArtist === 1){
+            //class audio-element
+            myAudio[0].play();
+            //class musicBox
+            musicBoxContainer[0].classList.add('playing');
+            musicBoxContainer[0].classList.remove('stop');
+            //class playSong
+            controls[0].querySelector('i.fa').classList.remove('fa-play');
+            controls[0].querySelector('i.fa').classList.add('fa-pause');
+        }
 
-        musicBoxContainer.classList.add('playing');
-        musicBoxContainer.classList.remove('stop');
+        if(props.idArtist === 2){
+            //class audio-element
+            myAudio[1].play();
+            //class musicBox
+            musicBoxContainer[1].classList.add('playing');
+            musicBoxContainer[1].classList.remove('stop');
+            //class playSong
+            controls[1].querySelector('i.fa').classList.remove('fa-play');
+            controls[1].querySelector('i.fa').classList.add('fa-pause');
+        }
 
-        document.getElementsByClassName("playSong")[0].querySelector('i.fa').classList.remove('fa-play');
-        document.getElementsByClassName("playSong")[0].querySelector('i.fa').classList.add('fa-pause');
-        myAudio.play();
+        if(props.idArtist === 3){
+            //class audio-element
+            myAudio[2].play();
+            //class musicBox
+            musicBoxContainer[2].classList.add('playing');
+            musicBoxContainer[2].classList.remove('stop');
+            //class playSong
+            controls[2].querySelector('i.fa').classList.remove('fa-play');
+            controls[2].querySelector('i.fa').classList.add('fa-pause');
+        }
     }
 
+
+    //PAUSE
     function pauseAudio(){
-        const myAudio = document.getElementsByClassName("audio-element")[0];
-        const musicBoxContainer = document.getElementsByClassName("musicBox")[0];
+        if(props.idArtist === 1){
+            //class audio-element
+            myAudio[0].pause();
+            //class musicBox
+            musicBoxContainer[0].classList.remove('playing');
+            //class playSong
+            controls[0].querySelector('i.fa').classList.remove('fa-pause');
+            controls[0].querySelector('i.fa').classList.add('fa-play');
+        }
 
-        musicBoxContainer.classList.remove('playing');
+        if(props.idArtist === 2){
+            //class audio-element
+            myAudio[1].pause();
+            //class musicBox
+            musicBoxContainer[1].classList.remove('playing');
+            //class playSong
+            controls[1].querySelector('i.fa').classList.remove('fa-pause');
+            controls[1].querySelector('i.fa').classList.add('fa-play');
+        }
 
-        document.getElementsByClassName("playSong")[0].querySelector('i.fa').classList.remove('fa-pause');
-        document.getElementsByClassName("playSong")[0].querySelector('i.fa').classList.add('fa-play');
-        myAudio.pause();
+        if(props.idArtist === 3){
+            //class audio-element
+            myAudio[2].pause();
+            //class musicBox
+            musicBoxContainer[2].classList.remove('playing');
+            //class playSong
+            controls[2].querySelector('i.fa').classList.remove('fa-pause');
+            controls[2].querySelector('i.fa').classList.add('fa-play');
+        }
     }
 
+
+    //STOP
     function stopAudio(){
-        const myAudio = document.getElementsByClassName("audio-element")[0];
-        const musicBoxContainer = document.getElementsByClassName("musicBox")[0];
+        if(props.idArtist === 1){
+            //class audio-element
+            myAudio[0].pause();
+            myAudio[0].currentTime = 0;
+            //class musicBox
+            musicBoxContainer[0].classList.remove('playing');
+            musicBoxContainer[0].classList.add('stop');
+            //class playSong    
+            controls[0].querySelector('i.fa').classList.remove('fa-pause');
+            controls[0].querySelector('i.fa').classList.add('fa-play');
+        }
 
-        musicBoxContainer.classList.remove('playing');
-        musicBoxContainer.classList.add('stop');
+        if(props.idArtist === 2){
+            //class audio-element
+            myAudio[1].pause();
+            myAudio[1].currentTime = 0;
+            //class musicBox
+            musicBoxContainer[1].classList.remove('playing');
+            musicBoxContainer[1].classList.add('stop');
+            //class playSong    
+            controls[1].querySelector('i.fa').classList.remove('fa-pause');
+            controls[1].querySelector('i.fa').classList.add('fa-play');
+        }
+
+        if(props.idArtist === 3){
+            //class audio-element
+            myAudio[2].pause();
+            myAudio[2].currentTime = 0;
+            //class musicBox
+            musicBoxContainer[2].classList.remove('playing');
+            musicBoxContainer[2].classList.add('stop');
+            //class playSong    
+            controls[2].querySelector('i.fa').classList.remove('fa-pause');
+            controls[2].querySelector('i.fa').classList.add('fa-play');
+        }
 
 
-        document.getElementsByClassName("playSong")[0].querySelector('i.fa').classList.remove('fa-pause');
-        document.getElementsByClassName("playSong")[0].querySelector('i.fa').classList.add('fa-play');
-        myAudio.pause();
-        myAudio.currentTime = 0;
+        
     }
 
     function handleClick(){
-        const isPlaying = document.getElementsByClassName("musicBox")[0].classList.contains('playing');
+        const isPlaying1 = musicBoxContainer[0].classList.contains('playing');
+        const isPlaying2 = musicBoxContainer[1].classList.contains('playing');
+        const isPlaying3 = musicBoxContainer[2].classList.contains('playing');
 
-        if(isPlaying){
+        if(isPlaying1 || isPlaying2 || isPlaying3){
             pauseAudio();
         } else {
             playAudio();
@@ -52,29 +136,26 @@ function Audio({ idArtist, songArtist }){
     function handleClickStop(){
         stopAudio();
     }
-
-
-
+    
+    
+   
     return(
         <div className="audio-set">
 
             <div className="audio-playSong">
-                <button className="playSong">
-                    <i className="fa fa-play fa-3x" onClick={handleClick}></i>
+                {/* <button className={`playSong ${props.idArtist}`} onClick={handleClick}> */}
+                <button className="playSong" onClick={handleClick}>
+                    <i className="fa fa-play fa-3x"></i>
+                    <audio className="audio-element" src={props.songArtist}></audio>
                 </button>
             </div>
 
             <div className="audio-stopSong">
-                <button className="stopSong">
-                    <i className="fa fa-stop fa-3x" onClick={handleClickStop}></i>
+                <button className="stopSong" onClick={handleClickStop}>
+                    <i className="fa fa-stop fa-3x"></i>
                 </button>
             </div>
-
-            <audio className="audio-element" src={songArtist}></audio>
-
         </div>
-        
-
     )        
 }
 

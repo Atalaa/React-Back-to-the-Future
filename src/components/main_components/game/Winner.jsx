@@ -18,7 +18,6 @@ function Winner({guess}){
               }, 1100)
             }
         </div>
-
     )
 }
 

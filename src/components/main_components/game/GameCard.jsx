@@ -1,6 +1,6 @@
 import React from 'react';
-import './Game';
 
+import './Game';
 
 const hidden_symbol = '❔';
 

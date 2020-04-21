@@ -76,8 +76,6 @@ function Game(){
         setTimeout(() => { setCurrentPair([]) }, milliseconds);
         // React re-render the component with a new value with setCurrentPaire - purge pair
     }
-    
-   
 
 
     return(
