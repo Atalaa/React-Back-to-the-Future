@@ -98,9 +98,11 @@ button.playSong, button.stopSong{
     animation-play-state: paused;
 }
 
+
 .musicBox.playing .musicBox__img{
     animation-play-state: running;
 }
+
 
 .musicBox.stop .musicBox__img{
     animation: 0s;
