@@ -9,8 +9,8 @@ import Winner from './Winner';
 
 function Game(){
 
-    // const side1 = 6
-    // const side2 = 5
+    const side1 = 6
+    const side2 = 5
     const milliseconds = 750
     const [cards, setCards] = useState(generateCards);
     const [currentPair, setCurrentPair] = useState([]);
@@ -20,9 +20,7 @@ function Game(){
 
     function generateCards() {
         const result = []
-        // const size = side1 * side2
-        const size = 4
-        // const size = 6
+        const size = sideÁ1 * side2
         const candidates = shuffle(imagesJson)
 
         while (result.length < size) {
@@ -81,7 +79,7 @@ function Game(){
     return(
         <section className="sectionGame">
             <div className="gameTitle utility-center-text">
-                <h2 className="headingSecondary__game">Memory Game <br/> Find all pairs</h2>
+                <h2 className="headingSecondary__game">Memory Matching Game</h2>
 
                 <div className="play">
                     <button className="play__btn" onClick={()=> {

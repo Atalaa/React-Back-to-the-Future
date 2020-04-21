@@ -32,13 +32,12 @@ function Audio(props){
                 control2.querySelector('i.fa').classList.add('fa-pause');
                 break;
 
-            case 3:
+            default:
                 audio3.play();
                 musBox3.classList.add('playing');
                 musBox3.classList.remove('stop');
                 control3.querySelector('i.fa').classList.remove('fa-play');
                 control3.querySelector('i.fa').classList.add('fa-pause');
-                break;
         }
     }
 
@@ -62,12 +61,11 @@ function Audio(props){
                 controls[1].querySelector('i.fa').classList.add('fa-play');
                 break;
 
-            case 3:
+            default:
                 audio3.pause();
                 musicBoxContainer[2].classList.remove('playing');
                 controls[2].querySelector('i.fa').classList.remove('fa-pause');
                 controls[2].querySelector('i.fa').classList.add('fa-play');
-                break;
         }
     }
 
@@ -95,14 +93,13 @@ function Audio(props){
                 controls[1].querySelector('i.fa').classList.add('fa-play');
                 break;
 
-            case 3:
+            default:
                 audio3.pause();
                 audio3.currentTime = 0;
                 musicBoxContainer[2].classList.remove('playing');
                 musicBoxContainer[2].classList.add('stop');
                 controls[2].querySelector('i.fa').classList.remove('fa-pause');
                 controls[2].querySelector('i.fa').classList.add('fa-play');
-                break;
         }
     }
 
@@ -110,7 +107,6 @@ function Audio(props){
 //HANDCLICK
     function handleClick(){
         const [isPlaying1, isPlaying2, isPlaying3] = musicBoxContainer;
-        console.log(musicBoxContainer)
 
         if( isPlaying1.classList.contains('playing')  || 
             isPlaying2.classList.contains('playing')  || 
@@ -123,11 +119,9 @@ function Audio(props){
         }
     }
 
-
     function handleClickStop(){
         stopAudio();
     }
-    
     
    
     return(
