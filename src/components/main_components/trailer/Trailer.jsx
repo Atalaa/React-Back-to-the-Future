@@ -33,6 +33,7 @@ function createCard(item){
 function Trailer(){
     return(
         <section className="sectionTrailer">
+
             <div className="utility-center-text utility-margin-bottom-big">
                 <h2 className="headingSecondary">
                     Movie Trailers
@@ -52,8 +53,8 @@ function Trailer(){
                         </span>
                     </button>
                 </div>
-                
             </ScrollAnimation>
+            
         </section>
     )
 }

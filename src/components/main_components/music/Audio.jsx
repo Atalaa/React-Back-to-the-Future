@@ -1,19 +1,15 @@
 import React from 'react';
 
-    
 function Audio(props){
     
-    const myAudio = document.getElementsByClassName("audio-element");
     const musicBoxContainer = document.getElementsByClassName("musicBox");
     const controls = document.getElementsByClassName("playSong");
     const artist = props.idArtist;
+    const myAudio = document.getElementsByClassName("audio-element");
 
 
 //PLAY
-    function playAudio(){
-        const[audio1, audio2, audio3] = myAudio;
-        const[musBox1, musBox2, musBox3] = musicBoxContainer;
-        const[control1, control2, control3] = controls;
+    function playAudio(audio1, audio2, audio3, musBox1, musBox2, musBox3, control1, control2, control3){
 
         switch(artist){
             case 1:
@@ -43,86 +39,95 @@ function Audio(props){
 
 
 //PAUSE
-    function pauseAudio(){
-        const[audio1, audio2, audio3] = myAudio;
-        
+    function pauseAudio(audio1, audio2, audio3, musBox1, musBox2, musBox3, control1, control2, control3){
+
         switch(artist){
             case 1:
                 audio1.pause();
-                musicBoxContainer[0].classList.remove('playing');
-                controls[0].querySelector('i.fa').classList.remove('fa-pause');
-                controls[0].querySelector('i.fa').classList.add('fa-play');
+                musBox1.classList.remove('playing');
+                control1.querySelector('i.fa').classList.remove('fa-pause');
+                control1.querySelector('i.fa').classList.add('fa-play');
                 break;
 
             case 2:
                 audio2.pause();
-                musicBoxContainer[1].classList.remove('playing');
-                controls[1].querySelector('i.fa').classList.remove('fa-pause');
-                controls[1].querySelector('i.fa').classList.add('fa-play');
+                musBox2.classList.remove('playing');
+                control2.querySelector('i.fa').classList.remove('fa-pause');
+                control2.querySelector('i.fa').classList.add('fa-play');
                 break;
 
             default:
                 audio3.pause();
-                musicBoxContainer[2].classList.remove('playing');
-                controls[2].querySelector('i.fa').classList.remove('fa-pause');
-                controls[2].querySelector('i.fa').classList.add('fa-play');
+                musBox3.classList.remove('playing');
+                control3.querySelector('i.fa').classList.remove('fa-pause');
+                control3.querySelector('i.fa').classList.add('fa-play');
         }
     }
 
 
-//STOP
-    function stopAudio(){
-        const[audio1, audio2, audio3] = myAudio;
-        
+// STOP
+    function stopAudio(audio1, audio2, audio3, musBox1, musBox2, musBox3, control1, control2, control3){
+
         switch(artist){
             case 1:
                 audio1.pause();
                 audio1.currentTime = 0;
-                musicBoxContainer[0].classList.remove('playing');
-                musicBoxContainer[0].classList.add('stop');
-                controls[0].querySelector('i.fa').classList.remove('fa-pause');
-                controls[0].querySelector('i.fa').classList.add('fa-play');
+                musBox1.classList.remove('playing');
+                musBox1.classList.add('stop');
+                control1.querySelector('i.fa').classList.remove('fa-pause');
+                control1.querySelector('i.fa').classList.add('fa-play');
                 break;
 
             case 2:
                 audio2.pause();
                 audio2.currentTime = 0;
-                musicBoxContainer[1].classList.remove('playing');
-                musicBoxContainer[1].classList.add('stop');
-                controls[1].querySelector('i.fa').classList.remove('fa-pause');
-                controls[1].querySelector('i.fa').classList.add('fa-play');
+                musBox2.classList.remove('playing');
+                musBox2.classList.add('stop');
+                control2.querySelector('i.fa').classList.remove('fa-pause');
+                control2.querySelector('i.fa').classList.add('fa-play');
                 break;
 
             default:
                 audio3.pause();
                 audio3.currentTime = 0;
-                musicBoxContainer[2].classList.remove('playing');
-                musicBoxContainer[2].classList.add('stop');
-                controls[2].querySelector('i.fa').classList.remove('fa-pause');
-                controls[2].querySelector('i.fa').classList.add('fa-play');
+                musBox3.classList.remove('playing');
+                musBox3.classList.add('stop');
+                control3.querySelector('i.fa').classList.remove('fa-pause');
+                control3.querySelector('i.fa').classList.add('fa-play');
         }
     }
 
 
 //HANDCLICK
     function handleClick(){
+        const [audio1, audio2, audio3] = myAudio;   
+        const[musBox1, musBox2, musBox3] = musicBoxContainer;
+        const[control1, control2, control3] = controls;
+
         const [isPlaying1, isPlaying2, isPlaying3] = musicBoxContainer;
+
 
         if( isPlaying1.classList.contains('playing')  || 
             isPlaying2.classList.contains('playing')  || 
             isPlaying3.classList.contains('playing') ) {
 
-            pauseAudio();
+            pauseAudio(audio1, audio2, audio3, musBox1, musBox2, musBox3, control1, control2, control3);
 
         } else {
-            playAudio();
+            playAudio(audio1, audio2, audio3, musBox1, musBox2, musBox3, control1, control2, control3);
         }
     }
 
+//HANDCLICKSTOP
     function handleClickStop(){
-        stopAudio();
+        const [audio1, audio2, audio3] = myAudio;   
+        const[musBox1, musBox2, musBox3] = musicBoxContainer;
+        const[control1, control2, control3] = controls;
+
+        stopAudio(audio1, audio2, audio3, musBox1, musBox2, musBox3, control1, control2, control3);
     }
-    
+
+
    
     return(
         <div className="audio-set">

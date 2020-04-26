@@ -62,7 +62,6 @@ function Card(props){
                     <div className="card__movie">
                         {props.mySynopsis}
                     </div>
-                        
                 </div>
 
                 {/* cast movie */}

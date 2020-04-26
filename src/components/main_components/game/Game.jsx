@@ -105,7 +105,7 @@ function Game(){
                     {cards.map((memory__card, index) => (
                         <GameCard 
                             key={index} 
-                            index={index} //position of a card
+                            index={index} //position of a card in the array
                             imageOfCard={memory__card.imge} 
                             stateOfCard={getStateOfCard(index)} //stateOfCard = 'hidden' at the beggining
                             onClick={handleCardClick}

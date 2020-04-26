@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Audio from './Audio';
 
 function Singer({id, singerImg, song, artist, info}){
