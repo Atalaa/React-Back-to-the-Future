@@ -1,0 +1,35 @@
+@import '../colors.scss';
+
+.sectionQuotes{
+    padding: 25rem 0;
+    background: linear-gradient(45deg, #480048, #c04848);
+}
+
+.quote{
+    &__card{
+        background-color: #000;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20rem;
+        text-align: center;
+    }
+
+    &__text{
+        // padding: 80px 20px 60px 20px;
+    }
+}
+// .un{
+//     padding: 25rem;;
+//     background-color: red;
+//     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
+//     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); 
+//     margin-bottom: -14rem;
+
+// }
+
+// .deux{
+//     padding: 25rem;;
+//     background-color: blueviolet;
+// }

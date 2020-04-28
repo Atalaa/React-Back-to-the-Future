@@ -9,6 +9,7 @@ import '../sass/components/Card.scss';
 import '../sass/components/Game.scss';
 import '../sass/components/GameCard.scss';
 import '../sass/components/Music.scss';
+import '../sass/components/Quotes.scss'
 import '../sass/components/Review.scss';
 import '../sass/components/Trailer.scss';
 import '../sass/layout/App.scss';

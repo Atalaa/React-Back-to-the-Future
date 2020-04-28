@@ -14,17 +14,35 @@ function Quote(){
         .then(data => {
             console.log(data);
             console.log(data[0]);
-            alert(data[0].quote);
+            alert(`\"${data[0].quote}\" ${data[0].author}`); //HOVER TO SHOW THE MOVIE ANSWER
         })
         .catch(err => console.log(err))    
     }
     return(
-        <div className="trailers utility-center-text utility-margin-bottom-big">
-            <button className="trailers__btn" onClick={quote}>
-                <span>Generate Quotes</span>
-        
-            </button>
-        </div>            
+        <section className="sectionQuotes">
+            <div className="quote__card">
+                <div className="quote__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ratione nulla? Sapiente nesciunt officia voluptas distinctio tempore, dolores esse explicabo officiis consectetur velit nostrum modi? Sunt autem animi nostrum corporis.
+                </div>
+            {/* <i class="fa fa-quote-left fab" data-reactid=".0.0.0"> </i> */}
+            </div>
+
+                {/* <div className="trailers utility-center-text utility-margin-bottom-big">
+                    <button className="trailers__btn" onClick={quote}>
+                        <span>Generate Quotes</span>
+                    </button>
+                </div> */}
+
+
+
+
+            {/* <div className="un">
+                
+            </div>      
+            <div className="deux">
+                
+            </div>    */}
+        </section>
     )
 }
 
