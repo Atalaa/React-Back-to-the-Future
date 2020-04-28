@@ -1,14 +1,13 @@
 import React from 'react';
 
 function Audio(props){
-    
+    const myAudio = document.getElementsByClassName("audio-element");
     const musicBoxContainer = document.getElementsByClassName("musicBox");
     const controls = document.getElementsByClassName("playSong");
     const artist = props.idArtist;
-    const myAudio = document.getElementsByClassName("audio-element");
 
 
-//PLAY
+//PLAY 
     function playAudio(audio1, audio2, audio3, musBox1, musBox2, musBox3, control1, control2, control3){
 
         switch(artist){
@@ -100,31 +99,18 @@ function Audio(props){
 
 //HANDCLICK
     function handleClick(){
-        const [audio1, audio2, audio3] = myAudio;   
-        const[musBox1, musBox2, musBox3] = musicBoxContainer;
-        const[control1, control2, control3] = controls;
-
         const [isPlaying1, isPlaying2, isPlaying3] = musicBoxContainer;
 
-
-        if( isPlaying1.classList.contains('playing')  || 
-            isPlaying2.classList.contains('playing')  || 
-            isPlaying3.classList.contains('playing') ) {
-
-            pauseAudio(audio1, audio2, audio3, musBox1, musBox2, musBox3, control1, control2, control3);
-
-        } else {
-            playAudio(audio1, audio2, audio3, musBox1, musBox2, musBox3, control1, control2, control3);
-        }
+        isPlaying1.classList.contains('playing') || 
+        isPlaying2.classList.contains('playing') || 
+        isPlaying3.classList.contains('playing') ? 
+        pauseAudio(...myAudio, ...musicBoxContainer, ...controls) : 
+        playAudio(...myAudio, ...musicBoxContainer, ...controls)
     }
 
 //HANDCLICKSTOP
     function handleClickStop(){
-        const [audio1, audio2, audio3] = myAudio;   
-        const[musBox1, musBox2, musBox3] = musicBoxContainer;
-        const[control1, control2, control3] = controls;
-
-        stopAudio(audio1, audio2, audio3, musBox1, musBox2, musBox3, control1, control2, control3);
+        stopAudio(...myAudio, ...musicBoxContainer, ...controls);
     }
 
 
