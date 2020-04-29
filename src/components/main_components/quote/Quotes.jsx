@@ -1,8 +1,17 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function Quote(){
 
     function quote(){
+        setTimeout(() => {
+            document.getElementsByClassName('text')[0].style.display="block"
+            document.getElementsByClassName('movie')[0].style.display="block"
+            document.getElementsByClassName('font-quote-l')[0].style.display="inline";
+            document.getElementsByClassName('font-quote-r')[0].style.display="inline";
+        }, 450)
+        
+
         fetch("https://andruxnet-random-famous-quotes.p.rapidapi.com/?cat=movies&count=10", {
             "method": "GET",
             "headers": {
@@ -25,22 +34,40 @@ function Quote(){
     }
 
 
+    function reset(){
+        document.getElementsByClassName('text')[0].style.display="none";
+        document.getElementsByClassName('movie')[0].style.display="none";
+        document.getElementsByClassName('font-quote-l')[0].style.display="none";
+        document.getElementsByClassName('font-quote-r')[0].style.display="none";
+    }
+
+
+
     return(
         <section className="sectionQuotes utility-center-text">
-            <h2 className="utility-margin-bottom-big headingSecondary changeColorQuote">Famous Movie Quotes</h2>
+            <h2 className="utility-margin-bottom-big headingSecondary changeColorQuote">
+                Famous Movie Quotes
+            </h2>
 
-            <div className="quote">
-                <div className="text"></div>      
-                <div className="movie"></div>
-                <i className="font-quote-l"></i>
-                <i className="font-quote-r"></i>
-            </div>
+            <ScrollAnimation animateIn='fadeIn' duration={1.5} animateOnce={true}>
 
-            <div className="test utility-center-text utility-margin-bottom-big">
-                <button className="test__btn " onClick={quote}>
-                    <span>Generate Quotes</span>
-                </button>
-            </div>
+                <div className="quote">
+                    <div className="text"></div>      
+                    <div className="movie"></div>
+                    <i className="font-quote-l"></i>
+                    <i className="font-quote-r"></i>
+                </div>
+
+                <div className="test utility-center-text utility-margin-bottom-big">
+                    <button className="test__btn blank" onClick={reset}>
+                        <span>Reset</span>
+                    </button>
+                    <span>&nbsp;</span>
+                    <button className="test__btn " onClick={quote}>
+                        <span>New Quote</span>
+                    </button>
+                </div>
+            </ScrollAnimation>
         </section>
     )
 }
