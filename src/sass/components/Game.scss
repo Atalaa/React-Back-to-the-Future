@@ -29,16 +29,8 @@
     font-family: Menlo, Monaco, Consolas, Inconsolata, 'Courier New', monospace;
 }
 
-.gameTitle{
-    // transform: skewY(7deg);
-    text-transform: uppercase;
-    font-size: 2.5rem;
+.changeColor{
     background-image: linear-gradient(to bottom right, $color-game-button-light, $color-game-button-dark);
-    -webkit-background-clip: text;
-    color: transparent;
-    letter-spacing: 3px;
-    font-weight: bold;
-    padding: 2rem;
 }
 
 

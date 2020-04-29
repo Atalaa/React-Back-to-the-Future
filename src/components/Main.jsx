@@ -14,6 +14,7 @@ function Main() {
             <Music />
             <Trailer />
             <Game />
+            <Quote />
             <Review />
         </main>
         

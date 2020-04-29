@@ -79,7 +79,7 @@ function Game(){
     return(
         <section className="sectionGame">
             <div className="gameTitle utility-center-text">
-                <h2 className="headingSecondary__game">Memory Matching Game</h2>
+                <h2 className="headingSecondary changeColor">Memory Matching Game</h2>
 
                 <div className="play">
                     <button className="play__btn" onClick={()=> {
