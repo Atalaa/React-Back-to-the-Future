@@ -9,7 +9,7 @@ function Quote(){
             document.getElementsByClassName('movie')[0].style.display="block"
             document.getElementsByClassName('font-quote-l')[0].style.display="inline";
             document.getElementsByClassName('font-quote-r')[0].style.display="inline";
-        }, 450)
+        }, 500)
         
 
         fetch("https://andruxnet-random-famous-quotes.p.rapidapi.com/?cat=movies&count=10", {
@@ -30,7 +30,7 @@ function Quote(){
             document.getElementsByClassName("font-quote-l")[0].classList.add("fa", "fa-quote-left", "fa-3x");
             document.getElementsByClassName("font-quote-r")[0].classList.add("fa", "fa-quote-right", "fa-3x");
         })
-        .catch(err => console.log(err))    
+        .catch(err => console.log('error is ', err))    
     }
 
 
