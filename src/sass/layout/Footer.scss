@@ -1,8 +1,12 @@
 @import '../colors.scss';
 
-
 .footer{
-    background-color:$color-background-footer;
+    // background-color:$color-background-footer;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba($color-secondary, 0.8), 
+        rgba($color-primary, 0.8)
+    );
     padding: 11rem 0;
     font-size: 1.4rem;
 
@@ -48,19 +52,22 @@
             text-transform: uppercase;
             text-decoration: none;
             display: inline-block; //rotate(5deg) doesn't work without inline-block
-            background-color:$color-background-footer;
+            background-image: linear-gradient(
+                to bottom, 
+                rgba($color-secondary, 0.8), 
+                rgba($color-primary, 0.8)
+            );
+            border-radius: 4px;
+            padding: 1.5px;
         }
 
         &:hover,
         /* selected link by clicking */
         &:active {
-            color: #70a1ff;
+            color: $color-background-footer;
             box-shadow: 0 1rem 2rem rgba($color-black, .4);
             transform: rotate(5deg) scale(1.5); //150%
+            border-radius: 4px;
         }
     }
-}
-
-.footer__details{
-    background-color: red;
 }
