@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Back-to-the-Future/static/css/main.ad59dc24.chunk.css",
+    "main.css": "/Back-to-the-Future/static/css/main.1d8809ba.chunk.css",
     "main.js": "/Back-to-the-Future/static/js/main.607215df.chunk.js",
     "main.js.map": "/Back-to-the-Future/static/js/main.607215df.chunk.js.map",
     "runtime-main.js": "/Back-to-the-Future/static/js/runtime-main.13387317.js",
@@ -9,10 +9,10 @@
     "static/js/2.f76630e1.chunk.js": "/Back-to-the-Future/static/js/2.f76630e1.chunk.js",
     "static/js/2.f76630e1.chunk.js.map": "/Back-to-the-Future/static/js/2.f76630e1.chunk.js.map",
     "index.html": "/Back-to-the-Future/index.html",
-    "precache-manifest.3776130c681a232119017ecf5101275c.js": "/Back-to-the-Future/precache-manifest.3776130c681a232119017ecf5101275c.js",
+    "precache-manifest.8758ae07812aa69172d980d9ba462e5d.js": "/Back-to-the-Future/precache-manifest.8758ae07812aa69172d980d9ba462e5d.js",
     "service-worker.js": "/Back-to-the-Future/service-worker.js",
     "static/css/2.de36cf76.chunk.css.map": "/Back-to-the-Future/static/css/2.de36cf76.chunk.css.map",
-    "static/css/main.ad59dc24.chunk.css.map": "/Back-to-the-Future/static/css/main.ad59dc24.chunk.css.map",
+    "static/css/main.1d8809ba.chunk.css.map": "/Back-to-the-Future/static/css/main.1d8809ba.chunk.css.map",
     "static/js/2.f76630e1.chunk.js.LICENSE.txt": "/Back-to-the-Future/static/js/2.f76630e1.chunk.js.LICENSE.txt",
     "static/media/3-5star.png": "/Back-to-the-Future/static/media/3-5star.b3f70f12.png",
     "static/media/4-5star.png": "/Back-to-the-Future/static/media/4-5star.69aa2788.png",
@@ -78,7 +78,7 @@
     "static/js/runtime-main.13387317.js",
     "static/css/2.de36cf76.chunk.css",
     "static/js/2.f76630e1.chunk.js",
-    "static/css/main.ad59dc24.chunk.css",
+    "static/css/main.1d8809ba.chunk.css",
     "static/js/main.607215df.chunk.js"
   ]
 }
