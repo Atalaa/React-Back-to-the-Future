@@ -21,12 +21,8 @@ function Quote(){
         })
         .then(response => response.json())
         .then(data => {
-            // console.log(data);
-            // console.log(data[0]);
-            // alert(`\"${data[0].quote}\" ${data[0].author}`); //HOVER TO SHOW THE MOVIE ANSWER
             document.getElementsByClassName("text")[0].innerHTML = `"${data[0].quote}"`;
             document.getElementsByClassName("movie")[0].innerHTML = `- ${data[0].author} -`;
-
             document.getElementsByClassName("font-quote-l")[0].classList.add("fa", "fa-quote-left", "fa-3x");
             document.getElementsByClassName("font-quote-r")[0].classList.add("fa", "fa-quote-right", "fa-3x");
         })
