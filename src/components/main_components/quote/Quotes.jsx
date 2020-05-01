@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 function Quote(){
+    const testRef = useRef(null);
+
+    const textRef = useRef(null);
+    const movieRef = useRef(null);
+    const quoteLeftRef = useRef(null);
+    const quoteRightRef = useRef(null);
+
+
+    useEffect(() => {
+        console.log(testRef)
+        console.log(textRef.current)
+        console.log(movieRef.current)
+        // testRef.current.click();
+        quote();
+    },[]);
 
     function quote(){
-        setTimeout(() => {
-            document.getElementsByClassName('text')[0].style.display="block"
-            document.getElementsByClassName('movie')[0].style.display="block"
-            document.getElementsByClassName('font-quote-l')[0].style.display="inline";
-            document.getElementsByClassName('font-quote-r')[0].style.display="inline";
-        }, 500)
-        
 
         fetch("https://andruxnet-random-famous-quotes.p.rapidapi.com/?cat=movies&count=10", {
             "method": "GET",
@@ -21,22 +29,13 @@ function Quote(){
         })
         .then(response => response.json())
         .then(data => {
-            document.getElementsByClassName("text")[0].innerHTML = `"${data[0].quote}"`;
-            document.getElementsByClassName("movie")[0].innerHTML = `- ${data[0].author} -`;
-            document.getElementsByClassName("font-quote-l")[0].classList.add("fa", "fa-quote-left", "fa-3x");
-            document.getElementsByClassName("font-quote-r")[0].classList.add("fa", "fa-quote-right", "fa-3x");
+            textRef.current.innerHTML = `"${data[0].quote}"`;
+            movieRef.current.innerHTML = `- ${data[0].author} -`;
+            quoteLeftRef.current.classList.add("fa", "fa-quote-left", "fa-3x");
+            quoteRightRef.current.classList.add("fa", "fa-quote-right", "fa-3x");
         })
         .catch(err => console.log('error is ', err))    
     }
-
-
-    function reset(){
-        document.getElementsByClassName('text')[0].style.display="none";
-        document.getElementsByClassName('movie')[0].style.display="none";
-        document.getElementsByClassName('font-quote-l')[0].style.display="none";
-        document.getElementsByClassName('font-quote-r')[0].style.display="none";
-    }
-
 
 
     return(
@@ -48,21 +47,18 @@ function Quote(){
             <ScrollAnimation animateIn='fadeIn' duration={1.5} animateOnce={true}>
 
                 <div className="quote">
-                    <div className="text"></div>      
-                    <div className="movie"></div>
-                    <i className="font-quote-l"></i>
-                    <i className="font-quote-r"></i>
+                    <div ref={textRef} className="text"></div>      
+                    <div ref={movieRef} className="movie"></div>
+                    <i ref={quoteLeftRef} className="font-quote-l"></i>
+                    <i ref={quoteRightRef} className="font-quote-r"></i>
                 </div>
 
                 <div className="test utility-center-text utility-margin-bottom-big">
-                    <button className="test__btn blank" onClick={reset}>
-                        <span>Reset</span>
-                    </button>
-                    <span>&nbsp;</span>
-                    <button className="test__btn " onClick={quote}>
-                        <span>New Quote</span>
+                    <button ref={testRef} className="test__btn " onClick={quote}>
+                        <span> Generate New Quote</span>
                     </button>
                 </div>
+                
             </ScrollAnimation>
         </section>
     )
