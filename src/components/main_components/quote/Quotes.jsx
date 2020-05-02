@@ -11,12 +11,10 @@ function Quote(){
 
 
     useEffect(() => {
-        // console.log(testRef)
-        // console.log(textRef.current)
-        // console.log(movieRef.current)
         // testRef.current.click();
         quote();
     },[]);
+    
 
     function quote(){
 

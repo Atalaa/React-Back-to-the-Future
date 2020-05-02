@@ -1,11 +1,9 @@
 import React, {useRef} from 'react';
-
 import Audio from './Audio';
-
 
 function Singer({id, singerImg, song, artist, info}){
     
-    const musicBoxRef = useRef(null)
+    const musicBoxRef = useRef(null);
 
     return(
         <div className="item">
