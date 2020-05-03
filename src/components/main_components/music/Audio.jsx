@@ -3,112 +3,49 @@ import React, { useRef } from 'react';
 
 function Audio(props){
     
-    const artist = props.idArtist;
     const audioElementRef = useRef(null);
     const btnPlaySongRef = useRef(null);
 
 
-
-    //PLAY 
-    function playAudio(){
-
-        switch(artist){
-            case 1:
-                audioElementRef.current.play();
-                props.musicBoxRef.current.classList.add('playing');
-                props.musicBoxRef.current.classList.remove('stop');
-                btnPlaySongRef.current.querySelector('i.fa').classList.remove('fa-play');
-                btnPlaySongRef.current.querySelector('i.fa').classList.add('fa-pause');
-                break;
-
-            case 2:
-                audioElementRef.current.play();
-                props.musicBoxRef.current.classList.add('playing');
-                props.musicBoxRef.current.classList.remove('stop');
-                btnPlaySongRef.current.querySelector('i.fa').classList.remove('fa-play');
-                btnPlaySongRef.current.querySelector('i.fa').classList.add('fa-pause');
-                break;
-
-            default:
-                audioElementRef.current.play();
-                props.musicBoxRef.current.classList.add('playing');
-                props.musicBoxRef.current.classList.remove('stop');
-                btnPlaySongRef.current.querySelector('i.fa').classList.remove('fa-play');
-                btnPlaySongRef.current.querySelector('i.fa').classList.add('fa-pause');
-        }
-    }
-
-
-    // //PAUSE
-    function pauseAudio(){
-
-        switch(artist){
-            case 1:
-                audioElementRef.current.pause();
-                props.musicBoxRef.current.classList.remove('playing');
-                btnPlaySongRef.current.querySelector('i.fa').classList.remove('fa-pause');
-                btnPlaySongRef.current.querySelector('i.fa').classList.add('fa-play');
-                break;
-
-            case 2:
-                audioElementRef.current.pause();
-                props.musicBoxRef.current.classList.remove('playing');
-                btnPlaySongRef.current.querySelector('i.fa').classList.remove('fa-pause');
-                btnPlaySongRef.current.querySelector('i.fa').classList.add('fa-play');
-                break;
-
-            default:
-                audioElementRef.current.pause();
-                props.musicBoxRef.current.classList.remove('playing');
-                btnPlaySongRef.current.querySelector('i.fa').classList.remove('fa-pause');
-                btnPlaySongRef.current.querySelector('i.fa').classList.add('fa-play');
-        }
-    }
-
-
-    //STOP
-    function stopAudio(){
-
-        switch(artist){
-            case 1:
-                audioElementRef.current.pause(); audioElementRef.current.currentTime = 0;
-                props.musicBoxRef.current.classList.remove('playing');
-                props.musicBoxRef.current.classList.add('stop');
-                btnPlaySongRef.current.querySelector('i.fa').classList.remove('fa-pause');
-                btnPlaySongRef.current.querySelector('i.fa').classList.add('fa-play');
-                break;
-
-            case 2:
-                audioElementRef.current.pause(); audioElementRef.current.currentTime = 0;
-                props.musicBoxRef.current.classList.remove('playing');
-                props.musicBoxRef.current.classList.add('stop');
-                btnPlaySongRef.current.querySelector('i.fa').classList.remove('fa-pause');
-                btnPlaySongRef.current.querySelector('i.fa').classList.add('fa-play');
-                break;
-
-            default:
-                audioElementRef.current.pause(); audioElementRef.current.currentTime = 0;
-                props.musicBoxRef.current.classList.remove('playing');
-                props.musicBoxRef.current.classList.add('stop');
-                btnPlaySongRef.current.querySelector('i.fa').classList.remove('fa-pause');
-                btnPlaySongRef.current.querySelector('i.fa').classList.add('fa-play');
-        }
-    }
-
-
-    //HANDCLICK
-    function handleClick(){
+     //HANDCLICK
+     function handleClick(){
         const isPlaying = props.musicBoxRef.current;
         isPlaying.classList.contains('playing') ? pauseAudio() : playAudio()
     }
-
 
     //HANDCLICKSTOP
     function handleClickStop(){
         stopAudio();
     }
 
-   
+
+    //PLAY 
+    function playAudio(){
+        audioElementRef.current.play();
+        props.musicBoxRef.current.classList.add('playing');
+        props.musicBoxRef.current.classList.remove('stop');
+        btnPlaySongRef.current.querySelector('i.fa').classList.remove('fa-play');
+        btnPlaySongRef.current.querySelector('i.fa').classList.add('fa-pause');
+    }
+
+    //PAUSE
+    function pauseAudio(){
+        audioElementRef.current.pause();
+        props.musicBoxRef.current.classList.remove('playing');
+        btnPlaySongRef.current.querySelector('i.fa').classList.remove('fa-pause');
+        btnPlaySongRef.current.querySelector('i.fa').classList.add('fa-play');
+    }
+
+    //STOP
+    function stopAudio(){
+        audioElementRef.current.pause(); audioElementRef.current.currentTime = 0;
+        props.musicBoxRef.current.classList.remove('playing');
+        props.musicBoxRef.current.classList.add('stop');
+        btnPlaySongRef.current.querySelector('i.fa').classList.remove('fa-pause');
+        btnPlaySongRef.current.querySelector('i.fa').classList.add('fa-play');
+    }
+
+
     return(
         <div className="audio-set">
 

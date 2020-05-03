@@ -4,20 +4,22 @@ import ScrollAnimation from 'react-animate-on-scroll';
 function Quote(){
     const testRef = useRef(null);
 
-    const textRef = useRef(null);
-    const movieRef = useRef(null);
-    const quoteLeftRef = useRef(null);
+    const textRef       = useRef(null);
+    const movieRef      = useRef(null);
+    const quoteLeftRef  = useRef(null);
     const quoteRightRef = useRef(null);
-
+    
+    const bgColorRef    = useRef(null);
+    const bgColorH2Ref  = useRef(null);
+    let   bgColorBool   = false;
 
     useEffect(() => {
         // testRef.current.click();
         quote();
-    },[]);
+    });
     
 
-    function quote(){
-
+    function quote(){        
         fetch("https://andruxnet-random-famous-quotes.p.rapidapi.com/?cat=movies&count=10", {
             "method": "GET",
             "headers": {
@@ -31,14 +33,24 @@ function Quote(){
             movieRef.current.innerHTML = `- ${data[0].author} -`;
             quoteLeftRef.current.classList.add("fa", "fa-quote-left", "fa-3x");
             quoteRightRef.current.classList.add("fa", "fa-quote-right", "fa-3x");
+
+            if(bgColorBool){
+                bgColorRef.current.style.backgroundImage = "linear-gradient(45deg, #000, #fff)";
+                bgColorH2Ref.current.style.backgroundImage = "linear-gradient(to bottom, #240b36, #11998e)";
+                bgColorBool = false;
+            }else{
+                bgColorRef.current.style.backgroundImage = "linear-gradient(45deg, #480048, #c04848)";
+                bgColorH2Ref.current.style.backgroundImage = "linear-gradient(to bottom, #ee0979, #ff6a00)";
+                bgColorBool = true;
+            }
         })
         .catch(err => console.log('error is ', err))    
     }
 
 
     return(
-        <section className="sectionQuotes utility-center-text">
-            <h2 className="utility-margin-bottom-big headingSecondary changeColorQuote">
+        <section ref={bgColorRef} className="sectionQuotes utility-center-text">
+            <h2 ref={bgColorH2Ref} className="utility-margin-bottom-big headingSecondary changeColorQuote">
                 Famous Movie Quotes
             </h2>
 

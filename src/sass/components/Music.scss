@@ -19,9 +19,8 @@
 
 .container2 {
     display: grid;
-    grid-template-columns: repeat(3, 25%);
-    column-gap: 10rem;
-    justify-content: center;
+    grid-template-columns: auto;
+    justify-content: space-evenly;
     transform: skewY(7deg);
 
     // width < 900px - tablet portrait
@@ -81,6 +80,10 @@
             backface-visibility: hidden;
         }
     }
+}
+.info-crew{
+    width: 57%;
+    margin: 0 auto;
 }
 
 button.playSong, button.stopSong{

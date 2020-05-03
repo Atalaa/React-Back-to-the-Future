@@ -12,7 +12,7 @@ function Singer({id, singerImg, song, artist, info}){
 
                 <h3 className="headingTertiary utility-margin-bottom-small">{artist}</h3>
                 
-                <p>{info}</p>
+                <p className="info-crew">{info}</p>
 
                 <Audio idArtist={id} songArtist={song} musicBoxRef={musicBoxRef} />
             </div>
