@@ -73,6 +73,10 @@
             top:0;
         }
 
+        &:active {
+            transform: translateY(3px);
+        }
+
         &:focus{
             outline: none;
         }

@@ -37,10 +37,12 @@ function Quote(){
             if(bgColorBool){
                 bgColorRef.current.style.backgroundImage = "linear-gradient(45deg, #000, #fff)";
                 bgColorH2Ref.current.style.backgroundImage = "linear-gradient(to bottom, #240b36, #11998e)";
+                testRef.current.style.backgroundImage = "linear-gradient(45deg, #000, #fff)";
                 bgColorBool = false;
             }else{
                 bgColorRef.current.style.backgroundImage = "linear-gradient(45deg, #480048, #c04848)";
                 bgColorH2Ref.current.style.backgroundImage = "linear-gradient(to bottom, #ee0979, #ff6a00)";
+                testRef.current.style.backgroundImage = "linear-gradient(45deg, #480048, #c04848)";
                 bgColorBool = true;
             }
         })
@@ -50,11 +52,11 @@ function Quote(){
 
     return(
         <section ref={bgColorRef} className="sectionQuotes utility-center-text">
-            <h2 ref={bgColorH2Ref} className="utility-margin-bottom-big headingSecondary changeColorQuote">
-                Famous Movie Quotes
-            </h2>
+            <ScrollAnimation animateIn='fadeIn' duration={2} animateOnce={true}>
 
-            <ScrollAnimation animateIn='fadeIn' duration={1.5} animateOnce={true}>
+                <h2 ref={bgColorH2Ref} className="utility-margin-bottom-big headingSecondary changeColorQuote">
+                    Famous Movie Quotes
+                </h2>
 
                 <div className="quote">
                     <div ref={textRef} className="text"></div>      
@@ -65,7 +67,7 @@ function Quote(){
 
                 <div className="test utility-center-text utility-margin-bottom-big">
                     <button ref={testRef} className="test__btn " onClick={quote}>
-                        <span> Generate New Quote</span>
+                        <span>New Quote</span>
                     </button>
                 </div>
 

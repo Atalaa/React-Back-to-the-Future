@@ -9,20 +9,21 @@ import Reviews from './Reviews';
 function Review(){
     return(
         <section className="sectionReview">
-            <div className="bg-video">
-                <video className="bg-video__content" autoPlay loop playsInline>
-                    <source src={wavesMp4} type="video/mp4"/>
-                    <source src={wavesWebm} type="video/webm"/>
-                    Your browser does not support videos.
-                </video>            
-            </div>
+            <ScrollAnimation animateIn='fadeIn' duration={2} animateOnce={true}>
 
-            <div className="utility-center-text utility-margin-bottom-big">
-                <h2 className="headingSecondary">
-                    Critics Consensus
-                </h2>
-            </div>
-            <ScrollAnimation animateIn='fadeIn' duration={1.5} animateOnce={true}>
+                <div className="bg-video">
+                    <video className="bg-video__content" autoPlay loop playsInline>
+                        <source src={wavesMp4} type="video/mp4"/>
+                        <source src={wavesWebm} type="video/webm"/>
+                        Your browser does not support videos.
+                    </video>            
+                </div>
+
+                <div className="utility-center-text utility-margin-bottom-big">
+                    <h2 className="headingSecondary">
+                        Critics Consensus
+                    </h2>
+                </div>
 
                 {json_review_reviews.map(item => (
                     <Reviews 

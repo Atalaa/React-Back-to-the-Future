@@ -33,28 +33,28 @@ function createCard(item){
 function Trailer(){
     return(
         <section className="sectionTrailer">
+            <ScrollAnimation animateIn='fadeIn' duration={2} animateOnce={true}>
 
-            <div className="utility-center-text utility-margin-bottom-big">
-                <h2 className="headingSecondary">
-                    Movie Trailers
-                </h2>
-            </div>
-
-            <ScrollAnimation animateIn='fadeIn' duration={1.5} animateOnce={true}>
-                <div className="container3">
-                    {json_trailer_cards.map(createCard)}
+                <div className="utility-center-text utility-margin-bottom-big">
+                    <h2 className="headingSecondary">
+                        Movie Trailers
+                    </h2>
                 </div>
 
-                <div className="trailers utility-center-text utility-margin-bottom-big">
-                    <button className="trailers__btn">
-                        <span className="trailers__btn--visible">Blu-ray Collection Trailer</span>
-                        <span className="trailers__btn--invisible">
-                            <a className="trailers__btn--invisible-anchor" href="https://www.youtube.com/watch?v=yUcVeQ9jZDw" target="_blank" rel="noreferrer noopener">Watch it !</a>
-                        </span>
-                    </button>
-                </div>
+                    <div className="container3">
+                        {json_trailer_cards.map(createCard)}
+                    </div>
+
+                    <div className="trailers utility-center-text utility-margin-bottom-big">
+                        <button className="trailers__btn">
+                            <span className="trailers__btn--visible">Blu-ray Collection Trailer</span>
+                            <span className="trailers__btn--invisible">
+                                <a className="trailers__btn--invisible-anchor" href="https://www.youtube.com/watch?v=yUcVeQ9jZDw" target="_blank" rel="noreferrer noopener">Watch it !</a>
+                            </span>
+                        </button>
+                    </div>
+
             </ScrollAnimation>
-            
         </section>
     )
 }

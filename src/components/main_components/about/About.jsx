@@ -9,7 +9,7 @@ import "animate.css/animate.min.css";
 function About() {
     return(
         <section className="sectionAbout">
-            <ScrollAnimation animateIn='fadeIn' duration={1.5} animateOnce={true}>
+            <ScrollAnimation animateIn='fadeIn' duration={2} animateOnce={true}>
                 <div className="utility-center-text utility-margin-bottom-big">
                     <h2 className="headingSecondary">
                         The Timeless Classic Original

@@ -1,7 +1,7 @@
 @import '../colors.scss';
 
 .sectionMusic {
-    padding: 20rem 0;
+    padding: 15rem 0 20rem;
     background-image: linear-gradient(
         to right bottom, 
         rgba($color-primary, 0.8), 
@@ -14,6 +14,15 @@
      // width < 900px - tablet portrait
      @media only screen and (max-width: 56.25em) { //900/16
         padding: 10rem 0;
+    }
+}
+.titleMusic{
+    transform: skewY(7deg);
+    margin-bottom: 10rem;
+
+    &:hover {
+        transform: skewY(9deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 20px rgba($color-black, .2);
     }
 }
 
@@ -55,10 +64,10 @@
     }
 
     &__img {
-        width: 13rem;
-        height: 13rem;
+        width: 14rem;
+        height: 14rem;
         border-radius: 50%;
-        border: 1px solid $color-primary-outline;
+        border: 5px solid $color-primary-outline;
         object-fit: cover;
 
         // width < 900px - tablet portrait
@@ -91,10 +100,17 @@ button.playSong, button.stopSong{
     background-color: inherit;
     color: $color-grey-dark;
 
+    &:active {
+        transform: translateY(1.5px) scale(.95);
+        // box-shadow: -2px 1px gray;
+        // box-shadow: 1px 1px 3px red;
+    }
+
     &:focus{
         outline: none;
     }
 }
+
 
 .musicBox .musicBox__img{
     animation: rotate 3s linear infinite;

@@ -78,27 +78,28 @@ function Game(){
 
     return(
         <section className="sectionGame">
-            <div className="gameTitle utility-center-text">
-                <h2 className="headingSecondary changeColor">Memory Matching Game</h2>
+            <ScrollAnimation animateIn='fadeIn' duration={2} animateOnce={true}>
 
-                <div className="play">
-                    <button className="play__btn" onClick={()=> {
-                            setCards(generateCards); 
-                            setGuesses(0);
-                            setCurrentPair([]);
-                            setindexOfCardsSuccessfullyPaired([]);
-                        }}>
+                <div className="gameTitle utility-center-text">
+                    <h2 className="headingSecondary changeColor">Memory Matching Game</h2>
 
-                        <span className="play__btn--visible">Play again ?</span>
-                        <span className="play__btn--invisible">
-                            <div className="play__btn--invisible-anchor">Enjoy!</div>
-                        </span>
-                    </button>
+                    <div className="play">
+                        <button className="play__btn" onClick={()=> {
+                                setCards(generateCards); 
+                                setGuesses(0);
+                                setCurrentPair([]);
+                                setindexOfCardsSuccessfullyPaired([]);
+                            }}>
+
+                            <span className="play__btn--visible">Play again ?</span>
+                            <span className="play__btn--invisible">
+                                <div className="play__btn--invisible-anchor">Enjoy!</div>
+                            </span>
+                        </button>
+                    </div>
                 </div>
-            </div>
 
 
-            <ScrollAnimation animateIn='fadeIn' duration={1.5} animateOnce={true}>
                 <GuessTry guesses={guesses} />
                 <div className="memory">
 
@@ -111,10 +112,9 @@ function Game(){
                             onClick={handleCardClick}
                         />
                     ))}
-
                     {won && <Winner guess={guesses} />}
-
                 </div>
+
             </ScrollAnimation>
         </section>
     )    
