@@ -2,8 +2,8 @@
 # *.js linguist-detectable=true
 # *.css linguist-detectable=false
 
+*.js linguist-vendored=true
 *.css linguist-vendored=false
 
 # *.js linguist-detectable=true
-# *.js linguist-vendored=true
 
