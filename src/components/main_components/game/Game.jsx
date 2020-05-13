@@ -103,11 +103,11 @@ function Game(){
                 <GuessTry guesses={guesses} />
                 <div className="memory">
 
-                    {cards.map((memory__card, index) => (
+                    {cards.map((memory_card, index) => (
                         <GameCard 
                             key={index} 
                             index={index} //position of a card in the array
-                            imageOfCard={memory__card.imge} 
+                            imageOfCard={memory_card.imge} 
                             stateOfCard={getStateOfCard(index)} //stateOfCard = 'hidden' at the beggining
                             onClick={handleCardClick}
                         />

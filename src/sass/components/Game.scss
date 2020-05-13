@@ -116,7 +116,7 @@
 
 // GAMECARD
 .memory {
-    &__card{
+    &_card{
         margin: 6px;
         outline: 4px solid #6bd4facc;
         text-align: center;
@@ -130,35 +130,36 @@
 
 
 .memory {
-    &__card.hidden{
+    &_card.hidden{
             background-image: linear-gradient(to right bottom, #6bd4facc, #2948ff);
     }   
 }
 
 
 .memory {
-    &__card.justMatched, &__card.justMismatched {
-        outline: 4px solid blue;
+    &_card.justMatched, &__card.justMismatched {
+        // outline: 4px solid blue;
+        outline: 4px solid yellow;
     }
 }
 
 
 .memory {
-    &__card.justMismatched {
+    &_card.justMismatched {
         outline-color: red;
     }
 }
 
 
 .memory {
-    &__card.visible {
+    &_card.visible {
         cursor: not-allowed;
     }
 }
 
 
 .memory {
-    &__card > .symbol {
+    &_card > .symbol {
         font-size: 5.5rem;
         margin:auto 0;
 
