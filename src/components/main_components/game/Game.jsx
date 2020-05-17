@@ -18,6 +18,7 @@ function Game(){
     const [indexOfCardsSuccessfullyPaired, setindexOfCardsSuccessfullyPaired] = useState([]);  
     const won = indexOfCardsSuccessfullyPaired.length === cards.length;
 
+    
     function generateCards() {
         const result = []
         const size = side1 * side2
@@ -27,6 +28,7 @@ function Game(){
             const card = candidates.pop();
             result.push(card, card);
         }  
+
         return shuffle(result);
     }
 
@@ -58,7 +60,7 @@ function Game(){
         handleNewPairSecondClick(index);
     }
 
-    function handleNewPairSecondClick(index) {//index = position {
+    function handleNewPairSecondClick(index) {
         const newPair = [currentPair[0], index]
         setGuesses(guesses + 1)
         const matching = cards[newPair[0]] === cards[newPair[1]]
@@ -101,13 +103,13 @@ function Game(){
 
 
                 <GuessTry guesses={guesses} />
-                <div className="memory">
 
-                    {cards.map((memory_card, index) => (
+                <div className="memory">
+                    {cards.map((card, index) => (
                         <GameCard 
                             key={index} 
                             index={index} //position of a card in the array
-                            imageOfCard={memory_card.imge} 
+                            imageOfCard={card.imge} 
                             stateOfCard={getStateOfCard(index)} //stateOfCard = 'hidden' at the beggining
                             onClick={handleCardClick}
                         />

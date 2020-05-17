@@ -4,12 +4,6 @@ import Typed from 'react-typed';
 import logo from '../img/bttfLogo.png';
 
 function Header(){
-
-    // function effect(){
-    //     const
-    // }
-    
-
     return(
         <header className="header">
             <div className="header__logoBox">

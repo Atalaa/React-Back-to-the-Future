@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 function Card(props){
     return(
@@ -78,6 +80,24 @@ function Card(props){
         </div>
 
     )
+}
+
+Card.propTypes = {
+    myDashes: PropTypes.string.isRequired,
+    myTitle: PropTypes.string.isRequired,
+    myDash: PropTypes.string.isRequired,
+    myMp4: PropTypes.string.isRequired,
+    myWebm: PropTypes.string.isRequired,
+    myQuote: PropTypes.string.isRequired,
+    myAuthor: PropTypes.string.isRequired,
+    myPicCard: PropTypes.string.isRequired,
+    myYear: PropTypes.string.isRequired,
+    myStar: PropTypes.string.isRequired,
+    mySynopsis: PropTypes.string.isRequired,
+    myCastImage1: PropTypes.string.isRequired,
+    myCastImage2: PropTypes.string.isRequired,
+    myCastImage3: PropTypes.string.isRequired,
+    myCastImage4: PropTypes.string.isRequired,
 }
 
 export default Card;

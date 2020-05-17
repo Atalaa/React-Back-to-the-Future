@@ -1,5 +1,6 @@
 import React from 'react';
 import Swal from 'sweetalert2';
+import PropTypes from 'prop-types';
 
 import win from '../../../img/win.png';
 
@@ -19,6 +20,10 @@ function Winner({guess}){
             }
         </div>
     )
+}
+
+Winner.propTypes = {
+    guess: PropTypes.number.isRequired
 }
 
 export default Winner;

@@ -1,29 +1,26 @@
 import React, { useRef } from 'react';
+import PropTypes from 'prop-types';
 
 
-function Audio(props){
+function Audio({songArtist, musicBoxRef }){
     
     const audioElementRef = useRef(null);
     const btnPlaySongRef = useRef(null);
 
-
-     //HANDCLICK
-     function handleClick(){
-        const isPlaying = props.musicBoxRef.current;
+    //HANDLECLICK
+    const handleClick = () => {
+        const isPlaying = musicBoxRef.current;
         isPlaying.classList.contains('playing') ? pauseAudio() : playAudio()
     }
 
-    //HANDCLICKSTOP
-    function handleClickStop(){
-        stopAudio();
-    }
-
+    //HANDLECLICKSTOP
+    const handleClickStop = () => stopAudio();
 
     //PLAY 
     function playAudio(){
         audioElementRef.current.play();
-        props.musicBoxRef.current.classList.add('playing');
-        props.musicBoxRef.current.classList.remove('stop');
+        musicBoxRef.current.classList.add('playing');
+        musicBoxRef.current.classList.remove('stop');
         btnPlaySongRef.current.querySelector('i.fa').classList.remove('fa-play');
         btnPlaySongRef.current.querySelector('i.fa').classList.add('fa-pause');
     }
@@ -31,7 +28,7 @@ function Audio(props){
     //PAUSE
     function pauseAudio(){
         audioElementRef.current.pause();
-        props.musicBoxRef.current.classList.remove('playing');
+        musicBoxRef.current.classList.remove('playing');
         btnPlaySongRef.current.querySelector('i.fa').classList.remove('fa-pause');
         btnPlaySongRef.current.querySelector('i.fa').classList.add('fa-play');
     }
@@ -39,8 +36,8 @@ function Audio(props){
     //STOP
     function stopAudio(){
         audioElementRef.current.pause(); audioElementRef.current.currentTime = 0;
-        props.musicBoxRef.current.classList.remove('playing');
-        props.musicBoxRef.current.classList.add('stop');
+        musicBoxRef.current.classList.remove('playing');
+        musicBoxRef.current.classList.add('stop');
         btnPlaySongRef.current.querySelector('i.fa').classList.remove('fa-pause');
         btnPlaySongRef.current.querySelector('i.fa').classList.add('fa-play');
     }
@@ -48,11 +45,10 @@ function Audio(props){
 
     return(
         <div className="audio-set">
-
             <div className="audio-playSong">
                 <button ref={btnPlaySongRef} className="playSong" onClick={handleClick}>
                     <i className="fa fa-play fa-3x"></i>
-                    <audio ref={audioElementRef}  className="audio-element" src={props.songArtist}></audio>
+                    <audio ref={audioElementRef}  className="audio-element" src={songArtist}></audio>
                 </button>
             </div>
 
@@ -63,7 +59,11 @@ function Audio(props){
             </div>
         </div>
     )        
-    
+}
+
+Audio.propTypes = {
+    songArtist: PropTypes.string.isRequired,
+    musicBoxRef: PropTypes.object.isRequired
 }
 
 export default Audio;

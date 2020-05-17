@@ -1,7 +1,9 @@
 import React, {useRef} from 'react';
 import Audio from './Audio';
+import PropTypes from 'prop-types';
 
-function Singer({id, singerImg, song, artist, info}){
+
+function Singer({singerImg, song, artist, info}){
     
     const musicBoxRef = useRef(null);
 
@@ -12,11 +14,19 @@ function Singer({id, singerImg, song, artist, info}){
                 <img src={singerImg} alt="singer" className="musicBox__img"/>
                 <p className="info-crew">{info}</p>
                 
-                <Audio idArtist={id} songArtist={song} musicBoxRef={musicBoxRef} />
+                <Audio songArtist={song} musicBoxRef={musicBoxRef} />
             </div>
             
         </div>
     )
 }
+
+Singer.propTypes = {
+    singerImg: PropTypes.string.isRequired,
+    song: PropTypes.string.isRequired,
+    artist: PropTypes.string.isRequired,
+    info: PropTypes.string.isRequired
+}
+
 
 export default Singer;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 function Reviews({myPic, myPicName, myHeader, myDesc}){
@@ -16,6 +17,13 @@ function Reviews({myPic, myPicName, myHeader, myDesc}){
             </li>
         </ul>
     )
+}
+
+Reviews.propTypes = {
+    myPic: PropTypes.string.isRequired,
+    myPicName: PropTypes.string.isRequired,
+    myHeader: PropTypes.string.isRequired,
+    myDesc: PropTypes.string.isRequired
 }
 
 export default Reviews;

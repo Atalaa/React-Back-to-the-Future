@@ -4,7 +4,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import json_music_singers from '../../../json/json_music_singers';
 import Singer from './Singer';
 
-import 'animate.css/animate.css';
 
 function Music() {
     return(
@@ -19,7 +18,6 @@ function Music() {
                         {json_music_singers.map(item => (
                             <Singer 
                                 key={item.id} 
-                                id={item.id} 
                                 singerImg={item.image} 
                                 song={item.mp3} 
                                 artist={item.artist} 

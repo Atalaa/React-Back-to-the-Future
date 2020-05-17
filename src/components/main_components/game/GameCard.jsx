@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import './Game';
 
 const HIDDEN_SYMBOL = '❔';
@@ -18,8 +18,19 @@ function GameCard({imageOfCard, stateOfCard, index, onClick}){
             }
 
         </div>
-
     )
 }
   
+GameCard.propTypes = {
+    imageOfCard: PropTypes.string.isRequired,
+    stateOfCard: PropTypes.oneOf([
+        'visible',
+        'hidden',
+        'justMatched',
+        'justMismatched'
+    ]).isRequired,
+    index: PropTypes.number.isRequired,
+    onClick: PropTypes.func.isRequired
+}
+
 export default GameCard;
