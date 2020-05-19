@@ -12,16 +12,20 @@ function Game(){
     const side1 = 6
     const side2 = 5
     const milliseconds = 750
+
     const [cards, setCards] = useState(generateCards);
     const [currentPair, setCurrentPair] = useState([]);
+
     const [guesses, setGuesses] = useState(0);
     const [indexOfCardsSuccessfullyPaired, setindexOfCardsSuccessfullyPaired] = useState([]);  
+
     const won = indexOfCardsSuccessfullyPaired.length === cards.length;
 
     
     function generateCards() {
         const result = []
-        const size = side1 * side2
+        // const size = side1 * side2
+        const size = 4
         const candidates = shuffle(imagesJson)
 
         while (result.length < size) {

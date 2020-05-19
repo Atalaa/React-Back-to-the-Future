@@ -137,7 +137,7 @@
 
 
 .memory {
-    &_card.justMatched, &__card.justMismatched {
+    &_card.justMatched {
         // outline: 4px solid blue;
         outline: 4px solid yellow;
     }
@@ -146,14 +146,15 @@
 
 .memory {
     &_card.justMismatched {
-        outline-color: red;
+        outline: 4px solid red;
     }
 }
 
 
 .memory {
     &_card.visible {
-        cursor: not-allowed;
+        // cursor: not-allowed;
+        pointer-events: none;
     }
 }
 
