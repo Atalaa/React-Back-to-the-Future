@@ -7,8 +7,8 @@ const HIDDEN_SYMBOL = '❔';
 //destructuring
 function GameCard({imageOfCard, stateOfCard, index, onClick}){
     return(
+
         <div className={`memory_card ${stateOfCard}`} onClick={() => onClick(index)}>
-        
             { 
                 stateOfCard === 'hidden' ? 
                 
@@ -16,7 +16,6 @@ function GameCard({imageOfCard, stateOfCard, index, onClick}){
 
                 <img className="symbol_card" src={imageOfCard} style={{width:"75%"}} alt="movie-icon"/> 
             }
-
         </div>
     )
 }

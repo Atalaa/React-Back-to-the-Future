@@ -23,7 +23,17 @@ import jtolkan_card from '../img/jtolkan_card.jpg';
 import rzemeckis_card from '../img/rzemeckis_card.jpg';
 
 
+const me = {
+  "name": "Rchidi",
+  "lastname": "Aata-allah",
+  "nationalities": ["Canadian", "French"],
+  "livesin": "Toronto",
+  "passions": ["Programming", "Video Games", "Movies", "Basket-Ball", "Soccer"],
+  "interests": ["Education", "Sports"],
+  "believes": ["Failures are not permanent, soon or later, You will succeed!"]
+}
 
+ me;
 const json_trailer_cards = [ 
     {id: 1, 
     dashes:"--1",

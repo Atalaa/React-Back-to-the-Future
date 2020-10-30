@@ -80,6 +80,7 @@ function Card(props){
         </div>
 
     )
+    
 }
 
 Card.propTypes = {
@@ -101,3 +102,4 @@ Card.propTypes = {
 }
 
 export default Card;
+

@@ -14,6 +14,7 @@ function Game(){
     const milliseconds = 750
 
     const [cards, setCards] = useState(generateCards);
+    const [cards] = useState(generateCards);
     const [currentPair, setCurrentPair] = useState([]);
 
     const [guesses, setGuesses] = useState(0);
@@ -24,20 +25,17 @@ function Game(){
     
     function generateCards() {
         const result = []
-        const size = side1 * side2
+        // const size = side1 * side2
+        const size = 4
         const candidates = shuffle(imagesJson)
 
         while (result.length < size) {
             const card = candidates.pop();
             result.push(card, card);
         }  
-
         return shuffle(result);
     }
 
-    //getStateOfCard: prends la position d'une carte (index) et examine la paire en cours et les cartes deja appairees pour decider quelle est la valeur de stateOfCard a utiliser (hidden, visible, ect...) pour cette carte la.
-
-    //getStateOfCard(index): cartes automatiquement toutes masquees car quand la partie demarre je n'ai appaire aucune carte, donc stateOfCard is hidden pour tout le monde
 
     function getStateOfCard(index) {
         const indexMatched = indexOfCardsSuccessfullyPaired.includes(index);
@@ -63,6 +61,7 @@ function Game(){
         handleNewPairSecondClick(index);
     }
 
+
     function handleNewPairSecondClick(index) {
         const newPair = [currentPair[0], index]
         setGuesses(guesses + 1)
@@ -70,7 +69,7 @@ function Game(){
     
         setCurrentPair(newPair)
     
-        // //if it's really a pair
+        //if it's really a pair
         if (matching){             
             setindexOfCardsSuccessfullyPaired([...indexOfCardsSuccessfullyPaired, ...newPair]);
         } 
@@ -80,7 +79,7 @@ function Game(){
         // React re-render the component with a new value with setCurrentPaire - purge pair
     }
 
-
+console.log(cards)
     return(
         <section className="sectionGame">
             <ScrollAnimation animateIn='fadeIn' duration={2} animateOnce={true}>

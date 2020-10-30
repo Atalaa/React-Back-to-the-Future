@@ -23,7 +23,7 @@ describe('<App />', () => {
 
     it('has 30 cards', () => {
         const wrapper = shallow(<Game />)
-        expect(wrapper.find('GameCard')).to.have.lengthOf(30)    
+        expect(wrapper.find('GameCard')).to.have.lengthOf(3);    
     })
 })
 

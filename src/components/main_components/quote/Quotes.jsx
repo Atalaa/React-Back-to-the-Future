@@ -13,6 +13,7 @@ function Quote(){
     const bgColorH2Ref  = useRef(null);
     let   bgColorBool   = false;
 
+    //useEffect because we wanna know when the page is finished loading, then only we're gonna quote the first sentence
     useEffect(() => {
         // testRef.current.click();
         quote();
@@ -34,6 +35,7 @@ function Quote(){
             quoteLeftRef.current.classList.add("fa", "fa-quote-left", "fa-3x");
             quoteRightRef.current.classList.add("fa", "fa-quote-right", "fa-3x");
 
+            
             if(bgColorBool){
                 bgColorRef.current.style.backgroundImage = "linear-gradient(45deg, #000, #fff)";
                 bgColorH2Ref.current.style.backgroundImage = "linear-gradient(to bottom, #240b36, #11998e)";

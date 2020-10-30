@@ -138,8 +138,7 @@
 
 .memory {
     &_card.justMatched {
-        // outline: 4px solid blue;
-        outline: 4px solid yellow;
+        outline: 4px solid greenyellow;
     }
 }
 
@@ -153,7 +152,6 @@
 
 .memory {
     &_card.visible {
-        // cursor: not-allowed;
         pointer-events: none;
     }
 }

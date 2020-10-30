@@ -57,9 +57,10 @@
         height: 15rem; //mandatory for shape-outside
         float: left; //mandatory for shape-outside
 
-        -webkit-shape-outside: circle(50% at 50% 50%); //for Safari
+        -webkit-shape-outside: circle(50% at 50% 50%); //radius of circle and the position of the center
         shape-outside: circle(50% at 50% 50%); //only defines where the content floats around the element (circle in this case)
 
+        //look like element circle
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%); //if we want the element to look that circle, to specify a specific region of an element to display, rather than showing the complete area
 
