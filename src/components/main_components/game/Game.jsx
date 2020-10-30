@@ -9,9 +9,9 @@ import Winner from './Winner';
 
 function Game(){
 
-    const side1 = 6
-    const side2 = 5
-    const milliseconds = 750
+    const side1 = 6;
+    const side2 = 5;
+    const milliseconds = 750;
 
     const [cards, setCards] = useState(generateCards);
     const [currentPair, setCurrentPair] = useState([]);
