@@ -5,7 +5,7 @@
 .card{
 
     //FUNCTIONALITY
-    perspective: 150rem; //perspective always on the parent
+    perspective: 150rem; //perspective always on the parent, body, div or block level element
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem; //for perspective 3d flip back 
@@ -29,7 +29,7 @@
 
         &--back{
             position: relative; //for cast div
-            transform: rotateY(180deg);
+            transform: rotateY(180deg); //at the beginning to hide it behind
 
             &-1{
                 background-image: linear-gradient(to right bottom, $color-card1-light, $color-card1-dark);
