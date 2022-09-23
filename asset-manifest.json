@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Back-to-the-Future/static/css/main.b89de281.chunk.css",
-    "main.js": "/Back-to-the-Future/static/js/main.22761bd7.chunk.js",
-    "main.js.map": "/Back-to-the-Future/static/js/main.22761bd7.chunk.js.map",
-    "runtime-main.js": "/Back-to-the-Future/static/js/runtime-main.13387317.js",
-    "runtime-main.js.map": "/Back-to-the-Future/static/js/runtime-main.13387317.js.map",
-    "static/css/2.de36cf76.chunk.css": "/Back-to-the-Future/static/css/2.de36cf76.chunk.css",
-    "static/js/2.f77c6944.chunk.js": "/Back-to-the-Future/static/js/2.f77c6944.chunk.js",
-    "static/js/2.f77c6944.chunk.js.map": "/Back-to-the-Future/static/js/2.f77c6944.chunk.js.map",
+    "main.css": "/Back-to-the-Future/static/css/main.4f3879fc.chunk.css",
+    "main.js": "/Back-to-the-Future/static/js/main.5047a8f8.chunk.js",
+    "main.js.map": "/Back-to-the-Future/static/js/main.5047a8f8.chunk.js.map",
+    "runtime-main.js": "/Back-to-the-Future/static/js/runtime-main.d9ae7654.js",
+    "runtime-main.js.map": "/Back-to-the-Future/static/js/runtime-main.d9ae7654.js.map",
+    "static/css/2.cb7ace5d.chunk.css": "/Back-to-the-Future/static/css/2.cb7ace5d.chunk.css",
+    "static/js/2.6d56fb60.chunk.js": "/Back-to-the-Future/static/js/2.6d56fb60.chunk.js",
+    "static/js/2.6d56fb60.chunk.js.map": "/Back-to-the-Future/static/js/2.6d56fb60.chunk.js.map",
     "index.html": "/Back-to-the-Future/index.html",
-    "precache-manifest.251c4b1e3c353f3d1462f66db079745a.js": "/Back-to-the-Future/precache-manifest.251c4b1e3c353f3d1462f66db079745a.js",
+    "precache-manifest.f9bcf4620e14d6ca5589b1c4cfe4d36a.js": "/Back-to-the-Future/precache-manifest.f9bcf4620e14d6ca5589b1c4cfe4d36a.js",
     "service-worker.js": "/Back-to-the-Future/service-worker.js",
-    "static/css/2.de36cf76.chunk.css.map": "/Back-to-the-Future/static/css/2.de36cf76.chunk.css.map",
-    "static/css/main.b89de281.chunk.css.map": "/Back-to-the-Future/static/css/main.b89de281.chunk.css.map",
-    "static/js/2.f77c6944.chunk.js.LICENSE.txt": "/Back-to-the-Future/static/js/2.f77c6944.chunk.js.LICENSE.txt",
+    "static/css/2.cb7ace5d.chunk.css.map": "/Back-to-the-Future/static/css/2.cb7ace5d.chunk.css.map",
+    "static/css/main.4f3879fc.chunk.css.map": "/Back-to-the-Future/static/css/main.4f3879fc.chunk.css.map",
+    "static/js/2.6d56fb60.chunk.js.LICENSE.txt": "/Back-to-the-Future/static/js/2.6d56fb60.chunk.js.LICENSE.txt",
     "static/media/3-5star.png": "/Back-to-the-Future/static/media/3-5star.b3f70f12.png",
     "static/media/4-5star.png": "/Back-to-the-Future/static/media/4-5star.69aa2788.png",
     "static/media/4star.png": "/Back-to-the-Future/static/media/4star.a97c7bbc.png",
-    "static/media/back_in_time.mp3": "/Back-to-the-Future/static/media/back_in_time.35cb67dd.mp3",
+    "static/media/Huey Lewis & The News - The Power Of Love (HQ).mp3": "/Back-to-the-Future/static/media/Huey Lewis & The News - The Power Of Love (HQ).5c125eee.mp3",
     "static/media/bgale_card.jpg": "/Back-to-the-Future/static/media/bgale_card.f1dff462.jpg",
     "static/media/bttfLogo.png": "/Back-to-the-Future/static/media/bttfLogo.c9d46b3b.png",
     "static/media/capacitor.png": "/Back-to-the-Future/static/media/capacitor.8b238181.png",
@@ -71,10 +71,10 @@
     "static/media/wsmith.jpg": "/Back-to-the-Future/static/media/wsmith.86cc3319.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.13387317.js",
-    "static/css/2.de36cf76.chunk.css",
-    "static/js/2.f77c6944.chunk.js",
-    "static/css/main.b89de281.chunk.css",
-    "static/js/main.22761bd7.chunk.js"
+    "static/js/runtime-main.d9ae7654.js",
+    "static/css/2.cb7ace5d.chunk.css",
+    "static/js/2.6d56fb60.chunk.js",
+    "static/css/main.4f3879fc.chunk.css",
+    "static/js/main.5047a8f8.chunk.js"
   ]
 }
