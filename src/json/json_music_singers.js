@@ -11,4 +11,4 @@ const json_music_singers = [
   },
 ];
 
-export default json_music_singers;
+export default json_music_singers; 
