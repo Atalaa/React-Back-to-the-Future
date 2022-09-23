@@ -1,5 +1,5 @@
 import huey from "../img/hlewis.jpg";
-import soundHuey from "../sounds/Huey Lewis & The News - The Power Of Love (HQ).mp3";
+import soundHuey from "../sounds/Huey.mp3";
 
 const json_music_singers = [
   {
