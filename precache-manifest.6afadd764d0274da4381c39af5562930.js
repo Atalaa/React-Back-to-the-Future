@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "22cb2218089dec874fb9998a91de1250",
+    "revision": "80fc0e59044cc00754ffb7e911de5e85",
     "url": "/Back-to-the-Future/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Back-to-the-Future/static/css/2.cb7ace5d.chunk.css"
   },
   {
-    "revision": "fbe65771b4421d73bc95",
+    "revision": "0b55115c58b70c078e10",
     "url": "/Back-to-the-Future/static/css/main.4f3879fc.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Back-to-the-Future/static/js/2.6d56fb60.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fbe65771b4421d73bc95",
-    "url": "/Back-to-the-Future/static/js/main.5047a8f8.chunk.js"
+    "revision": "0b55115c58b70c078e10",
+    "url": "/Back-to-the-Future/static/js/main.95cbfdfb.chunk.js"
   },
   {
     "revision": "34de59bc677e410ae42c",
@@ -41,7 +41,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "5c125eee5b358ef2e30d4839aacdb236",
-    "url": "/Back-to-the-Future/static/media/Huey Lewis & The News - The Power Of Love (HQ).5c125eee.mp3"
+    "url": "/Back-to-the-Future/static/media/Huey.5c125eee.mp3"
   },
   {
     "revision": "f1dff462a9404ac88573368694198d0c",
